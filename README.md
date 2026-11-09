@@ -10,7 +10,7 @@ Production application code lives in the separate `school-erp` repository. This 
 |---|---|
 | `brand/` | Brand guidelines (Graphite & Institutional Green), logos, templates |
 | `brochure/` | Six-page brochure source, exports, print specifications |
-| `docs/` | Product, administrator, faculty, guardian and implementation documentation |
+| `docs/` | Product, administrator, faculty, guardian and implementation documentation; source of the Zensical documentation portal |
 | `demo/` | Presenter scripts, checklists, sample (fictional) data, Playwright demo automation |
 | `sales/` | Proposals, pricing, FAQ, objection handling |
 | `diagrams/` | Mermaid sources for workflows and module maps |
@@ -29,6 +29,10 @@ Production application code lives in the separate `school-erp` repository. This 
 ## Presentation draft
 
 - [GTM-PRESENTATION-01 — 12-slide Marp school-management deck](presentations/marp/README.md) — source, Graphite & Institutional Green theme, speaker notes and export instructions. Draft only; identity, price and live demo verification remain pending.
+
+## Documentation portal draft
+
+- [GTM-DOCS-01 — Zensical documentation portal](DOCUMENTATION-PORTAL.md) — searchable Administrator, Teacher, Guardian and Implementation manuals plus FAQ, built from `docs/` with [`zensical.toml`](zensical.toml). Install with `requirements-docs.txt`, preview with `zensical serve`, validate with `zensical build --clean --strict`. Draft only; local preview, no public hosting.
 
 ## Content status
 
