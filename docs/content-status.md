@@ -14,3 +14,6 @@ Statuses: **Not yet imported** → **Draft** → **Approved** → **Published**.
 | Guardian documentation | `docs/guardian/` | Draft | | 2026-11-09 | Role overview imported |
 | Live-demo presenter script | `demo/presenter-scripts/` | Draft | | 2026-11-09 | Updated for online-only PWA position |
 | Workflow and module-map diagrams | `diagrams/` | Draft | | 2026-11-09 | SVG and Mermaid sources imported |
+| Pre-demo readiness checklist | `demo/demo-checklists/pre-demo-readiness.md` | Draft | | 2026-11-09 | Based on reported 2026-10-26 demo snapshot; live staging validation required before client use |
+| Eight-minute executive demo | `demo/presenter-scripts/executive-demo-8-minute.md` | Draft | | 2026-11-09 | Read-only short alternative to 30-minute presentation; verify role screens |
+| School requirements capture sheet | `sales/proposals/school-requirements-capture.md` | Draft | | 2026-11-09 | Blank template for Telangana and Andhra Pradesh school discovery; no client information |
