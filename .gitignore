@@ -1,0 +1,32 @@
+# Secrets and environment
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Databases and data dumps
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+*.dump
+
+# Real data exports
+*.csv.real
+exports-private/
+
+# Playwright authentication and generated output
+**/.auth/
+**/storage-state*.json
+test-results/
+playwright-report/
+blob-report/
+*.webm
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
