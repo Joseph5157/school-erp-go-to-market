@@ -2,15 +2,15 @@
 
 Statuses: **Not yet imported** → **Draft** → **Approved** → **Published**.
 
-| Asset | Path | Status | Owner | Last updated |
-|---|---|---|---|---|
-| Repository README | `README.md` | Draft | | 2026-11-09 |
-| Agent instructions | `AGENTS.md` | Draft | | 2026-11-09 |
-| Brand guidelines | `brand/brand-guidelines.md` | Draft | | 2026-11-09 |
-| Six-page brochure | `brochure/` | Not yet imported | | |
-| Product feature catalogue | `docs/product/` | Not yet imported | | |
-| Administrator documentation | `docs/administrator/` | Not yet imported | | |
-| Faculty documentation | `docs/faculty/` | Not yet imported | | |
-| Guardian documentation | `docs/guardian/` | Not yet imported | | |
-| Live-demo presenter script | `demo/presenter-scripts/` | Not yet imported | | |
-| Workflow and module-map diagrams | `diagrams/mermaid/` | Not yet imported | | |
+| Asset | Path | Status | Owner | Last updated | Notes |
+|---|---|---|---|---|---|
+| Repository README | `README.md` | Draft | | 2026-11-09 | Foundation merged |
+| Agent instructions | `AGENTS.md` | Draft | | 2026-11-09 | Foundation merged |
+| Brand guidelines | `brand/brand-guidelines.md` | Draft | | 2026-11-09 | Palette name and typography approved; identity assets pending |
+| Six-page brochure | `brochure/` | Not yet imported | | 2026-11-09 | Source reviewed; rebuild required for approved palette |
+| Product feature catalogue | `docs/product/` | Draft | | 2026-11-09 | Imported from baseline `b800676`; recheck before publication |
+| Administrator documentation | `docs/administrator/` | Draft | | 2026-11-09 | Role overview imported |
+| Faculty documentation | `docs/faculty/` | Draft | | 2026-11-09 | Role overview imported |
+| Guardian documentation | `docs/guardian/` | Draft | | 2026-11-09 | Role overview imported |
+| Live-demo presenter script | `demo/presenter-scripts/` | Draft | | 2026-11-09 | Updated for online-only PWA position |
+| Workflow and module-map diagrams | `diagrams/` | Draft | | 2026-11-09 | SVG and Mermaid sources imported |
