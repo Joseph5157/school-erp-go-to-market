@@ -43,7 +43,7 @@ jobs:
       - name: Strict build (fails on broken links or anchors)
         run: zensical build --clean --strict
 
-      - name: Check excluded internal documents are not published
+      - name: Check navigation targets and excluded documents
         run: python scripts/ci/check_docs_site.py
 
       - name: Confirm tracked files are unchanged
