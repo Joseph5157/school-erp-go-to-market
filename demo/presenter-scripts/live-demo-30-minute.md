@@ -4,7 +4,7 @@ Status: **Draft**. Thirty-minute presenter script for a rehearsed demo using fic
 
 For the company presenter and demo operator.
 
-Use the quoted paragraphs as your spoken script. Follow the screen actions between them. The sequence takes about 30 minutes including navigation and a short requirements discussion. Replace the company and product placeholders before the meeting.
+Use the quoted paragraphs as your spoken script. Follow the screen actions between them. The sequence takes about 30 minutes including navigation and a short requirements discussion.
 
 ## Preparation before the client joins
 
@@ -18,11 +18,11 @@ Use the quoted paragraphs as your spoken script. Follow the screen actions betwe
 | Other examples | One relevant notice, a weekly timetable, an import preview with a sample issue, and supported sample PDFs.                                |
 | Communication  | Fictional contacts only. Keep real recipients out of all demo records. Do not send a real WhatsApp message during the demonstration.      |
 
-Team roles One presenter speaks while one operator navigates, if two people are available. With one person, pause after each explanation before clicking. Keep credentials out of the shared screen.
+Team roles: one presenter speaks while one operator navigates, if two people are available. With one person, pause after each explanation before clicking. Keep credentials out of the shared screen.
 
 Record before starting: Demo URL __________ · School __________ · Academic year __________ · Business date __________ · Build __________
 
-*Presenter note: this script originated from feature-catalogue baseline `b800676`. Rehearse every path against the actual deployed demo build. The current build, approved feature catalogue and runbook remain the scope references.*
+*Presenter note: this script originated from feature-catalogue baseline `b800676`. Rehearse every path against the actual deployed demo build. The current build, reviewed feature catalogue and runbook remain the scope references.*
 
 # Opening and school administration
 
