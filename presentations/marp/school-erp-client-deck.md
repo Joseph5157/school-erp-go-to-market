@@ -23,7 +23,7 @@ Admissions · Attendance · Assessments · Report cards
 
 - Admissions records, registers, marks and reports may sit in different places.
 - Teachers need a clear view of the classes and work assigned to them.
-- School management needs to review progress before sharing results with families.
+- School management needs to review progress before results reach families.
 - Guardians need secure access to information about their own children.
 
 **Our focus:** help the school keep these connected workflows organized.
@@ -35,7 +35,7 @@ Admissions · Attendance · Assessments · Report cards
 
 ![w:1040](../../diagrams/svg/02_Student_Journey.svg)
 
-*Admissions are decided by the office. Guardians see eligible records only after the school grants access or publishes results.*
+*The office decides admissions. Guardians see records only after the school grants access or publishes results.*
 
 ---
 
@@ -44,7 +44,7 @@ Admissions · Attendance · Assessments · Report cards
 
 ![w:1040](../../diagrams/svg/01_Product_Map.svg)
 
-*The current feature catalogue groups implemented workflows into M01–M12. School-specific needs are checked separately.*
+*The feature catalogue documents these workflows as areas M01–M12. School-specific needs are assessed separately.*
 
 ---
 
@@ -95,7 +95,7 @@ Admissions · Attendance · Assessments · Report cards
 - **Timetable:** view weekly periods and identify known teacher clashes.
 - **Attendance:** distinguish submitted registers from missing entries.
 - **Notices:** post to the whole school, one class or one section.
-- **Documents:** issue bonafide, attendance summary and eligible report-card PDFs.
+- **Documents:** bonafide, attendance summary and eligible report-card PDFs.
 - **Excel import:** preview and correct spreadsheet problems before confirming.
 
 ---
@@ -106,7 +106,7 @@ Admissions · Attendance · Assessments · Report cards
 | Current demonstration scope | Separately assessed requests |
 |---|---|
 | Admissions, enrollment and academic setup | Fees and online payment collection |
-| Teacher attendance and assessment workflows | Bulk academic-year rollover |
+| Class attendance and assessment workflows | Bulk academic-year rollover |
 | Guardian portal and published report cards | Transfer certificates and board-specific calculations |
 | Timetable, notices and supported PDFs | Automated WhatsApp API, SMS or email delivery |
 | Installable **online-only** PWA | Native apps, offline workflows and multi-school SaaS |

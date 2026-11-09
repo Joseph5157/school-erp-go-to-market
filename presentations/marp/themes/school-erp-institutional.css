@@ -10,10 +10,12 @@ section {
   background-color: #F5F6F3;
   color: #18212B;
   font-family: "Noto Sans", "Arial", sans-serif;
-  font-size: 27px;
+  font-size: 29px;
   line-height: 1.30;
   padding: 58px 78px 67px;
   border-top: 8px solid #1F6B52;
+  /* Top-align content slides so titles sit at the same height on every slide. */
+  place-content: start stretch;
 }
 section h1 {
   color: #18212B;
@@ -26,6 +28,7 @@ section h1 {
 section h2 { color: #1F6B52; font-size: 32px; margin: 12px 0 24px; }
 section h3 { color: #FFFFFF; font-size: 30px; margin: 18px 0 22px; }
 section p { margin: 12px 0; }
+section ul + p, section ol + p, section table + p { margin-top: 28px; }
 section strong { color: #1F6B52; }
 section ul, section ol { margin: 17px 0 0; padding-left: 34px; }
 section li { padding-left: 4px; margin-bottom: 14px; }
@@ -49,27 +52,34 @@ section.lead {
   color: #FFFFFF;
   border-top: 8px solid #1F6B52;
   padding: 78px 88px 74px;
+  place-content: safe center stretch;
 }
 section.lead h1 {
   color: #FFFFFF;
   font-size: 73px;
   margin-bottom: 28px;
 }
-section.lead h2 { color: #D6EADD; font-size: 39px; margin-bottom: 32px; }
+section.lead h2 { color: #E3EFE9; font-size: 39px; margin-bottom: 32px; }
 section.lead p { font-size: 26px; line-height: 1.36; }
-section.lead strong { color: #D6EADD; }
-section.lead footer, section.lead::after { color: #C6D1D9; }
+section.lead strong { color: #E3EFE9; }
+section.lead footer, section.lead::after { color: #DDE1DC; }
 section.lead h3 { color: #FFFFFF; font-size: 32px; font-weight: 700; }
 section.diagram img {
   display: block;
   max-width: 100%;
-  max-height: 444px;
+  max-height: 430px;
   object-fit: contain;
-  margin: 8px auto 7px;
+  margin: 4px auto 0;
+  background: #FFFFFF;
+  border: 1px solid #DDE1DC;
+  border-radius: 10px;
+  padding: 8px;
 }
 section.diagram p:has(img) { margin: 0 auto; }
-section.diagram em { font-size: 18px; }
+section.diagram em { font-size: 20px; }
+section.diagram h1 { margin-bottom: 18px; }
 section table {
+  display: table;
   width: 100%;
   font-size: 22px;
   line-height: 1.25;
