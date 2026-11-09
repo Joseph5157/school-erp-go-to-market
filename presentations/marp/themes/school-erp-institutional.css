@@ -1,0 +1,96 @@
+/* @theme school-erp-institutional */
+@import 'default';
+
+/*
+  Draft client presentation theme.
+  Based on brand/brand-guidelines.md:
+  Graphite & Institutional Green, cobalt for informational use only.
+*/
+section {
+  background-color: #F5F6F3;
+  color: #18212B;
+  font-family: "Noto Sans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 1.30;
+  padding: 58px 78px 67px;
+  border-top: 8px solid #1F6B52;
+}
+section h1 {
+  color: #18212B;
+  font-size: 49px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+  line-height: 1.12;
+  margin: 0 0 25px;
+}
+section h2 { color: #1F6B52; font-size: 32px; margin: 12px 0 24px; }
+section h3 { color: #FFFFFF; font-size: 30px; margin: 18px 0 22px; }
+section p { margin: 12px 0; }
+section strong { color: #1F6B52; }
+section ul, section ol { margin: 17px 0 0; padding-left: 34px; }
+section li { padding-left: 4px; margin-bottom: 14px; }
+section li::marker { color: #1F6B52; }
+section em { color: #4A5562; font-style: normal; font-size: 20px; }
+section footer {
+  color: #4A5562;
+  font-size: 15px;
+  bottom: 23px;
+  left: 78px;
+  letter-spacing: 0.2px;
+}
+section::after {
+  color: #4A5562;
+  font-size: 15px;
+  right: 78px;
+  bottom: 23px;
+}
+section.lead {
+  background: #18212B;
+  color: #FFFFFF;
+  border-top: 8px solid #1F6B52;
+  padding: 78px 88px 74px;
+}
+section.lead h1 {
+  color: #FFFFFF;
+  font-size: 73px;
+  margin-bottom: 28px;
+}
+section.lead h2 { color: #D6EADD; font-size: 39px; margin-bottom: 32px; }
+section.lead p { font-size: 26px; line-height: 1.36; }
+section.lead strong { color: #D6EADD; }
+section.lead footer, section.lead::after { color: #C6D1D9; }
+section.lead h3 { color: #FFFFFF; font-size: 32px; font-weight: 700; }
+section.diagram img {
+  display: block;
+  max-width: 100%;
+  max-height: 444px;
+  object-fit: contain;
+  margin: 8px auto 7px;
+}
+section.diagram p:has(img) { margin: 0 auto; }
+section.diagram em { font-size: 18px; }
+section table {
+  width: 100%;
+  font-size: 22px;
+  line-height: 1.25;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #DDE1DC;
+  background: #FFFFFF;
+}
+section th {
+  background-color: #E3EFE9;
+  color: #185842;
+  text-align: left;
+  font-weight: 700;
+  padding: 12px 18px;
+}
+section td {
+  color: #18212B;
+  border-top: 1px solid #DDE1DC;
+  padding: 11px 18px;
+}
+section td + td, section th + th { border-left: 1px solid #DDE1DC; }
+section.compact h1 { font-size: 44px; margin-bottom: 18px; }
+section.compact p { font-size: 22px; }
+section.compact strong { color: #185842; }
