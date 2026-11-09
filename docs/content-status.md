@@ -1,6 +1,6 @@
 # Content Status Register
 
-Statuses: **Draft** → **Approved** → **Published**.
+Statuses: **Not yet imported** → **Draft** → **Approved** → **Published**.
 
 | Asset | Path | Status | Owner | Last updated |
 |---|---|---|---|---|
