@@ -1,0 +1,14 @@
+# School ERP documentation portal (GTM-DOCS-01)
+# Tested set for reproducible local builds with Python 3.13 on 2026-11-09.
+# Install into an isolated virtual environment; see DOCUMENTATION-PORTAL.md.
+zensical==0.1.0
+zensical-ui==0.0.41
+click==8.5.1
+Jinja2==3.1.6
+Markdown==3.11.3
+MarkupSafe==3.0.4
+pathspec==1.1.1
+Pygments==2.21.0
+pymdown-extensions==13.0
+PyYAML==6.0.3
+tomli==2.5.0
