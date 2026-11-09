@@ -8,7 +8,7 @@ Statuses: **Not yet imported** → **Draft** → **Approved** → **Published**.
 | Agent instructions | `AGENTS.md` | Draft | | 2026-11-09 | Foundation merged |
 | Brand guidelines | `brand/brand-guidelines.md` | Draft | | 2026-11-09 | Palette name and typography approved; identity assets pending |
 | Six-page brochure | `brochure/` | Not yet imported | | 2026-11-09 | Source reviewed; rebuild required for approved palette |
-| Product feature catalogue | `docs/product/` | Draft | | 2026-11-09 | Imported from baseline `b800676`; recheck before publication |
+| Product feature catalogue | `docs/product/` | Draft | | 2026-11-09 | Baseline `b800676` reconciled with current PWA, correction, archive and security decisions |
 | Administrator documentation | `docs/administrator/` | Draft | | 2026-11-09 | Role overview imported |
 | Faculty documentation | `docs/faculty/` | Draft | | 2026-11-09 | Role overview imported |
 | Guardian documentation | `docs/guardian/` | Draft | | 2026-11-09 | Role overview imported |
