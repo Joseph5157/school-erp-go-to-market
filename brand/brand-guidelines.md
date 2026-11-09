@@ -1,6 +1,6 @@
-# Brand Guidelines: Graphite & Cobalt
+# Brand Guidelines: Graphite & Institutional Green
 
-Status: **Draft**. Values below are derived from the implemented School ERP design system. They are not yet owner-approved for publication.
+Status: **Draft**. The palette name and collateral typography were approved by the owner on 2026-11-09. Company/product names and approved logo assets remain pending.
 
 ## 1. Source of truth
 
@@ -15,9 +15,9 @@ Verified against the `school-erp` default branch on 2026-11-09.
 
 ## 2. Palette clarification
 
-“Graphite & Cobalt” is the working visual-direction name. The live product does **not** use cobalt as its primary action colour. Its implemented brand/action colour is institutional green; cobalt is reserved for information states and selected data visualisation.
+**Graphite & Institutional Green** is the approved external palette name. Institutional green is the primary brand/action colour; cobalt remains a supporting colour reserved for information states and selected data visualisation.
 
-Marketing material must reflect this distinction. Do not recolour the product or present cobalt as the main call-to-action colour without an explicit brand decision.
+Marketing material must preserve this hierarchy. Do not recolour the product or present cobalt as the main call-to-action colour.
 
 ## 3. Core palette
 
@@ -103,7 +103,7 @@ The product bundles:
 - Noto Sans Bold (700)
 - Noto Sans Telugu Regular
 
-Until a separate corporate typeface is approved, use **Noto Sans** for English and **Noto Sans Telugu** for Telugu in brochures, proposals, manuals and slides. Use no more than regular and bold weights.
+The approved collateral typefaces are **Noto Sans** for English and **Noto Sans Telugu** for Telugu. Use them in brochures, proposals, manuals and slides, with no more than regular and bold weights.
 
 ## 6. Layout language
 
@@ -172,13 +172,17 @@ No approved company or product logo package has been imported into this reposito
 - Use fictional data in screenshots and demonstrations
 - Verify every feature claim against the current product before publication
 
-## 11. Open approval decisions
+## 11. Approved and pending decisions
 
-The owner still needs to approve:
+Approved by the owner on 2026-11-09:
 
-1. Whether “Graphite & Cobalt” remains the external palette name given the product’s green primary action colour
-2. The final company and product names
-3. Approved logo files and logo rules
-4. Whether Noto Sans becomes the permanent collateral typeface
-5. Any formal colour-usage ratio
-6. Telugu marketing-copy conventions
+- External palette name: **Graphite & Institutional Green**
+- Collateral typography: **Noto Sans** and **Noto Sans Telugu**
+- Cobalt remains a supporting information colour
+
+Still pending:
+
+1. Final company and product names
+2. Approved logo files and logo rules
+3. Any formal colour-usage ratio
+4. Telugu marketing-copy conventions
