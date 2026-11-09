@@ -48,4 +48,7 @@ If you need to change something, select **Back to register**. Your marks are kep
 
 ## Attendance history
 
-You can see each Section's attendance for the dates you were its class teacher, with expected, submitted and missing registers, and each student's present and absent counts. Use **‹ Previous** and **Next ›** to move between periods.
+!!! warning "Provisional — how to reach this page is not yet confirmed"
+    School ERP has an attendance history page for teachers, but **My day** deliberately does not link to it. How teachers are expected to open it has not been decided yet. This section will be updated once it is confirmed.
+
+The history page shows each Section's attendance for the dates you were its class teacher, with expected, submitted and missing registers, and each student's present and absent counts. Use **‹ Previous** and **Next ›** to move between periods, and **‹ All my Sections** to return to the list of Sections.
