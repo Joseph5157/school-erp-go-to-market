@@ -26,6 +26,10 @@ Production application code lives in the separate `school-erp` repository. This 
 - [Thirty-minute live demonstration](demo/presenter-scripts/live-demo-30-minute.md) — detailed role-based walkthrough, requiring rehearsal.
 - [School requirements capture sheet](sales/proposals/school-requirements-capture.md) — blank discovery worksheet; store completed school details securely outside Git.
 
+## Presentation draft
+
+- [GTM-PRESENTATION-01 — 12-slide Marp school-management deck](presentations/marp/README.md) — source, Graphite & Institutional Green theme, speaker notes and export instructions. Draft only; identity, price and live demo verification remain pending.
+
 ## Content status
 
 Every asset is tracked in [`docs/content-status.md`](docs/content-status.md) as Draft, Approved or Published. Only Approved content may be Published.
