@@ -17,4 +17,4 @@ Statuses: **Not yet imported** → **Draft** → **Approved** → **Published**.
 | Pre-demo readiness checklist | `demo/demo-checklists/pre-demo-readiness.md` | Draft | | 2026-11-09 | Based on reported 2026-10-26 demo snapshot; live staging validation required before client use |
 | Eight-minute executive demo | `demo/presenter-scripts/executive-demo-8-minute.md` | Draft | | 2026-11-09 | Read-only short alternative to 30-minute presentation; verify role screens |
 | School requirements capture sheet | `sales/proposals/school-requirements-capture.md` | Draft | | 2026-11-09 | Blank template for Telangana and Andhra Pradesh school discovery; no client information |
-| Marp client presentation and speaker notes | `presentations/marp/` | Draft | | 2026-11-09 | 12-slide Markdown source, approved palette, diagrams reused; branding and export QA pending; demo verification deferred |
+| Marp client presentation and speaker notes | `presentations/marp/` | Draft | | 2026-11-09 | 12-slide Markdown source with PDF/PPTX exports and slide previews; visual QA completed 2026-11-09; branding pending; demo verification deferred |
