@@ -36,7 +36,7 @@ The **26 October 2026 demo-school setup** was reported to contain **110 students
 ## 3. Accounts, privacy and screen sharing
 
 - [ ] Verify an **Administrator** role with the precise permissions needed for the screens; check dashboard, student profile, attendance review, assessment finalisation/publication, announcements, documents, timetable and Excel import preview.
-- [ ] Verify a **Teacher** with a current effective class or subject assignment; check Today, My Students, Attendance, Gradebook and, if applicable, remarks. A teacher cannot act merely because they were assigned in another academic year.
+- [ ] Verify a **Teacher** with a current effective class or subject assignment; check desktop **My day** (phone **Today**), My Students, Attendance, Gradebook and, if applicable, remarks. A teacher cannot act merely because they were assigned in another academic year.
 - [ ] Verify a **Guardian** with explicit current portal access to the intended fictional child; check child card, eligible attendance, published report card and announcement. A link without portal access is not sufficient.
 - [ ] Use distinct browser profiles or isolated sessions for Admin, Teacher and Guardian; pre-test role switches without stale-session confusion.
 - [ ] Handle passwords, recovery, temporary credential slips, lockouts and browser autofill in a private password vault or operator-only notes, **not** in this repo, slide, browser shared area or recording.
@@ -49,7 +49,7 @@ The **26 October 2026 demo-school setup** was reported to contain **110 students
 |---|---|---|---|---|
 | 1 | Admin | Overview, school name / year / dashboard | Counts and academic context visible | Explain using a prepared fictional screenshot |
 | 2 | Admin | Applicant → accepted student → enrollment history | Fictional linked record and authorised view | Show existing student record only |
-| 3 | Teacher | Today / assigned class | Relevant current assignment and periods | Show My Students or explain assignment boundary |
+| 3 | Teacher | Desktop **My day** / assigned class | Relevant current assignment and periods | Show My Students or explain assignment boundary |
 | 4 | Teacher | Attendance | Eligible school day with correct roster; **do not edit** without reset permission | Show an earlier submitted register and monthly summary |
 | 5 | Teacher | Assessment / gradebook | Matching subject and effective assignment; complete sample results | Read-only assessment example |
 | 6 | Admin | Assessment review → publication preview | All required term data complete; publication eligible | Show an already published fictional report |
