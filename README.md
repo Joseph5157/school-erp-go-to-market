@@ -8,7 +8,7 @@ Production application code lives in the separate `school-erp` repository. This 
 
 | Folder | Purpose |
 |---|---|
-| `brand/` | Brand guidelines (Graphite & Cobalt), logos, templates |
+| `brand/` | Brand guidelines (Graphite & Institutional Green), logos, templates |
 | `brochure/` | Six-page brochure source, exports, print specifications |
 | `docs/` | Product, administrator, faculty, guardian and implementation documentation |
 | `demo/` | Presenter scripts, checklists, sample (fictional) data, Playwright demo automation |
@@ -18,6 +18,13 @@ Production application code lives in the separate `school-erp` repository. This 
 | `social/` | LinkedIn, WhatsApp and campaign content |
 | `website/` | Website copy and screenshots |
 | `research/` | Competitor and market research |
+
+## Ready-to-rehearse demo materials
+
+- [Pre-demo readiness checklist](demo/demo-checklists/pre-demo-readiness.md) — role checks, fictional records, privacy, fallback and reset steps.
+- [Eight-minute executive walkthrough](demo/presenter-scripts/executive-demo-8-minute.md) — read-only short presentation.
+- [Thirty-minute live demonstration](demo/presenter-scripts/live-demo-30-minute.md) — detailed role-based walkthrough, requiring rehearsal.
+- [School requirements capture sheet](sales/proposals/school-requirements-capture.md) — blank discovery worksheet; store completed school details securely outside Git.
 
 ## Content status
 
