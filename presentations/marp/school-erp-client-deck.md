@@ -138,3 +138,7 @@ Who will coordinate requirements and approve the scope?
 
 **Next:** requirements review → written scope → quotation and implementation proposal
 
+
+---
+
+# Extra slide
