@@ -75,11 +75,12 @@ Brand styling (Graphite & Institutional Green, Noto Sans) is in `docs/assets/sty
 Set with `exclude_docs` in `zensical.toml`. These files stay in the repository but are not built:
 
 - `docs/content-status.md` — internal status register
+- `docs/CI.md` — internal CI maintainer notes
 - `docs/product/` — feature catalogue for proposals
 - `docs/administrator/overview.md`, `docs/faculty/overview.md`, `docs/guardian/overview.md` — role overviews containing presenter "demo emphasis" notes
 - `.gitkeep` placeholders
 
-After every build, confirm none of these appear in `site/` or `site/search.json`.
+After every build, confirm none of these appear in `site/` or `site/search.json` by running `python scripts/ci/check_docs_site.py`. CI runs the same check on every pull request; see [`docs/CI.md`](docs/CI.md).
 
 ## Writing rules
 
