@@ -1,6 +1,6 @@
 # School ERP Feature Catalogue
 
-Status: **Draft**. Imported from catalogue v1.0 (baseline `b800676`) and retained as a traceable feature inventory. Recheck every client-facing claim against the deployed demo build before publication.
+Status: **Draft**. Imported from catalogue v1.0 (baseline `b800676`) and reconciled on 9 November 2026 with the current default branch, PWA Gate 1, accepted correction/archive decisions and the November security closeout. Rehearse every client-facing workflow against the deployed demo build before publication.
 
 For school management office staff and the academic evaluation team.
 
@@ -62,6 +62,8 @@ M02 07 Holiday closures and additional instructional date exceptions.
 
 M02 08 Calendar safeguards where attendance already exists.
 
+M02 09 Controlled archiving and restoration of Classes/Grades and Sections while preserving historical records.
+
 # Product areas 3 and 4
 
 ## M03 Admissions and student records
@@ -87,6 +89,10 @@ M03 07 Preserved placement history and prevention of overlapping enrollments.
 M03 08 Active and inactive student status workflows.
 
 M03 09 Student and guardian search with family relationship context.
+
+M03 10 Reason-required Applicant and Student detail corrections with immutable correction history.
+
+M03 11 Controlled ending of a Student-Guardian relationship with access revocation and preserved history.
 
 ## M04 Teacher accounts and assignments
 
@@ -234,6 +240,8 @@ M09 08 Message queue with prefilled WhatsApp links and staff sent or dismissed t
 
 M09 09 Consent rechecks and duplicate preparation protection.
 
+M09 10 Portal-access and consent rechecks before display and before staff mark a queued message sent.
+
 ## M10 School documents
 
 Issue supported PDFs with traceable serial numbers and stored content.
@@ -302,6 +310,12 @@ M12 07 Account changes that invalidate existing sessions where required.
 
 M12 08 Security events and historical protection for important operational records.
 
+M12 09 Class-teacher authority isolated to the relevant academic year.
+
+M12 10 Separate view permissions for guardian, attendance, marks and staged-import personal data.
+
+M12 11 Installable online PWA shell on supported devices; no offline page, background sync or push.
+
 # Current boundaries and future requests
 
 The following requests need a separate decision, estimate or implementation. An optional request does not imply that the feature is available today or included in a standard proposal.
@@ -329,7 +343,7 @@ The following requests need a separate decision, estimate or implementation. An 
 
 # Feature evidence and document control
 
-Catalogue source version 1.0. Reviewed 29 October 2026. Baseline `b800676`. Imported into the go-to-market repository on 9 November 2026 as a Draft. Sources below link to the reviewed commit so the catalogue can be rechecked when the product changes.
+Catalogue source version 1.0. Reviewed 29 October 2026 at baseline `b800676`. Imported and reconciled with the current default branch on 9 November 2026 as a Draft. The original evidence links remain pinned to the reviewed baseline; the current-build addendum below records later product decisions.
 
 [Product scope and timetable boundary](https://github.com/Joseph5157/school-erp/blob/b8006760fafbcc947df4250f2943f6c7c18d7017/docs/PRODUCT.md)
 
@@ -352,6 +366,14 @@ Catalogue source version 1.0. Reviewed 29 October 2026. Baseline `b800676`. Impo
 [Session limits and environment controlled HTTPS settings](https://github.com/Joseph5157/school-erp/blob/b8006760fafbcc947df4250f2943f6c7c18d7017/config/settings.py)
 
 [Planned academic year rollover](https://github.com/Joseph5157/school-erp/blob/b8006760fafbcc947df4250f2943f6c7c18d7017/docs/ACADEMIC_YEAR_ROLLOVER_PLAN.md)
+
+### Current-build addendum reviewed 9 November 2026
+
+- [Installable online-only PWA](https://github.com/Joseph5157/school-erp/blob/main/docs/PWA_GATE_1_PLAN.md)
+- [Applicant and Student correction history](https://github.com/Joseph5157/school-erp/blob/main/docs/adr/0023-record-corrections.md)
+- [Ending Student-Guardian relationships](https://github.com/Joseph5157/school-erp/blob/main/docs/adr/0024-ending-guardian-relationships.md)
+- [Archiving Classes/Grades and Sections](https://github.com/Joseph5157/school-erp/blob/main/docs/adr/0025-archiving-classes-and-sections.md)
+- [Security audit closeout](https://github.com/Joseph5157/school-erp/blob/main/docs/SECURITY_AUDIT.md)
 
 ## Updates for a school proposal
 
