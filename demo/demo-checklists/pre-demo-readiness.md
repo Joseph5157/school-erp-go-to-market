@@ -33,6 +33,13 @@ The **26 October 2026 demo-school setup** was reported to contain **110 students
 - [ ] Check that all email addresses and phone numbers in potentially visible records are controlled test destinations or non-deliverable fictional values.
 - [ ] Confirm enough browser viewport size and readable UI in the actual presentation resolution.
 
+### Reported demo-data issues (as of 26 October 2026; recheck current staging)
+
+- Grades 1–2 timetables were reportedly only about 40% populated. Prefer a **verified Grade 6–10** section with a complete timetable; do not imply all sections are filled.
+- An announcement headed **“Term 2 begins on Monday”** reportedly did not match the actual Term 2 start date. Verify the current calendar and message content; do not display an incorrect announcement as an authoritative school notice.
+- All four announcements reportedly shared one timestamp. Treat dates as demo-data quality issues until verified, and avoid promising realistic notification chronology based on those records.
+- These are **historical observations**, not fresh findings. Log any current mismatches privately and repair them only through an authorised demo-data maintenance task.
+
 ## 3. Accounts, privacy and screen sharing
 
 - [ ] Verify an **Administrator** role with the precise permissions needed for the screens; check dashboard, student profile, attendance review, assessment finalisation/publication, announcements, documents, timetable and Excel import preview.
