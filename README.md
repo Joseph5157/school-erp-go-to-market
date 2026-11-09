@@ -34,6 +34,10 @@ Production application code lives in the separate `school-erp` repository. This 
 
 - [GTM-DOCS-01 — Zensical documentation portal](DOCUMENTATION-PORTAL.md) — searchable Administrator, Teacher, Guardian and Implementation manuals plus FAQ, built from `docs/` with [`zensical.toml`](zensical.toml). Install with `requirements-docs.txt`, preview with `zensical serve`, validate with `zensical build --clean --strict`. Draft only; local preview, no public hosting.
 
+## Automated quality checks
+
+Every pull request to `main` runs the **Quality checks** workflow (GTM-CI-01): a strict Zensical documentation build with link, navigation and exclusion checks, and Marp presentation validation with a 12-slide render smoke test. It is validation only, with read-only permissions and no deployment. See [`docs/CI.md`](docs/CI.md) for what is checked and how to run the checks locally.
+
 ## Content status
 
 Every asset is tracked in [`docs/content-status.md`](docs/content-status.md) as Draft, Approved or Published. Only Approved content may be Published.

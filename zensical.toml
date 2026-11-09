@@ -19,11 +19,13 @@ copyright = "School ERP (temporary working name) · Draft documentation · Not f
 # Internal and sales-only material stays in the repository but is removed
 # from the generated website AND the search index:
 #   - content-status.md       internal status register
+#   - CI.md                   internal CI maintainer notes
 #   - product/                feature catalogue for proposals (links outside docs/)
 #   - */overview.md           role overviews with presenter "demo emphasis" notes
 #   - .gitkeep placeholders
 exclude_docs = """
 /content-status.md
+/CI.md
 /product/
 /administrator/overview.md
 /faculty/overview.md
