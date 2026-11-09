@@ -8,13 +8,13 @@
 - [themes/school-erp-institutional.css](themes/school-erp-institutional.css) — Graphite & Institutional Green style.
 - [speaker-notes.md](speaker-notes.md) — short presenter cues and product-scope cautions.
 
-Existing source-owned diagrams are reused from \`../../diagrams/svg/\`. Do not duplicate or recreate them in slides.
+Existing source-owned diagrams are reused from `../../diagrams/svg/`. Do not duplicate or recreate them in slides.
 
 ## Build locally (trusted repository files only)
 
 The commands below are run **from the repository root** with Node.js and Marp CLI installed:
 
-\`\`\`bash
+```bash
 mkdir -p presentations/marp/exports
 npx @marp-team/marp-cli presentations/marp/school-erp-client-deck.md \
   --theme presentations/marp/themes/school-erp-institutional.css \
@@ -25,18 +25,18 @@ npx @marp-team/marp-cli presentations/marp/school-erp-client-deck.md \
   --theme presentations/marp/themes/school-erp-institutional.css \
   --allow-local-files --pptx \
   -o presentations/marp/exports/school-erp-client-deck.pptx
-\`\`\`
+```
 
-Marp needs a compatible browser installed for PDF/PPTX conversion. \`--allow-local-files\` permits reading local assets; **use it only with this trusted, reviewed Markdown and local SVG files**, never untrusted contributions. PowerPoint export can include rendered slides rather than independently editable objects; the Markdown remains the editable source of truth.
+Marp needs a compatible browser installed for PDF/PPTX conversion. `--allow-local-files` permits reading local assets; **use it only with this trusted, reviewed Markdown and local SVG files**, never untrusted contributions. PowerPoint export can include rendered slides rather than independently editable objects; the Markdown remains the editable source of truth.
 
 The source, theme and notes are included in this PR. **PDF/PPTX exports have not been generated or visually QA-checked here**, because Marp CLI was unavailable in the authoring environment. Do not mark the deck Approved until exported and each slide has been inspected at 16:9 and in presenter view.
 
 ## Pre-publication checklist
 
-- [ ] Verify all feature claims against the current \`school-erp\` build and [feature catalogue](../../docs/product/feature-catalogue.md).
+- [ ] Verify all feature claims against the current `school-erp` build and [feature catalogue](../../docs/product/feature-catalogue.md).
 - [ ] Export both PDF and PPTX; inspect all 12 slides for clipping, diagram scaling, fonts and page numbering.
 - [ ] Rehearse the talk using [speaker notes](speaker-notes.md).
-- [ ] Add only approved company name, product identity, logo and contact information later; \`School ERP\` is neutral working copy.
+- [ ] Add only approved company name, product identity, logo and contact information later; `School ERP` is neutral working copy.
 - [ ] Confirm pricing/scope and customer-facing wording through owner approval.
 - [ ] Complete **deferred staging verification** before demonstrating the live product; do not confuse this presentation with live workflow validation.
 - [ ] Update [content status](../../docs/content-status.md) only after owner approval; it remains Draft now.
