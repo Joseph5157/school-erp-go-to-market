@@ -1,0 +1,197 @@
+/*
+ * School ERP documentation — Graphite & Institutional Green
+ * Status: Draft (GTM-DOCS-01). Tokens mirror brand/brand-guidelines.md §3.
+ * Institutional green is the action/link colour; cobalt is reserved for
+ * information callouts only.
+ */
+
+:root {
+  --erp-ink: #18212b;
+  --erp-ink-soft: #4a5562;
+  --erp-paper: #f5f6f3;
+  --erp-surface: #ffffff;
+  --erp-rule: #dde1dc;
+  --erp-brand: #1f6b52;
+  --erp-brand-strong: #185842;
+  --erp-brand-wash: #e3efe9;
+  --erp-info: #1d5fa8;
+  --erp-info-wash: #e6eef8;
+  --erp-warn: #9a5b00;
+  --erp-warn-wash: #fbf0dc;
+  --erp-danger: #a3322a;
+  --erp-danger-wash: #f8e4e1;
+}
+
+:root > * {
+  --md-primary-fg-color: var(--erp-brand);
+  --md-primary-fg-color--light: #2f7d63;
+  --md-primary-fg-color--dark: var(--erp-brand-strong);
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: var(--erp-brand-strong);
+  --md-accent-fg-color--transparent: rgba(31, 107, 82, 0.1);
+  --md-typeset-a-color: var(--erp-brand);
+  --md-default-fg-color: var(--erp-ink);
+  --md-default-fg-color--light: var(--erp-ink-soft);
+  --md-typeset-color: var(--erp-ink);
+}
+
+/* Calm, institutional typesetting */
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.md-typeset h1 {
+  color: var(--erp-ink);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--erp-ink);
+  font-weight: 700;
+}
+
+.md-typeset a:hover {
+  color: var(--erp-brand-strong);
+  text-decoration: underline;
+}
+
+/* Tables: rules, not shadows */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--erp-rule);
+  border-radius: 8px;
+  box-shadow: none;
+  font-size: 0.78rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--erp-paper);
+  color: var(--erp-ink);
+}
+
+/* Draft banner shown at the top of every page via the home page notice */
+.erp-draft {
+  border-left: 4px solid var(--erp-warn);
+  background: var(--erp-warn-wash);
+  color: var(--erp-ink);
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  margin: 0 0 1.2rem;
+}
+
+/* Admonitions mapped to the semantic palette */
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: var(--erp-info);
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary,
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: var(--erp-info-wash);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before,
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before {
+  background-color: var(--erp-info);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.success,
+.md-typeset details.success {
+  border-color: var(--erp-brand);
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary,
+.md-typeset .success > .admonition-title,
+.md-typeset .success > summary {
+  background-color: var(--erp-brand-wash);
+}
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before,
+.md-typeset .success > .admonition-title::before,
+.md-typeset .success > summary::before {
+  background-color: var(--erp-brand);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--erp-warn);
+}
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: var(--erp-warn-wash);
+}
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: var(--erp-warn);
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: var(--erp-danger);
+}
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary {
+  background-color: var(--erp-danger-wash);
+}
+.md-typeset .danger > .admonition-title::before,
+.md-typeset .danger > summary::before {
+  background-color: var(--erp-danger);
+}
+
+/* Role cards on the home page */
+.erp-roles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 1.6rem;
+}
+
+.erp-roles > div {
+  border: 1px solid var(--erp-rule);
+  border-radius: 10px;
+  background: var(--erp-surface);
+  padding: 0.8rem 1rem;
+}
+
+.erp-roles > div:hover {
+  border-color: var(--erp-brand);
+}
+
+.erp-roles h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.9rem;
+}
+
+.erp-roles p {
+  margin: 0;
+  color: var(--erp-ink-soft);
+  font-size: 0.75rem;
+}
+
+/* Header: graphite title with an institutional-green rule */
+.md-header {
+  border-bottom: 3px solid var(--erp-brand);
+}
+
+.md-tabs__item--active .md-tabs__link {
+  color: var(--erp-brand);
+  font-weight: 700;
+}
+
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  color: var(--erp-brand);
+}
+
+.erp-roles h3 a {
+  text-decoration: none;
+}

@@ -30,3 +30,9 @@ Thumbs.db
 .idea/
 .vscode/
 node_modules/
+
+# Documentation portal (Zensical) — local environment and generated output
+.venv-docs/
+.cache/
+site/
+.playwright-mcp/

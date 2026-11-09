@@ -1,0 +1,129 @@
+# School ERP documentation portal — Zensical configuration
+#
+# Status: Draft (GTM-DOCS-01). Local preview and local builds only.
+# Do not configure public hosting from this file without owner approval.
+#
+# Tested with zensical==0.1.0 (pinned in requirements-docs.txt).
+# Syntax reference: https://zensical.org/docs/setup/basics/
+
+[project]
+site_name = "School ERP Documentation"
+site_description = "Draft user manuals and implementation guide for School ERP (temporary working name)."
+docs_dir = "docs"
+site_dir = "site"
+use_directory_urls = true
+
+# Footer text. No company name, address or contact details until approved.
+copyright = "School ERP (temporary working name) · Draft documentation · Not for publication"
+
+# Internal and sales-only material stays in the repository but is removed
+# from the generated website AND the search index:
+#   - content-status.md       internal status register
+#   - product/                feature catalogue for proposals (links outside docs/)
+#   - */overview.md           role overviews with presenter "demo emphasis" notes
+#   - .gitkeep placeholders
+exclude_docs = """
+/content-status.md
+/product/
+/administrator/overview.md
+/faculty/overview.md
+/guardian/overview.md
+.gitkeep
+"""
+
+extra_css = ["assets/stylesheets/school-erp.css"]
+
+nav = [
+  { "Home" = "index.md" },
+  { "Administrator" = [
+    "administrator/index.md",
+    { "School setup and academic years" = "administrator/school-setup.md" },
+    { "Classes, sections, subjects and terms" = "administrator/academic-structure.md" },
+    { "Admissions and student management" = "administrator/admissions-and-students.md" },
+    { "Guardians and portal access" = "administrator/guardians-and-portal-access.md" },
+    { "Teacher accounts and assignments" = "administrator/teacher-assignments.md" },
+    { "Attendance review" = "administrator/attendance-review.md" },
+    { "Assessments and report cards" = "administrator/assessments-and-report-cards.md" },
+    { "Timetable" = "administrator/timetable.md" },
+    { "Announcements and messages" = "administrator/announcements.md" },
+    { "School documents" = "administrator/documents.md" },
+    { "Access reviews and sign-in lockouts" = "administrator/access-and-security.md" },
+  ] },
+  { "Teacher" = [
+    "faculty/index.md",
+    { "My day" = "faculty/my-day.md" },
+    { "My students" = "faculty/my-students.md" },
+    { "Recording and submitting attendance" = "faculty/attendance.md" },
+    { "Entering assessment marks" = "faculty/assessment-marks.md" },
+    { "Class-teacher term remarks" = "faculty/term-remarks.md" },
+    { "Permissions and corrections" = "faculty/permissions-and-corrections.md" },
+  ] },
+  { "Guardian" = [
+    "guardian/index.md",
+    { "Account access" = "guardian/account-access.md" },
+    { "Viewing your children" = "guardian/children.md" },
+    { "Attendance" = "guardian/attendance.md" },
+    { "Report cards and PDFs" = "guardian/report-cards.md" },
+    { "School notices" = "guardian/notices.md" },
+  ] },
+  { "Implementation" = [
+    "implementation/index.md",
+    { "Initial school configuration" = "implementation/initial-configuration.md" },
+    { "Academic structure" = "implementation/academic-structure.md" },
+    { "Account provisioning" = "implementation/account-provisioning.md" },
+    { "Data preparation" = "implementation/data-preparation.md" },
+    { "Excel import validation" = "implementation/excel-import.md" },
+    { "Onboarding and acceptance checks" = "implementation/onboarding-acceptance.md" },
+  ] },
+  { "FAQ" = [
+    "faq/index.md",
+    { "Signing in and passwords" = "getting-started/signing-in.md" },
+    { "Using this documentation" = "getting-started/using-these-docs.md" },
+  ] },
+]
+
+[project.theme]
+language = "en"
+features = [
+  "navigation.tabs",
+  "navigation.sections",
+  "navigation.indexes",
+  "navigation.path",
+  "navigation.top",
+  "navigation.footer",
+  "navigation.tracking",
+  "toc.follow",
+  "search.highlight",
+  "content.code.copy",
+]
+# Noto Sans is the approved collateral typeface (brand/brand-guidelines.md §5).
+font.text = "Noto Sans"
+font.code = "Noto Sans Mono"
+
+[project.theme.palette]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+
+# No approved logo exists yet: use a neutral bundled icon, not an invented mark.
+[project.theme.icon]
+logo = "lucide/book-open"
+
+[project.extra]
+generator = true
+
+[project.validation]
+invalid_links = true
+invalid_link_anchors = true
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+md_in_html = {}
+tables = {}
+toc.permalink = true
+pymdownx.details = {}
+pymdownx.superfences = {}
+pymdownx.keys = {}
