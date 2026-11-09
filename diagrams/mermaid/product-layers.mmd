@@ -1,0 +1,13 @@
+flowchart TB
+    UX[User experience] --> SM[School management]
+    SM --> SS[Shared services]
+    SS --> IS[Identity and security]
+    IS --> DP[Data and persistence]
+    DP --> INF[Infrastructure]
+
+    UX1[Admin · Teacher · Guardian] --- UX
+    SM1[Admissions · Students · Attendance · Assessments] --- SM
+    SS1[Validation · Publication · Imports] --- SS
+    IS1[Authentication · Permissions · Audit] --- IS
+    DP1[PostgreSQL · Django ORM · History] --- DP
+    INF1[Python · Django · Web · Cron] --- INF
