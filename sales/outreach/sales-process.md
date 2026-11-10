@@ -34,7 +34,7 @@ One person may hold more than one role. The owner remains the only person who ca
 
 | # | Stage | Enters when | Next action | Internal owner | Exit / output |
 |---|---|---|---|---|---|
-| 1 | **Initial introduction** | There is a reasonable basis to contact the school ([controls](privacy-and-outreach-controls.md)) | Send one introduction (templates [1](outreach-templates.md#1-initial-whatsapp-introduction)–[4](outreach-templates.md#4-in-person-school-visit)) and record it in the private tracker | Outreach lead | Reply received → 2. No reply after one follow-up and the [final follow-up](outreach-templates.md#8-polite-final-follow-up-no-response) → Closed |
+| 1 | **Initial introduction** | There is a reasonable basis to contact the school ([controls](privacy-and-outreach-controls.md)) | Send one introduction (templates [1](outreach-templates.md#1-initial-whatsapp-introduction)–[4](outreach-templates.md#4-in-person-school-visit)) and record it in the private tracker | Outreach lead | Reply received → 2. Three unanswered attempts per school across all channels, ending with the [final follow-up](outreach-templates.md#8-polite-final-follow-up-no-response) → Closed |
 | 2 | **Interested school** | The school replies positively or enquires | Reply within two working days ([template 6](outreach-templates.md#6-follow-up-after-an-enquiry)); ask the first qualification questions; offer a demo or requirements call | Outreach lead | A meeting is agreed → 3 or 4 |
 | 3 | **Requirements discussion** | The school agrees to discuss needs | Use the [requirements capture sheet](../proposals/school-requirements-capture.md); classify each request; request fictional or redacted format samples if needed | Solution lead | Priorities and must-have areas recorded privately |
 | 4 | **Demo** | A demo date is agreed ([template 5](outreach-templates.md#5-demo-invitation)) | Complete the pre-demo checklist; run the [8-minute](../../demo/presenter-scripts/executive-demo-8-minute.md) or 30-minute script focused on the school's priorities; send [template 7](outreach-templates.md#7-follow-up-after-a-demonstration) within two working days | Demo presenter | Demo held; questions and requests recorded |
@@ -49,11 +49,13 @@ One person may hold more than one role. The owner remains the only person who ca
 - Requests outside the current product are recorded as **separate assessment** and never described as available.
 - Never share demo credentials or private staging URLs.
 - Prospect details and notes stay outside Git.
-- An opt-out at any stage closes the lead immediately.
+- An opt-out at any stage closes the lead immediately and is added to the suppression list, which is checked before every outreach attempt on any channel ([opt-outs and suppression](lead-tracker-guide.md#opt-outs-and-suppression)).
+- No draft collateral (including the brochure) is given to a school until its content and print version are formally approved.
 
 ## Open decisions for the owner
 
 1. Who holds each internal role
 2. Where the private lead tracker is stored and who can access it
-3. Whether the follow-up limits and response times in this kit are acceptable
-4. When outreach may begin (see the owner checklist in the [controls](privacy-and-outreach-controls.md#before-outreach-begins-owner-checklist))
+3. Whether the proposed attempt limit (three unanswered attempts per school, five working days apart) and response times are acceptable as internal safeguards
+4. Approval, with legal advice, of the opt-out suppression approach and of retention periods for prospect records (12 months proposed, Pending) and suppression records (Pending)
+5. When outreach may begin (see the owner checklist in the [controls](privacy-and-outreach-controls.md#before-outreach-begins-owner-checklist))
