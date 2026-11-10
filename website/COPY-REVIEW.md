@@ -15,7 +15,7 @@ Every page (`/`, `/features/`, `/who-its-for/`, `/implementation/`, `/faq/`, `/c
 
 | Page | Before | After | Reason |
 |---|---|---|---|
-| Home (hero illustration) | Teacher "Takes attendance and enters marks for assigned classes" | "Records class attendance and enters marks for assigned subjects" | Attendance is captured by the class teacher for their class (M05 04); marks follow subject assignments (M06 02) |
+| Home (hero illustration) | Teacher "Takes attendance and enters marks for assigned classes" | "As class teacher, records attendance; enters marks for assigned subjects" (final review wording) | Attendance is captured by the class teacher for their class (M05 04); marks follow subject assignments (M06 02) |
 | Home (Teacher card) | "Take attendance and submit a complete class register" | "As class teacher, take attendance and submit the complete register" | Same: not every teacher takes attendance |
 | Home (publication band) | Stage chips "Draft / Finalised / Preview" looked like product status labels | Chips read "Not visible" until "Visible to guardian", with the caption "Illustration of the stages, not a product screenshot" | Avoid implying exact application labels; the point is guardian visibility (M06 08) |
 | Who it's for (Teachers) | "Assigned classes only"; "Class attendance on the school day" | "Assigned classes and subjects"; "Daily attendance for their class (class teachers)" | Subject teachers enter marks; attendance is class-teacher work |
@@ -34,13 +34,20 @@ Every page (`/`, `/features/`, `/who-its-for/`, `/implementation/`, `/faq/`, `/c
 - Commercial wording describes the model only (setup fee, annual support, hosting separate, additional development quoted). No prices, discounts, SLAs, support hours, licensing or ownership terms appear.
 - DPDP: the FAQ states that no compliance claim is made and that each school should take its own advice, consistent with the sales FAQ.
 
+## Owner wording decisions (recorded 2026-11-10)
+
+These are wording decisions for the draft. They do not approve the copy (Gate 3 stays open).
+
+| Topic | Decision | Applied wording |
+|---|---|---|
+| Short and detailed demo options | May be advertised conditionally, subject to scheduling and demo readiness | Contact: "A short executive version or a longer, detailed session can be arranged, subject to scheduling and demo readiness." |
+| Hosting | Costs and responsibilities may be described as separately identified in the school-specific proposal, subject to final agreement | Implementation and FAQ: "Hosting costs and responsibilities are identified separately in the school-specific proposal, subject to final agreement." The FAQ question "Why is hosting shown separately?" became "How are hosting costs handled?" |
+
 ## Open items for the owner (not changed)
 
 | Item | Where | Question |
 |---|---|---|
 | "Areas served: Telangana and Andhra Pradesh" | Contact | Confirm this is the public service area (Gate 4) |
-| "A short executive version or a longer, detailed session" | Contact | Both demo scripts are Draft and not yet rehearsed on a live environment (R1); keep or remove? |
-| "Hosting is shown separately" and the hosting FAQ | Implementation, FAQ | Taken from the internal sales FAQ; confirm it is acceptable publicly |
 | "Our implementation team" responsibilities | Implementation | Confirm the team description and the training offer before publication |
 | Product name "School ERP" | Everywhere | Provisional until Gate 1 |
 | Same-day absence alerts as a WhatsApp Assist example | Home, FAQ | Catalogue item M09 06; re-verify on the deployed build |

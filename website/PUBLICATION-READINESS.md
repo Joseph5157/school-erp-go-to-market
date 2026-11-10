@@ -2,7 +2,7 @@
 
 Status: **Draft. Not approved for publication.** Prepared in GTM-WEBSITE-02 on 2026-11-10 against `main` at `dab51eb`.
 
-The website in `website/` stays unpublished until **every gate below is approved by its owner** and Gate 13 (launch authorisation) is recorded. Nothing in this file authorises deployment, domain registration, indexing or enquiry collection.
+The website in `website/` stays unpublished until **every gate below is approved by its owner** and Gate 13 (launch authorisation) is recorded for a specific, already-tested candidate commit. Nothing in this file authorises deployment, domain registration, indexing or enquiry collection.
 
 ## How to use this checklist
 
@@ -27,9 +27,9 @@ Roles used below: **Owner** (business owner and final decision-maker), **Web lea
 | 8 | Enquiry workflow decision | Owner | Decision between (a) contact details only, as now, or (b) an enquiry form; for (b): fields, consent text, processor, storage location, retention, spam protection and who answers enquiries; Gate 7 updated to match | Pending | |
 | 9 | Analytics and cookie decisions | Owner, with Legal adviser | Decision to use no analytics (as now) or a named tool; if a tool is chosen: cookies set, consent mechanism, data location and privacy-notice update | Pending | |
 | 10 | Search indexing and SEO configuration | Web lead, then Owner | Approved domain set as Astro `site`; canonical URLs, Open Graph/social image and `sitemap.xml`; final titles and descriptions reviewed; launch plan below agreed | Pending | |
-| 11 | Final accessibility and cross-browser checks | Web lead | Keyboard, screen-reader spot check, contrast and 200% zoom on the final build; latest Chrome, Edge, Firefox and Safari (desktop), Chrome on Android and Safari on iOS; results recorded | Draft evidence | |
-| 12 | Performance and security checks | Web lead | Lighthouse (or equivalent) on a deployed preview URL; security headers (HSTS, CSP, X-Content-Type-Options, Referrer-Policy) confirmed; `npm audit` clean; no secrets or personal data in the repository or build | Draft evidence | |
-| 13 | Owner authorisation for public launch | Owner | Written go-live authorisation naming the build (commit SHA) and date, given after Gates 1–12 are Approved | Pending | |
+| 11 | Final accessibility and cross-browser checks | Web lead | Keyboard, screen-reader spot check, contrast and 200% zoom on the launch candidate deployed to the access-restricted, non-indexable preview; latest Chrome, Edge, Firefox and Safari (desktop), Chrome on Android and Safari on iOS; results recorded against the candidate commit SHA | Draft evidence | |
+| 12 | Performance and security checks | Web lead | Lighthouse (or equivalent) on the access-restricted preview of the launch candidate; security headers (HSTS, CSP, X-Content-Type-Options, Referrer-Policy) confirmed; `npm audit` clean; no secrets or personal data in the repository or build; results recorded against the candidate commit SHA | Draft evidence | |
+| 13 | Owner authorisation for public launch | Owner | Written go-live authorisation naming the **final candidate commit SHA** (the head of the launch-candidate PR that passed Gates 11 and 12 on the preview) and the launch date, given after Gates 1–12 are Approved. Any new commit to the candidate invalidates this approval | Pending | |
 
 Related item outside the website itself:
 
@@ -45,7 +45,7 @@ Related item outside the website itself:
 
 ## Controlled process for going public (do not perform yet)
 
-These protections are deliberately in place now. Remove them **only** after Gate 13 is recorded, in one dedicated pull request titled `GTM-WEBSITE-<NN>: enable public indexing`, reviewed before merge.
+These protections are deliberately in place now and stay on `main` until launch. They are removed only in one dedicated **launch-candidate pull request** titled `GTM-WEBSITE-<NN>: enable public indexing`, opened after Gates 1–10 are Approved. That PR is built and tested on an access-restricted, non-indexable preview, and it is merged and deployed publicly **only** after Gate 13 approves its exact head commit.
 
 | Protection | Where | Change at launch |
 |---|---|---|
@@ -57,14 +57,17 @@ These protections are deliberately in place now. Remove them **only** after Gate
 | Pending contact placeholders | `src/pages/contact.astro`, footer | Replace with approved channels per Gate 4 |
 | Draft-state site checks | `scripts/check-site.mjs` | Update the noindex, robots, canonical/Open Graph and contact-link rules to the approved launch rules in the same PR, so CI keeps guarding the published state |
 
-Steps for that pull request:
+Launch sequence:
 
-1. Confirm Gates 1–12 show **Approved** with decision records, and Gate 13 names the commit to publish.
-2. Make only the changes in the table above, plus the approved identity, contact and SEO values.
-3. Run `npm ci`, `npm run check` and the full CI workflow; attach screenshots of every page at 390 px and 1440 px.
-4. Deploy to a non-indexed preview URL first and repeat Gates 11 and 12 there.
-5. Merge only on the owner's written instruction, then deploy production from the merged commit.
-6. Record the published commit and date in `docs/content-status.md`; the owner sets the status to **Published**.
+1. **Prerequisites.** Gates 1–10 show **Approved** with decision records. Gates 11–13 are still open.
+2. **Create the candidate.** Open the launch-candidate PR as a Draft. Make only the changes in the table above, plus the approved identity, contact and SEO values. Run `npm ci`, `npm run check` and the full CI workflow.
+3. **Restricted preview.** Deploy the candidate's head commit to a preview that is access-restricted (password, allow-list or host authentication) and non-indexable (an `X-Robots-Tag: noindex, nofollow` response header from the host, because the candidate itself no longer carries the `noindex` meta tag). The preview URL is not shared publicly or linked from anywhere.
+4. **Test the candidate.** Complete Gates 11 and 12 on that preview and record the results against the candidate commit SHA. Attach screenshots of every page at 390 px and 1440 px. If any fix is needed, push it, redeploy the preview and repeat this step for the new head SHA.
+5. **Authorise the exact commit.** The owner records Gate 13, naming the tested candidate commit SHA. A later commit to the candidate cancels the authorisation and returns to step 4.
+6. **Merge and launch.** Merge only on the owner's written instruction, pinned to the authorised SHA (for example `gh pr merge --match-head-commit <sha>`). Deploy production from the resulting merge commit, whose content must match the authorised candidate. Then remove the restricted preview.
+7. **Record.** Add the published commit and date to `docs/content-status.md`; the owner sets the status to **Published**.
+
+Until step 6, every publication lock in the table above remains in place on `main`.
 
 Rollback: redeploy the previous commit, or restore `noindex` and `Disallow: /` and redeploy, if anything published proves wrong.
 
