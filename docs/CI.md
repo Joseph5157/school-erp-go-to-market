@@ -38,6 +38,19 @@ Marp CLI exits successfully even when it cannot load a theme, so the script trea
 
 Renders are written to a temporary directory and deleted. CI **never regenerates or commits** the PDF, PPTX or PNG exports; the Markdown and theme remain the source of truth.
 
+### Demo automation (offline, GTM-DEMO-AUTO-01)
+
+In `demo/playwright/` on Node.js 22: `npm ci`, then `npm run check`.
+
+| Step | Fails when |
+|---|---|
+| `npm ci` | `package-lock.json` does not match the pinned `package.json` |
+| `tsc --noEmit` | A type error in the framework, fixtures or tests |
+| `playwright test --project=offline` | A configuration, read-only guard, scene/sequence mapping or hygiene rule is broken (for example a presenter-script slot label no longer matches, or a Git-ignore entry for `.auth/` is removed) |
+| Tracked files unchanged | The run wrote into a tracked file |
+
+No browser is installed and no environment is contacted. The live projects refuse to run when `CI` is set; see [`demo/playwright/README.md`](../demo/playwright/README.md).
+
 ## Reproduce locally
 
 From the repository root.

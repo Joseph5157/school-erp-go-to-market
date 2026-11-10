@@ -71,3 +71,36 @@ jobs:
         run: |
           git status --porcelain
           test -z "$(git status --porcelain)"
+
+  demo-automation:
+    name: Demo automation (offline Playwright checks)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: demo/playwright
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: demo/playwright/package-lock.json
+
+      # No browser install and no environment variables: only the offline
+      # project runs. Live projects refuse to start when CI is set.
+      - name: Install pinned dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Typecheck and offline tests
+        run: npm run check
+
+      - name: Confirm tracked files are unchanged
+        run: |
+          git status --porcelain
+          test -z "$(git status --porcelain)"
