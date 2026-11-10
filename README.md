@@ -48,6 +48,16 @@ GTM-OUTREACH-01. **Draft — internal review only.** Nothing has been sent, publ
 - [Blank lead tracker](sales/outreach/lead-tracker-template.csv) with its [permitted-use guide](sales/outreach/lead-tracker-guide.md). Copy it outside Git before use.
 - [Starter social campaign](social/campaigns/starter-campaign.md) — six draft [LinkedIn](social/linkedin/starter-posts.md) and [WhatsApp](social/whatsapp/starter-posts.md) posts with Graphite & Institutional Green visual guidance.
 
+## Competitor and market research (internal)
+
+GTM-RESEARCH-01. **Draft — internal review only.** Desk research from official UDISE+ statistics and official vendor websites, accessed 2026-11-10. No schools or vendors contacted, no pricing approved.
+
+- [Executive summary](research/executive-summary.md) — strongest findings, uncertainties and decisions for management.
+- [Research index](research/README.md) — evidence rules and limits.
+- [Competitor landscape](research/competitors/competitor-landscape.md), [comparison CSV](research/competitors/competitor-comparison.csv), [pricing and business models](research/competitors/pricing-and-business-models.md) and [source register](research/competitors/source-register.md).
+- [Telangana and Andhra Pradesh market data](research/market/telangana-andhra-pradesh.md), [school segmentation](research/market/school-segmentation.md) and [market-entry recommendations](research/market/market-entry-recommendations.md).
+- [Positioning and feature gaps](research/positioning-and-feature-gaps.md) — five testable hypotheses.
+
 ## Presentation draft
 
 - [GTM-PRESENTATION-01 — 12-slide Marp school-management deck](presentations/marp/README.md) — source, Graphite & Institutional Green theme, speaker notes and export instructions. Draft only; identity, price and live demo verification remain pending.
