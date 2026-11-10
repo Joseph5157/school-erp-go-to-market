@@ -1,0 +1,192 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+// Public-safe answers adapted from sales/faq/sales-faq.md and the feature
+// catalogue. Licensing, legal, support-hours and pricing figures are omitted
+// because they are not yet approved.
+const groups = [
+  {
+    id: 'about',
+    title: 'About the product',
+    items: [
+      {
+        q: 'What is it?',
+        a: [
+          'A web-based system for running a school’s academic administration: school setup, admissions and student records, teacher assignments, attendance, assessments and report cards, timetables, the guardian portal, notices, school documents, Excel onboarding, and access control with audit history.',
+        ],
+      },
+      {
+        q: 'Who uses it?',
+        a: [
+          'Administrators, teachers and guardians. Each person sees only what their permissions and assignments allow. Guardians see only their own children, after the school grants access.',
+        ],
+      },
+      {
+        q: 'Is it one shared service used by many schools?',
+        a: ['No. Each school has its own installation, configured for that school.'],
+      },
+      {
+        q: 'Can it follow our school’s way of working?',
+        a: [
+          'Much of it is configuration: academic year, terms, classes and sections, subjects, weekly pattern and holidays, grading scales, roles, timetable periods and document letterhead text.',
+          'Changes that need new development are assessed and quoted separately, after a written specification.',
+        ],
+      },
+      {
+        q: 'Is the interface available in Telugu?',
+        a: ['Not currently. PDFs include Telugu fonts, but the interface and student names are in English.'],
+      },
+    ],
+  },
+  {
+    id: 'product-boundaries',
+    title: 'What it does not do today',
+    items: [
+      {
+        q: 'Does it handle fees and online payments?',
+        a: [
+          'No. Fees, fee receipts and online payment collection are not part of the current product. They would need a separate scope, decision and estimate.',
+        ],
+      },
+      {
+        q: 'Does it send WhatsApp, SMS or email messages automatically?',
+        a: [
+          'No. With WhatsApp Assist, the system prepares messages, for example same-day absence alerts, for guardians who have given consent. A member of staff opens each prefilled message in WhatsApp and sends it. There is no automatic WhatsApp, SMS or email sending.',
+        ],
+      },
+      {
+        q: 'Is there a mobile app? Does it work offline?',
+        a: [
+          'There is no native Android or iOS app and no student login. It works in the phone’s browser and, on supported devices, can be added to the home screen as a web app.',
+          'It needs an internet connection. There is no offline mode, background sync or push notification.',
+        ],
+      },
+      {
+        q: 'Can we move all students to the next class at year end in one step?',
+        a: ['Not yet. Bulk academic-year rollover is planned but not implemented. Placements are changed per student.'],
+      },
+      {
+        q: 'Can it issue transfer certificates?',
+        a: [
+          'Not yet. The required fields and layout must first be agreed with the school and scoped separately. It currently issues bonafide certificates, report-card PDFs and attendance summaries.',
+        ],
+      },
+      {
+        q: 'Does it calculate ranks, GPA or board-specific results?',
+        a: [
+          'No. Assessments use marks, maximum marks, optional pass marks and grading scales. Ranks, GPA, weighting and board-specific rules need a separate policy decision and assessment.',
+        ],
+      },
+      {
+        q: 'Can we add transport, library, hostel, payroll or inventory?',
+        a: ['These are outside the current product. Each would be assessed separately before any estimate.'],
+      },
+    ],
+  },
+  {
+    id: 'getting-started',
+    title: 'Getting started',
+    items: [
+      {
+        q: 'Can we import our existing Excel records?',
+        a: [
+          'Yes, for students, guardians and class or section placement, using the product’s Excel template. Every row is checked and problems are shown before anything is saved; possible duplicates are flagged for the school to review.',
+          'Data in other formats, or historical attendance and marks, would need to be assessed.',
+        ],
+      },
+      {
+        q: 'Who prepares the data?',
+        a: [
+          'The school prepares and cleans the records it is authorised to share. We provide the template, explain the validation messages and run the trial and final imports as agreed.',
+        ],
+      },
+      {
+        q: 'How long does implementation take?',
+        a: [
+          'It depends on the school’s size, data quality and how quickly decisions and data are available. We agree stages and any target dates after requirements are confirmed.',
+        ],
+      },
+      {
+        q: 'What training is included?',
+        a: [
+          'Role-based sessions for administrators and teachers, plus briefing material for guardians. The number and format of sessions are agreed in the proposal.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'commercial',
+    title: 'Pricing and data',
+    items: [
+      {
+        q: 'How is it priced?',
+        a: [
+          'A one-time setup and implementation fee covering initial data migration and training, then annual support and maintenance. Hosting is shown separately. Any additional development is quoted separately.',
+          'Amounts depend on the school’s requirements and are given in a written quotation.',
+        ],
+      },
+      {
+        q: 'Why is hosting shown separately?',
+        a: [
+          'Hosting is a third-party cost that depends on the provider and arrangement chosen. Showing it separately makes clear what the school pays for software support and what it pays for infrastructure.',
+        ],
+      },
+      {
+        q: 'Is the product DPDP compliant?',
+        a: [
+          'We do not claim that the software, or any school using it, is automatically compliant with the Digital Personal Data Protection Act, 2023 or its Rules. The product includes controls such as role-based access, explicit guardian access grants, consent records for WhatsApp messages and audit history.',
+          'Each school should confirm its own obligations with its legal or compliance adviser.',
+        ],
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="FAQ"
+  description="Answers to common questions from school management about what the product does, what it does not do yet, implementation and pricing approach."
+>
+  <PageIntro
+    eyebrow="FAQ"
+    title="Questions school management often ask"
+    lead="Straight answers about what the product does today, what it does not, and how implementation and pricing work."
+  >
+    <nav aria-label="FAQ sections">
+      <ul class="jump-links">
+        {groups.map((group) => <li><a href={`#${group.id}`}>{group.title}</a></li>)}
+      </ul>
+    </nav>
+  </PageIntro>
+
+  <section class="section" aria-label="Questions and answers">
+    <div class="wrap" style="max-width: 880px;">
+      {
+        groups.map((group) => (
+          <section class="faq-group group" id={group.id} aria-labelledby={`${group.id}-heading`}>
+            <h2 id={`${group.id}-heading`}>{group.title}</h2>
+            <div class="faq-list">
+              {group.items.map((item) => (
+                <details>
+                  <summary>{item.q}</summary>
+                  <div class="answer">
+                    {item.a.map((para) => (
+                      <p>{para}</p>
+                    ))}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </section>
+        ))
+      }
+      <p class="mt-lg muted">
+        Support hours, response times and licensing terms will be stated in the written agreement once approved.
+      </p>
+    </div>
+  </section>
+
+  <CtaBand heading="Have a question that is not answered here?" />
+</BaseLayout>

@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import CtaBand from '../components/CtaBand.astro';
+import implementationSvg from '../../../diagrams/svg/06_Implementation_Process.svg?url';
+---
+
+<BaseLayout
+  title="Implementation"
+  description="How a school installation is set up: discovery, agreed scope, configuration, data import and training, school acceptance, then launch and support."
+>
+  <PageIntro
+    eyebrow="Implementation"
+    title="Implementation starts with your school"
+    lead="We understand how your school works, agree the scope in writing, then set up, import, train and check together before launch."
+  />
+
+  <section class="section" aria-labelledby="process-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="process-heading">Six stages from first conversation to launch</h2>
+      </div>
+      <figure class="diagram diagram-figure">
+        <img
+          src={implementationSvg}
+          width="1000"
+          height="390"
+          alt="Implementation process in six stages: 1 Discover, 2 Agree scope, 3 Configure and build, 4 Import and train, 5 School acceptance, 6 Launch and support."
+        />
+        <figcaption>Each stage is confirmed with the school before the next begins.</figcaption>
+      </figure>
+      <ol class="steps steps-3 mt-lg">
+        <li>
+          <h3>Discover</h3>
+          <p>Review the school’s priorities, policies and sample formats, and the people who approve decisions.</p>
+        </li>
+        <li>
+          <h3>Agree scope</h3>
+          <p>Separate what the current product already does from any custom work, and agree it in writing.</p>
+        </li>
+        <li>
+          <h3>Configure and build</h3>
+          <p>Set up the school structure, roles and calendar, plus any approved changes.</p>
+        </li>
+        <li>
+          <h3>Import and train</h3>
+          <p>Check and import the school’s data, then run role-based training and practise everyday tasks.</p>
+        </li>
+        <li>
+          <h3>School acceptance</h3>
+          <p>Check agreed workflows together, record the results and resolve anything that blocks launch.</p>
+        </li>
+        <li>
+          <h3>Launch and support</h3>
+          <p>The school approves go-live, and ongoing support follows the written agreement.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-white" aria-labelledby="roles-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Shared responsibilities</span>
+        <h2 id="roles-heading">Who does what</h2>
+      </div>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>The school</h3>
+          <ul>
+            <li>Names a coordinator and the people who approve scope and acceptance</li>
+            <li>Shares policies and sample formats (fictional or redacted where possible)</li>
+            <li>Prepares and cleans the records it is authorised to share</li>
+            <li>Reviews validation messages and confirms corrections</li>
+            <li>Confirms its own data-protection obligations with its advisers</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Our implementation team</h3>
+          <ul>
+            <li>Runs the requirements review and writes up the agreed scope</li>
+            <li>Configures the installation for the school</li>
+            <li>Provides the Excel template and explains each validation message</li>
+            <li>Runs the trial and final imports as agreed</li>
+            <li>Delivers role-based training for administrators and teachers, plus guardian briefing material</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="data-heading">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Your existing records</span>
+        <h2 id="data-heading">Bringing in your data</h2>
+        <p>
+          Students, guardians and class or section placements can be imported from the product’s Excel template.
+          Every row is checked, and problems are shown before anything is saved.
+        </p>
+        <ul class="check-list">
+          <li>A preview of every row before confirmation</li>
+          <li>Warnings for possible duplicates and shared phone numbers</li>
+          <li>Row and column problem messages you can download</li>
+          <li>Records are created only when the whole batch is confirmed</li>
+        </ul>
+        <p class="mt-lg muted">
+          Data in other formats, and historical attendance or marks, are assessed separately.
+        </p>
+      </div>
+      <div>
+        <h2 class="visually-hidden">Commercial approach and timing</h2>
+        <article class="card">
+          <h3>Commercial approach</h3>
+          <p>
+            A one-time setup and implementation fee covering initial data migration and training, followed by
+            annual support and maintenance. Hosting is shown separately. Any additional development is quoted
+            separately after a written specification.
+          </p>
+          <p>Prices are given in a written quotation for each school.</p>
+        </article>
+        <article class="card mt-lg">
+          <h3>Timing</h3>
+          <p>
+            Timing depends on the school’s size, data quality and how quickly decisions and data are available. We
+            agree the stages and any target dates once requirements are confirmed.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    heading="Start with a requirements conversation"
+    text="We will ask which workflows matter most, which formats and policies the system must follow, and who will coordinate and approve the scope."
+  />
+</BaseLayout>

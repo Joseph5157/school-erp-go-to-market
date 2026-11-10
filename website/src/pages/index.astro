@@ -1,0 +1,215 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { site, demoHref } from '../data/site';
+---
+
+<BaseLayout
+  title={site.wordmark}
+  description="School administration for private schools in Telangana and Andhra Pradesh: admissions, attendance, assessments, report cards and a guardian portal in one connected record."
+>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">For private schools in Telangana and Andhra Pradesh</span>
+        <h1>One connected record for everyday school work</h1>
+        <p class="lead">
+          Admissions, attendance, assessments and report cards in one system. Administrators, teachers and
+          guardians each see only what their role allows.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href={demoHref}>Request a demo</a>
+          <a class="btn btn-secondary" href="/features/">See the features</a>
+        </div>
+        <p class="hero-note">Each school gets its own installation, set up around its classes, terms and policies.</p>
+      </div>
+
+      <figure class="role-visual" aria-labelledby="role-visual-caption">
+        <div class="record-core">
+          <strong>School records</strong>
+          <span>Students, classes, attendance, marks and published reports</span>
+        </div>
+        <ul class="role-rows">
+          <li class="role-row">
+            <strong>Administrator</strong>
+            <span>Sets up the school, reviews work and decides what is published</span>
+          </li>
+          <li class="role-row">
+            <strong>Teacher</strong>
+            <span>Takes attendance and enters marks for assigned classes</span>
+          </li>
+          <li class="role-row">
+            <strong>Guardian</strong>
+            <span>Sees their own child’s attendance, released results and notices</span>
+          </li>
+        </ul>
+        <figcaption id="role-visual-caption" class="role-visual-caption">
+          Illustration: access follows each person’s role and assignment. Not a product screenshot.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="problem-heading">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Why schools look for a system</span>
+        <h2 id="problem-heading">When school work is spread across registers, files and spreadsheets</h2>
+        <p class="lead">
+          It becomes hard to see what is complete, what is missing and what is ready to share with families.
+        </p>
+      </div>
+      <ul class="check-list">
+        <li>Admissions records, registers, marks and reports often sit in different places.</li>
+        <li>Teachers need a clear view of the classes and work assigned to them.</li>
+        <li>Management needs to review progress before results reach families.</li>
+        <li>Guardians need secure access to information about their own children.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-white" aria-labelledby="journey-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">From admission to results</span>
+        <h2 id="journey-heading">Follow each student through one record</h2>
+        <p>
+          The office decides admissions. Guardians see records only after the school grants access or publishes
+          results.
+        </p>
+      </div>
+      <ol class="steps steps-3">
+        <li>
+          <h3>Register the applicant</h3>
+          <p>The office records the application and the guardians linked to it.</p>
+        </li>
+        <li>
+          <h3>Decide admission</h3>
+          <p>Each application is explicitly accepted or rejected.</p>
+        </li>
+        <li>
+          <h3>Enrol the student</h3>
+          <p>Assign the academic year, class and section, with history kept.</p>
+        </li>
+        <li>
+          <h3>Record school work</h3>
+          <p>Attendance and marks follow the student through the year.</p>
+        </li>
+        <li>
+          <h3>Review and publish</h3>
+          <p>The office finalises assessments and releases report cards.</p>
+        </li>
+        <li>
+          <h3>Family access</h3>
+          <p>The guardian views the child’s released records.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="roles-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Built around roles</span>
+        <h2 id="roles-heading">The right work for each person</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="card">
+          <span class="card-label">Administrator</span>
+          <h3>Coordinate school work</h3>
+          <ul>
+            <li>Set up years, terms, classes, sections, subjects and the calendar</li>
+            <li>Review applications, admit students and keep placement history</li>
+            <li>Manage teaching assignments and check attendance and assessment progress</li>
+            <li>Control report-card publication, notices and documents</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="card-label">Teacher</span>
+          <h3>Focus on assigned classes</h3>
+          <ul>
+            <li>See the day’s work and configured timetable periods</li>
+            <li>Take attendance and submit a complete class register</li>
+            <li>Enter marks for assigned subjects</li>
+            <li>Add class-teacher remarks where permitted</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="card-label">Guardian</span>
+          <h3>See the right information</h3>
+          <ul>
+            <li>Sign in to view children the school has approved access for</li>
+            <li>Read submitted attendance and the monthly calendar</li>
+            <li>Open published report cards and eligible PDF downloads</li>
+            <li>Read notices meant for the child’s school, class or section</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" aria-labelledby="publish-heading">
+    <div class="wrap band-grid">
+      <div>
+        <span class="eyebrow">Review before release</span>
+        <h2 id="publish-heading">Marks stay private until the school publishes</h2>
+        <p>
+          Teachers enter results. The office finalises assessments, previews the report card and explicitly
+          publishes it. Only then does it appear in the guardian portal. If a relevant correction is made later,
+          the old publication is flagged for review.
+        </p>
+        <p><a href="/features/#daily-work">Read about assessments and report cards</a></p>
+      </div>
+      <ol class="publish-flow" aria-label="Report card publication stages">
+        <li>Teacher enters marks and remarks <span class="state">Draft</span></li>
+        <li>Office finalises the assessment <span class="state">Finalised</span></li>
+        <li>Office previews the report card <span class="state">Preview</span></li>
+        <li>Office publishes it <span class="state state-live">Visible to guardian</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="fit-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works for a school</span>
+        <h2 id="fit-heading">Practical from the first term</h2>
+      </div>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Your own installation</h3>
+          <p>
+            Each school has its own installation, configured with its academic year, terms, classes, subjects,
+            weekly pattern, holidays and grading scales.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Start from your spreadsheets</h3>
+          <p>
+            Import students, guardians and class placements from the Excel template. Every row is checked, and
+            problems are shown before anything is saved.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Works in the browser</h3>
+          <p>
+            Use it on office computers and phones. On supported phones it can be added to the home screen. It
+            needs an internet connection; there is no offline mode.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Staff-assisted WhatsApp messages</h3>
+          <p>
+            WhatsApp Assist prepares messages, such as same-day absence alerts, for guardians who have consented.
+            Staff send each one from WhatsApp; nothing is sent automatically.
+          </p>
+        </article>
+      </div>
+      <p class="mt-lg">
+        <a href="/faq/#product-boundaries">See what the current product does not include</a>
+      </p>
+    </div>
+  </section>
+
+  <CtaBand />
+</BaseLayout>

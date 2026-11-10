@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { areaGroups, boundaries } from '../data/site';
+// Approved diagrams, read from the repository's single source in diagrams/svg.
+import publicationSvg from '../../../diagrams/svg/04_Report_Publication.svg?url';
+import whatsappSvg from '../../../diagrams/svg/05_WhatsApp_Assist.svg?url';
+---
+
+<BaseLayout
+  title="Features"
+  description="Twelve connected areas covering school setup, admissions, attendance, assessments, report cards, timetables, the guardian portal, notices, documents, Excel import and access control."
+>
+  <PageIntro
+    eyebrow="Features"
+    title="Twelve connected areas, one school system"
+    lead="Everything below is in the current product. Access to each area depends on a person’s permissions and current assignments."
+  >
+    <nav aria-label="Feature groups">
+      <ul class="jump-links">
+        {areaGroups.map((group) => <li><a href={`#${group.slug}`}>{group.title}</a></li>)}
+        <li><a href="#not-included">Not included</a></li>
+      </ul>
+    </nav>
+  </PageIntro>
+
+  <section class="section" aria-label="Product areas">
+    <div class="wrap">
+      {
+        areaGroups.map((group) => (
+          <section class="group" id={group.slug} aria-labelledby={`${group.slug}-heading`}>
+            <div class="group-head">
+              <h2 id={`${group.slug}-heading`}>{group.title}</h2>
+              <p>{group.intro}</p>
+            </div>
+            <div class="grid grid-2">
+              {group.areas.map((area) => (
+                <article class="card">
+                  <span class="area-id">{area.id}</span>
+                  <h3>{area.title}</h3>
+                  <p>{area.summary}</p>
+                  <p class="area-users">For: {area.users}</p>
+                  <ul>
+                    {area.points.map((point) => (
+                      <li>{point}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section section-white" aria-labelledby="workflows-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Two workflows in detail</span>
+        <h2 id="workflows-heading">Controlled publication and staff-assisted messages</h2>
+      </div>
+
+      <div class="workflows">
+        <div>
+          <h3>Report card publication</h3>
+          <figure class="diagram diagram-figure">
+            <img
+              src={publicationSvg}
+              width="1000"
+              height="390"
+              alt="Report publication flow: teacher entry of marks or Absent results and term remarks; office review to finalise assessments and preview publication; a published snapshot for the guardian view and eligible report PDF; after a relevant correction, the old publication becomes stale until reviewed again."
+            />
+            <figcaption>The office checks and explicitly publishes a report card before guardians can see it.</figcaption>
+          </figure>
+          <ol class="steps diagram-text">
+            <li><h3>Teacher entry</h3><p>Marks, Marked Absent results and term remarks.</p></li>
+            <li><h3>Office review</h3><p>Finalise assessments, then preview the publication.</p></li>
+            <li><h3>Published snapshot</h3><p>Guardian view and the eligible report-card PDF.</p></li>
+            <li><h3>Relevant correction</h3><p>The old publication becomes stale until reviewed again.</p></li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>WhatsApp Assist</h3>
+          <figure class="diagram diagram-figure">
+            <img
+              src={whatsappSvg}
+              width="1000"
+              height="390"
+              alt="WhatsApp Assist flow: consent and access checks so only eligible opted-in guardians are included; a queue holds approved minimal message text; staff open WhatsApp with the number and message prefilled; staff record the outcome by marking it sent or dismissing it with a reason."
+            />
+            <figcaption>The system prepares the message; a member of staff sends it in WhatsApp.</figcaption>
+          </figure>
+          <ol class="steps diagram-text">
+            <li><h3>Consent and access</h3><p>Only eligible guardians who have opted in.</p></li>
+            <li><h3>Prepare message</h3><p>The queue holds approved, minimal text.</p></li>
+            <li><h3>Staff open WhatsApp</h3><p>Number and message are prefilled.</p></li>
+            <li><h3>Staff record the outcome</h3><p>Mark it sent, or dismiss it with a reason.</p></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="not-included" aria-labelledby="not-included-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Clear boundaries</span>
+        <h2 id="not-included-heading">Not in the current product</h2>
+        <p>
+          These requests need a separate decision, estimate or development. Listing them here does not mean they are
+          available today or included in a standard proposal.
+        </p>
+      </div>
+      <div class="table-wrap">
+        <table class="stack-table">
+          <caption class="visually-hidden">Requests outside the current product and their position</caption>
+          <thead>
+            <tr><th scope="col">Request</th><th scope="col">Current position</th></tr>
+          </thead>
+          <tbody>
+            {
+              boundaries.map((row) => (
+                <tr>
+                  <th scope="row">{row.area}</th>
+                  <td>{row.position}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-lg muted small">
+        The interface and student names are in English. PDFs include Telugu fonts, but the interface is not
+        translated into Telugu.
+      </p>
+    </div>
+  </section>
+
+  <CtaBand heading="Check the features against your school’s needs" />
+</BaseLayout>

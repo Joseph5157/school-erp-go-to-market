@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageIntro from '../components/PageIntro.astro';
+
+// Draft enquiry journey. This page deliberately has no form and collects no
+// personal details. Contact channels stay as pending placeholders until the
+// owner approves them; do not invent addresses, numbers or domains.
+---
+
+<BaseLayout
+  title="Contact"
+  description="Request a demonstration or discuss your school’s requirements. Contact details are pending approval in this draft."
+>
+  <PageIntro
+    eyebrow="Contact"
+    title="Request a demo or discuss your requirements"
+    lead="Choose the conversation that suits where your school is today. Both start with your priorities, not a sales script."
+  >
+    <nav aria-label="Enquiry options">
+      <ul class="jump-links">
+        <li><a href="#request-a-demo">Request a demo</a></li>
+        <li><a href="#discuss-your-requirements">Discuss your requirements</a></li>
+        <li><a href="#contact-details">Contact details</a></li>
+      </ul>
+    </nav>
+  </PageIntro>
+
+  <section class="section" aria-label="Enquiry options">
+    <div class="wrap grid grid-2">
+      <article class="card journey" id="request-a-demo" aria-labelledby="demo-heading">
+        <span class="card-label">Option 1</span>
+        <h2 id="demo-heading">Request a demo</h2>
+        <p>
+          A guided walkthrough of the administrator, teacher and guardian views using fictional school data. A short
+          executive version or a longer, detailed session can be arranged.
+        </p>
+        <ol class="steps">
+          <li><h3>Get in touch</h3><p>Use the contact details below once they are published.</p></li>
+          <li><h3>Agree a time and audience</h3><p>Management only, or with office staff and teachers.</p></li>
+          <li><h3>See the product</h3><p>Admissions, attendance, assessments, publication and the guardian portal.</p></li>
+          <li><h3>Decide next steps</h3><p>If it looks like a fit, move to a requirements discussion.</p></li>
+        </ol>
+        <p class="small muted">Helpful to share: which workflows you most want to see.</p>
+      </article>
+
+      <article class="card journey" id="discuss-your-requirements" aria-labelledby="req-heading">
+        <span class="card-label">Option 2</span>
+        <h2 id="req-heading">Discuss your requirements</h2>
+        <p>
+          A structured conversation about how your school works today, so we can confirm what the current product
+          covers and what would need separate scope before any quotation.
+        </p>
+        <ol class="steps">
+          <li><h3>Your priorities</h3><p>The two or three workflows you would improve first.</p></li>
+          <li><h3>Formats and policies</h3><p>Attendance rules, assessment and grading, documents and calendar.</p></li>
+          <li><h3>Data and devices</h3><p>Current records, volumes, and how staff and guardians will connect.</p></li>
+          <li><h3>Written next steps</h3><p>Agreed scope, then a quotation and implementation proposal.</p></li>
+        </ol>
+        <p class="small muted">
+          Please do not send student or guardian records at this stage. Sample formats can be fictional or redacted.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-white" id="contact-details" aria-labelledby="contact-heading">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Contact details</span>
+        <h2 id="contact-heading">Contact channels are pending approval</h2>
+        <p class="muted">
+          This is a draft website. The enquiry email, phone or WhatsApp number and office address will be added after
+          the owner approves them. This page has no form and does not collect or send any information.
+        </p>
+      </div>
+      <div class="card">
+        <ul class="pending-list" aria-label="Contact channels">
+          <li><span>Enquiry email</span><span class="tag tag-pending">Pending approval</span></li>
+          <li><span>Phone or WhatsApp</span><span class="tag tag-pending">Pending approval</span></li>
+          <li><span>Office address</span><span class="tag tag-pending">Pending approval</span></li>
+          <li><span>Areas served</span><span>Telangana and Andhra Pradesh</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="prepare-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Before we talk</span>
+        <h2 id="prepare-heading">Questions worth thinking about</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>What matters most?</h3>
+          <p>Which two or three workflows would you improve first?</p>
+        </article>
+        <article class="card">
+          <h3>What must it follow?</h3>
+          <p>Which formats, policies and approval steps must the system respect?</p>
+        </article>
+        <article class="card">
+          <h3>Who decides?</h3>
+          <p>Who will coordinate requirements and approve the scope?</p>
+        </article>
+      </div>
+      <p class="mt-lg"><a href="/implementation/">See how implementation works</a></p>
+    </div>
+  </section>
+</BaseLayout>

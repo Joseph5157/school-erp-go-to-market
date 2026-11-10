@@ -1,0 +1,3 @@
+# Draft website (GTM-WEBSITE-01). Not approved for publication or indexing.
+User-agent: *
+Disallow: /

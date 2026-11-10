@@ -1,0 +1,21 @@
+{
+  "name": "school-erp-marketing-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GTM-WEBSITE-01 draft marketing website for School ERP. Static, local preview only; not published.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev",
+    "build": "node scripts/astro.mjs build",
+    "preview": "node scripts/astro.mjs preview",
+    "check:site": "node scripts/check-site.mjs",
+    "check": "node scripts/astro.mjs build && node scripts/check-site.mjs"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans": "5.3.0",
+    "astro": "7.3.8"
+  }
+}
