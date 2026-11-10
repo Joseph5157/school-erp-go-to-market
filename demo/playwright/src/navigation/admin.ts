@@ -24,7 +24,9 @@ export async function expectCurrentNav(page: Page, label: string): Promise<void>
  * permission, or a year-scoped link with no academic year).
  */
 export async function sidebarHref(page: Page, label: string): Promise<string | null> {
-  const link = officeNav(page).getByRole('link', { name: navLinkName(label) });
+  // Links in a closed <details> group are hidden from the accessibility tree;
+  // includeHidden lets us read their href without opening the group.
+  const link = officeNav(page).getByRole('link', { name: navLinkName(label), includeHidden: true });
   if ((await link.count()) === 0) return null;
   return link.first().getAttribute('href');
 }
