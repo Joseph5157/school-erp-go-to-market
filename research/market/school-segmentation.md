@@ -4,7 +4,7 @@
 
 ## The key limitation
 
-**No official count of private schools in the 300–500, 501–1,000 or 1,001–2,000 student bands was found for Telangana or Andhra Pradesh.** UDISE+ 2025-26 publishes school-size brackets for **all managements combined** (government, aided, private and others) [S01 Table 2.3], not for private schools alone. This research does **not** estimate the number of private schools in each of our segments.
+**No official count of private schools in the 300–500, 501–1,000 or 1,001–2,000 student bands was found in the sources reviewed for Telangana or Andhra Pradesh.** Such data may exist elsewhere (for example in UDISE+ dashboard downloads or state department records, which were not reviewed). The national UDISE+ 2025-26 booklet publishes school-size brackets for **all managements combined** (government, aided, private and others) [S01 Table 2.3], not for private schools alone. This research does **not** estimate the number of private schools in each of our segments.
 
 ## What the official data does show
 
@@ -24,17 +24,17 @@ Percentage of all schools in each state:
 
 The "up to 100" row is the sum of the published ≤10, 11–20 … 91–100 brackets (DER). The other rows are copied as published.
 
-### Upper bounds, not estimates (DER)
+### Approximate all-management counts (DER, indicative only)
 
-Because every private school is also counted in the all-management figures, the number of **private** schools with more than 300 students **cannot exceed** the number of **all** schools with more than 300 students:
+These counts are **approximations** calculated from the published percentages, which are rounded to one decimal place. A rounding difference of up to 0.05 percentage points per bracket means each figure may be off by roughly 20–60 schools. **They are not strict numerical bounds.**
 
 | | Telangana | Andhra Pradesh |
 |---|---:|---:|
-| All schools with 301–500 students (5.2% + 3.7%; 4.3% + 2.9%) | ≈ 3,717 | ≈ 4,381 |
-| All schools with more than 500 students | ≈ 4,093 | ≈ 3,772 |
-| All schools with more than 300 students | ≈ 7,809 | ≈ 8,153 |
+| All schools with 301–500 students (5.2% + 3.7%; 4.3% + 2.9% of total) | ≈ 3,700 | ≈ 4,400 |
+| All schools with more than 500 students (9.8%; 6.2%) | ≈ 4,100 | ≈ 3,800 |
+| All schools with more than 300 students | ≈ 7,800 | ≈ 8,150 |
 
-These are **ceilings**. The true private-school numbers are lower by an unknown amount, because government and aided schools are included. The brackets also stop at "more than 500", so the 501–1,000 and 1,001–2,000 bands cannot be separated.
+**How to read them:** private schools are a subset of all schools, so the true number of private schools in each band is lower than the true all-management number, by an unknown amount. Because the counts above are themselves approximate, treat them only as **indicative ceilings**. The brackets also stop at "more than 500", so the 501–1,000 and 1,001–2,000 bands cannot be separated. The original published percentages and totals are in the table above.
 
 ### Averages (DER)
 
@@ -48,8 +48,8 @@ An average says nothing about the spread. Many private schools may be far smalle
 
 | | Small (300–500) | Medium (501–1,000) | Larger (1,001–2,000) |
 |---|---|---|---|
-| Count in TG/AP | **Not available** | **Not available** | **Not available** |
-| Data signal | All-management schools with 301–500 students: ≈ 3.7k (TG), ≈ 4.4k (AP) ceilings | All-management schools above 500: ≈ 4.1k (TG), ≈ 3.8k (AP) ceilings, shared with the larger band | Shared ceiling with medium |
+| Count of private schools in TG/AP | **Not found in sources reviewed** | **Not found in sources reviewed** | **Not found in sources reviewed** |
+| Data signal | All-management schools with 301–500 students: approx. 3.7k (TG), 4.4k (AP), indicative only | All-management schools above 500: approx. 4.1k (TG), 3.8k (AP), indicative only, shared with the larger band | Shared with medium |
 | Competitor offers seen (VC) | Free or low monthly plans for under 100–300 students (S15, S21); fee-first products (S19) | Mostly quote-based or tiered (S03, S05) | Quote-based / Enterprise tiers (S03, S05, S15) |
 | Assumed buyer (HYP, from target-segments) | Owner/correspondent active in daily running | Owner with principal | Management committee, principal, senior administrator |
 | Likely deciding requirements (HYP) | Price, fee collection, simplicity | Fees plus academics, parent communication, controlled results | Access control, audit, documents, integrations, multi-campus |
@@ -70,7 +70,9 @@ The brief asks for particular attention to schools under 500 students.
 - If fee collection is the main problem for small schools, our current product does not address it.
 - Our strengths (controlled report-card publication, assignment-based access, audited corrections) may matter less to a very small school run directly by its owner.
 
-**What we must learn before targeting this band:** whether small schools would buy an academic-administration system without fees; what they pay today (if anything); and whether a setup-plus-support model is acceptable to them.
+**These are hypotheses, not a decision.** Small schools stay in comparative discovery alongside medium schools ([recommendations](market-entry-recommendations.md)).
+
+**What we must learn about this band:** whether small schools would buy an academic-administration system without fees; what they pay today (if anything); and whether a setup-plus-support model is acceptable to them.
 
 ## Data that would improve segmentation
 

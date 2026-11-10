@@ -7,7 +7,7 @@
 - **UDISE+ 2025-26** [S01] is the latest report found. Reference year 2025-26, data cut-off 31 March 2026. The report states it is based on data uploaded by schools with an active UDISE+ code, and that the Ministry assumes no liability for errors.
 - "Private Unaided Recognized" is the UDISE+ management category closest to our target (private schools). It excludes government-aided and unrecognised schools.
 - UDISE+ counts **schools**, not legal owners. One management may run several schools or branches. School counts are therefore not the same as the number of buyers.
-- The national booklet does **not** publish private-school counts by enrolment size. See [School segmentation](school-segmentation.md).
+- No private-school counts by enrolment size were found in the national booklet tables reviewed (its size brackets cover all managements combined). Such data may exist in sources not reviewed. See [School segmentation](school-segmentation.md).
 
 ## Private Unaided Recognized schools
 
@@ -63,7 +63,7 @@ UDISE+ school categories by classes offered [S01 Table 3.5]. Copied as published
 |---|---|---|---|
 | State board, Telangana | The Board of Secondary Education, Telangana conducts the SSC (Class 10) examinations | TP | S45 |
 | Boards served by vendors | Vendor pages for TG/AP schools reference state board (SSC / TSBIE), CBSE and ICSE | VC | S17, S18, S19 |
-| Board mix of private schools | **Not available** in the sources read; no official count of TG/AP private schools by board was found | — | — |
+| Board mix of private schools | **Not found in the sources reviewed**; no official count of TG/AP private schools by board was found | — | — |
 | AP fee regulation | AP passed legislation in 2019 creating a School Education Regulatory and Monitoring Commission with a fee-regulation role; in December 2021 the High Court set aside fee-ceiling orders for 2021–24. The framework in force now is **not verified** | TP | S40, S41 |
 | Telangana fee regulation | News reports in 2026 describe a proposed private unaided school fee regulatory bill and an Education Commission recommendation. Passage or commencement is **not verified** | TP | S42, S43 |
 
@@ -88,7 +88,7 @@ No authoritative public survey of how Telangana or Andhra Pradesh private school
 
 | Possible influence | Why we think it might matter | Evidence type |
 |---|---|---|
-| Fee collection and dues tracking | Advertised by every compared vendor; one Hyderabad vendor is built around it | VC pattern → HYP |
+| Fee collection and dues tracking | Advertised by all seven compared ERP vendors; one Hyderabad vendor is built around it | VC pattern → HYP |
 | Parent app in app stores | Advertised by most compared vendors | VC pattern → HYP |
 | Automatic WhatsApp/SMS | Advertised by most compared vendors | VC pattern → HYP |
 | Free plan, trial or low monthly price | Present for small schools (S15, S18, S21) | VC → HYP |

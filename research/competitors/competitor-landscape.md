@@ -6,8 +6,14 @@
 
 - **Verified advertised (VA):** the vendor's own website advertises the capability. It is not proof that the capability works, or works the way we would expect.
 - **Not publicly verified (NPV):** we did not find it on the pages we read. **This does not mean the vendor lacks it.** Many pages were long, menu-driven or partly truncated.
-- **Not offered (NO):** an explicit source says it is not offered or not claimed.
+- **Not offered (NO):** used **only** where an explicit source confirms the feature is not offered. A vendor saying it does not *claim* a feature, or simply not mentioning it, is **NPV**. No NO codes remain in this round.
+- **Plan-dependent:** "advertised" means advertised somewhere on the vendor's site. A capability may be limited to particular plans, tiers or paid add-ons (for example Fedena's module groups per plan, Campus 365 add-ons).
 - Customer counts, rankings, awards and satisfaction figures are **vendor claims** and are reported only as such.
+
+## Comparison group
+
+- **Seven clearly marketed school-ERP vendors** form the comparison group for all counts ("x of 7"): MyClassBoard, Fedena, Entab, Campus 365, Vidyalaya, Class ON App and ScholaBook.
+- **Teachmint is an adjacent or unconfirmed competitor.** Its site currently leads with classroom hardware, and its current school ERP offering has not been verified. It is profiled and kept in the tables for reference but **excluded from all feature counts**.
 
 ## Discovery (15 vendors)
 
@@ -18,7 +24,7 @@
 | 3 | Entab (CampusCare) | Brief lead; official site | **Compared** |
 | 4 | Campus 365 | Brief lead; official site | **Compared** |
 | 5 | Vidyalaya | Brief lead; official site | **Compared** (lower confidence: part of page summarised) |
-| 6 | Teachmint | Brief lead; official site | **Compared** with caveats: the site now leads with classroom hardware |
+| 6 | Teachmint | Brief lead; official site | **Profiled as adjacent / unconfirmed**: the site now leads with classroom hardware; excluded from feature counts |
 | 7 | Class ON App | Search: Telangana / Andhra Pradesh school ERP | **Compared**: dedicated TG and AP pages |
 | 8 | ScholaBook | Search: Hyderabad / Andhra Pradesh school software | **Compared**: Hyderabad-based, fee-first |
 | 9 | Edunext Technologies | Search; third-party profile [S50] | Discovered, not compared |
@@ -31,7 +37,7 @@
 
 Local directory listings around Vijayawada [S57] suggest more small local vendors exist. None was assessed.
 
-**Selection rationale:** the eight compared vendors cover established national suites (Fedena, Entab, Vidyalaya, Campus 365), a large brand that schools may recognise (Teachmint), a Hyderabad-headquartered suite (MyClassBoard) and two vendors visibly targeting Telangana and Andhra Pradesh (Class ON App, ScholaBook), one of them budget-oriented.
+**Selection rationale:** the seven compared ERP vendors cover established national suites (Fedena, Entab, Vidyalaya, Campus 365), a suite with a Hyderabad address (MyClassBoard) and two vendors visibly targeting Telangana and Andhra Pradesh (Class ON App, ScholaBook), one of them budget-oriented. Teachmint is profiled separately as an adjacent brand that schools may recognise.
 
 ## Vendor profiles
 
@@ -62,9 +68,9 @@ Full feature coding is in [`competitor-comparison.csv`](competitor-comparison.cs
 | Primary target | Schools and colleges, worldwide; boards listed include CBSE, ICSE, "Regional State Board", IB | VC / Medium |
 | Modules advertised | 60+ named modules across Core, Standard, Premium and Ultimate groups: admissions, attendance, timetable, examination and gradebook, certificates and ID cards, messaging, SMS and email integration, finance and fees, HR, hostel, library, transport, inventory, custom import, payment gateway, audit, automatic timetable generation, online exams and classes | VC / Medium |
 | Mobile / parent | iOS and Android apps "in your brand" for parents, teachers and students | VC / Medium |
-| Deployment | Web-based; "free cloud hosting" in all plans; basic version described as open source; Enterprise includes product source code | VC / Medium |
+| Deployment | Web-based; "free cloud hosting" in all plans (explicit); basic version described as open source; Enterprise includes product source code. Tenancy model (shared or separate instances) not publicly verified | VC / Medium |
 | Onboarding / support | Every plan lists one-to-one online training, onboarding data and configuration, email and phone support; home page claims 24/7 support | VC / Medium |
-| Pricing | Public yearly plans (see pricing file) | VC / Medium |
+| Pricing | Public yearly plans (see pricing file). The pricing page has "Web App" and "Both Web & Mobile App" selections; this research has **not** established whether the prices are the same for both | VC / Medium |
 | Reach claims | "40,000+ Schools & Colleges", "200+ Countries" | VC (unverified) |
 | TG/AP evidence | None found | NPV |
 
@@ -108,7 +114,9 @@ Full feature coding is in [`competitor-comparison.csv`](competitor-comparison.cs
 | Reach claims | "2000+ Satisfied Clients" and "1600+ global client base" on the same page (inconsistent) | VC (unverified) |
 | TG/AP evidence | A Hyderabad testimonial is reported only in the summarised part; no stated presence | VC / Low |
 
-### V06 Teachmint [S10, S11, S12, S13, S22]
+### V06 Teachmint — adjacent / unconfirmed [S10, S11, S12, S13, S22]
+
+Excluded from feature counts (see [comparison group](#comparison-group)).
 
 | Item | Finding | Class / confidence |
 |---|---|---|
@@ -144,7 +152,7 @@ Full feature coding is in [`competitor-comparison.csv`](competitor-comparison.cs
 | Location | Registered office in Hyderabad | VC / Medium |
 | Primary target | Private CBSE and Telangana state-board schools; fee-first administration | VC / Medium |
 | Modules advertised | Fee heads and plans, concessions, dues and receipts; student and guardian records (promotion, transfer, readmission); dues reports; multi-campus; Excel migration; parent portal; SMS notifications | VC / Medium |
-| Explicitly not claimed | Automated WhatsApp reminders; Telugu-language parent communication; replacing board portals | VC / Medium → coded NO |
+| Explicitly not claimed | Automated WhatsApp reminders; Telugu-language parent communication; replacing board portals. The pages say these are not *claimed*, which does not confirm they are unavailable | VC / Medium → coded **NPV** |
 | Not seen | Exams/report cards, timetable, library, payroll, online admissions | NPV |
 | Pricing | Free tier and low monthly plans (see pricing file); "No per-student fees"; no setup fee; free migration, onboarding and training | VC / Medium |
 | Onboarding | Step-by-step onboarding; "no fixed go-live date" promised | VC / Medium |
@@ -153,9 +161,9 @@ Full feature coding is in [`competitor-comparison.csv`](competitor-comparison.cs
 
 ## Feature comparison against our catalogue (M01–M12)
 
-`DOC` = documented in our [feature catalogue](../../docs/product/feature-catalogue.md) (not re-verified on live staging). Competitor codes as defined above.
+`DOC` = documented in our [feature catalogue](../../docs/product/feature-catalogue.md) (not re-verified on live staging). Competitor codes as defined above. The Teachmint column is for reference only (adjacent; excluded from counts).
 
-| Area (our ref) | Ours | MCB | Fedena | Entab | C365 | Vidyalaya | Teachmint | Class ON | ScholaBook |
+| Area (our ref) | Ours | MCB | Fedena | Entab | C365 | Vidyalaya | Teachmint (adjacent) | Class ON | ScholaBook |
 |---|---|---|---|---|---|---|---|---|---|
 | Setup and academic structure (M01, M02) | DOC | NPV | VA | NPV | VA | VA | NPV | NPV | NPV |
 | Admissions and student records (M03) | DOC | VA | VA | VA | VA | VA | VA | VA | VA |
@@ -174,7 +182,7 @@ Full feature coding is in [`competitor-comparison.csv`](competitor-comparison.cs
 
 `NOT` = not in our current product (catalogue boundaries table).
 
-| Requirement | Ours | MCB | Fedena | Entab | C365 | Vidyalaya | Teachmint | Class ON | ScholaBook |
+| Requirement | Ours | MCB | Fedena | Entab | C365 | Vidyalaya | Teachmint (adjacent) | Class ON | ScholaBook |
 |---|---|---|---|---|---|---|---|---|---|
 | Fee management | NOT | VA | VA | VA | VA | VA | VA | VA | VA |
 | Online fee payments | NOT | VA | VA | VA | VA | VA | VA | VA | VA |
@@ -182,18 +190,20 @@ Full feature coding is in [`competitor-comparison.csv`](competitor-comparison.cs
 | Library | NOT | VA | VA | VA | VA | VA | NPV | NPV | NPV |
 | Hostel | NOT | VA | VA | NPV | NPV | VA | NPV | NPV | NPV |
 | Payroll / HR | NOT | VA | VA | VA | VA | VA | NPV | NPV | NPV |
-| Automatic messaging (SMS / WhatsApp API) | NOT | VA | VA | VA | VA | VA | NPV | VA | NO (WhatsApp) |
+| Automatic messaging (SMS / WhatsApp API) | NOT | VA | VA | VA | VA | VA | NPV | VA | NPV |
 | Native mobile apps | NOT | VA | VA | VA | VA | VA | NPV | VA | NPV |
 | LMS / online classes | NOT | VA | VA | NPV | VA | VA | VA | NPV | NPV |
-| Telugu language (interface or parent messaging) | NOT (PDF fonts only) | NPV | NPV | NPV | NPV | NPV | NPV | VA (messaging) | NO |
+| Telugu language (interface or parent messaging) | NOT (PDF fonts only) | NPV | NPV | NPV | NPV | NPV | NPV | VA (messaging) | NPV |
 
 ## What the comparison shows
 
 **Verified observations**
 
-1. **Fee management is advertised by all eight compared vendors** and online payment by all eight (Teachmint via navigation only). Our product does not offer fees.
-2. **Native mobile apps** are advertised by six of eight. Our product is a browser-based, installable PWA that needs a connection.
-3. **Automatic messaging** (SMS gateways, WhatsApp business API) is advertised by six of eight. Our WhatsApp Assist prepares messages that staff send by hand.
+Counts are out of the **seven** clearly marketed ERP vendors (Teachmint excluded), and mean "advertised on at least one plan or as an add-on".
+
+1. **Fee management and online payment are advertised by 7 of 7.** Our product does not offer fees. (Teachmint's navigation also lists fee management.)
+2. **Native mobile apps** are advertised by 6 of 7. Our product is a browser-based, installable PWA that needs a connection.
+3. **Automatic messaging** (SMS gateways, WhatsApp business API) is advertised by 6 of 7. Our WhatsApp Assist prepares messages that staff send by hand.
 4. **Broad module counts** ("100+ modules", "40+ modules") are a common way vendors position themselves. Our product covers 12 academic administration areas.
 5. **Teacher-assignment workflows** (dated class-teacher and subject-teacher assignments with handover history, our M04) and **controlled report-card publication with withdrawal and audit** (our M06 05–M06 09) were not found described in comparable detail on any competitor page read. This is **NPV, not proof of absence**.
 
@@ -201,16 +211,16 @@ Full feature coding is in [`competitor-comparison.csv`](competitor-comparison.cs
 
 | Difference | Why it may matter | Needs validation? |
 |---|---|---|
-| No fee management | Every compared competitor leads with or includes it; one Hyderabad competitor is built around it | **Yes**: how many target schools require fees at launch, and whether they would keep fees in a separate tool |
+| No fee management | All seven compared ERP vendors lead with or include it; one Hyderabad competitor is built around it | **Yes**: how many target schools require fees at launch, and whether they would keep fees in a separate tool |
 | No native app / no push | Parent expectations may be shaped by app-store apps | Yes |
 | Staff-assisted rather than automatic WhatsApp | Competitors advertise automated alerts and official WhatsApp API | Yes: whether schools accept manual sending, and the cost and consent trade-offs |
 | No Telugu parent messaging | A regional competitor advertises Telugu updates | Yes, especially outside Hyderabad |
 | Controlled publication, audit history, assignment-based access | Possible differentiator for principals who worry about accuracy and accountability | Yes: whether schools value it enough to influence a decision |
-| Separate installation per school | Different from the cloud-subscription norm | Yes (see positioning) |
+| Separate installation per school | Competitors market cloud subscriptions; whether their installations are shared or separate is not publicly verified | Yes (see positioning) |
 
 ## Limitations
 
-- Eight vendors only; local vendors in district towns were not assessed.
+- Seven ERP vendors plus one adjacent brand only; local vendors in district towns were not assessed.
 - Pages were read on one day; vendors change their sites often.
 - Several pages were truncated or summarised. Those findings are marked Low.
 - No product was trialled or demonstrated. "VA" reflects advertising only.

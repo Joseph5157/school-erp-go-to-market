@@ -21,6 +21,7 @@
 **Cautions**
 
 - Fedena's prices carry a `$` sign without a currency code or Indian tax treatment. Prices for Indian schools may differ. Confirm before comparing.
+- Fedena's pricing page offers **"Web App"** and **"Both Web & Mobile App"** selections. The page text read for this research showed one set of prices. It has **not** been established whether both selections cost the same, or whether the prices above include mobile apps.
 - The entry plans above fit specific sizes (Campus 365 Lite: under 300 students; ScholaBook Free: up to 100). They do not show what a 500–2,000 student school would pay.
 - None of these is a full quotation. Messaging credits, payment-gateway charges, hardware (RFID, biometrics, GPS) and extra modules are typically separate or unspecified.
 
@@ -49,9 +50,11 @@ Directory and review sites show figures that conflict with each other and with v
 | Quote based on school size and needs | Yes | Entab (S05); demo-led vendors | VC |
 | Free plan | Yes (small schools) | ScholaBook up to 100 students (S21); Fedena says its basic version is open source and free (S04) | VC |
 | Free trial | Yes | Class ON App 15–30 days (S18); third-party reports for others conflict | VC / TP |
-| Free demo | Universal | All eight compared vendors | VC |
-| Hosting included | Explicit | Fedena "free cloud hosting" (S03); others cloud-only, so hosting is implied in the subscription but not itemised | VC |
+| Free demo | Universal | All eight vendors reviewed (seven ERP vendors and Teachmint) | VC |
+| Hosting **explicitly** included | Yes, one vendor | Fedena: "All plans include free cloud hosting" (S03) | VC |
+| Cloud / web delivery stated, hosting terms **not publicly verified** | Most vendors | Entab (S06), Campus 365 (S14, S15), Vidyalaya (S16), Class ON App (S17, S18); MyClassBoard and ScholaBook did not state deployment on the pages read (S07, S21) | VC / NPV |
 | Separate hosting charge | Not observed on any page read | — | NPV |
+| Shared (multi-tenant) or separate installations | **Not publicly verified** for any vendor; cloud delivery does not by itself establish shared tenancy | — | NPV |
 | One-time licence or setup fee | Explicitly **none** at ScholaBook (S21); not stated elsewhere | — | VC / NPV |
 | Annual maintenance charge (AMC) separate from licence | Not observed on any page read | — | NPV |
 | Onboarding / migration included | Fedena (onboarding data and configuration), ScholaBook (free migration and training), Campus 365 Enterprise (data onboarding) | S03, S21, S15 | VC |
@@ -65,9 +68,9 @@ Our model, unchanged by this research, is: **school-specific installation, one-t
 | Element | Common in the public market | Ours | Implication (HYP, to validate) |
 |---|---|---|---|
 | Entry cost | Free tier or low monthly/annual subscription; setup often "free" | One-time setup fee | A visible setup fee may be a barrier for schools under 500 students comparing against free or low monthly plans |
-| Hosting | Included and not itemised | Shown separately | Transparent, but may look like an extra cost beside "hosting included" offers |
+| Hosting | Explicitly included at one vendor (Fedena); terms not publicly verified elsewhere | Shown separately | Transparent, but may look like an extra cost beside an explicit "hosting included" offer |
 | Annual charge | Subscription renews | Annual support and maintenance | Similar recurring shape; needs clear explanation of what support covers |
-| Installation | Shared cloud service | Separate installation per school | May appeal to schools wanting their own installation; may cost more to run per school |
+| Installation | Cloud subscriptions; shared or separate tenancy not publicly verified | Separate installation per school | Only a differentiator if competitors' tenancy differs, which is unverified; may cost more to run per school |
 | Customisation | "Custom" or Enterprise tiers | Quoted separately after specification | Comparable; our written change-request process is more explicit |
 
 **No price comparison is drawn**, because we have no approved price.

@@ -6,16 +6,16 @@
 
 | Question | Recommendation | Confidence |
 |---|---|---|
-| Segment to approach first | **Medium schools (501–1,000 students)**, starting in Telangana, for validation conversations and first pilots | Low–medium: reasoned from public evidence, untested with schools |
-| Schools under 500 students | **Learn before selling**: include them in discovery conversations, but do not pursue sales until the fee decision (below) is made | Medium |
+| Segment to approach first | **Leading hypothesis:** medium schools (501–1,000 students) in Telangana, for validation conversations | Low–medium: reasoned from public evidence, untested with schools |
+| Schools under 500 students | **Include in comparative discovery** alongside medium schools. Whether and when to pursue sales with them is an **open owner decision**, to be informed by discovery and by the fee-management direction | Medium |
 | Buyer roles | Owner/correspondent (decision), principal (champion and evaluator), office administrator (daily user and evaluator) | Medium |
 | Workflows to demonstrate first | Daily attendance with missing-register view; report-card publication control; guardian access; Excel import preview | Medium |
-| Competitors most likely met | MyClassBoard and Class ON App (local presence), ScholaBook (small schools), Fedena, Entab, Vidyalaya, Campus 365 (national) | Medium |
-| Product decision needed first | **Fee management**: decide whether to scope it, partner, or explicitly target schools that keep fees elsewhere | High that a decision is needed |
+| Competitors most likely met | MyClassBoard and Class ON App (local presence), ScholaBook (small schools), Fedena, Entab, Vidyalaya, Campus 365 (national); Teachmint as an adjacent brand | Medium |
+| Fee management | **Direction undecided.** Options include scoping it, partnering, or targeting schools that keep fees elsewhere. No product development or pricing is authorised by this research | High that a decision will be needed |
 
 ## 1. Which segment first, and why
 
-**Medium schools (501–1,000) in Telangana**, for these reasons:
+**Leading hypothesis: medium schools (501–1,000) in Telangana.** This is a starting point for validation, not a settled decision. Reasons:
 
 1. **Product fit is moderate rather than weak.** Medium schools have enough sections and teachers for assignment-based access, missing-register reports and controlled publication to matter (positioning H1, H4). Very small schools may feel these less.
 2. **Competition at the bottom is price-led.** Free tiers and low monthly plans target small schools (S15, S21). Our setup-plus-support model is least competitive there (HYP).
@@ -24,7 +24,7 @@
 
 **Not first: larger schools (1,001–2,000).** They are likely to need fees, integrations and possibly multi-campus support, all outside current scope. They may also expect references we do not have. Approach selectively once we have pilot experience (HYP).
 
-**Not first, but learn from: small schools (300–500).** Average sizes suggest this band is commercially important, especially in AP. But current evidence points to fee collection and entry price as deciding factors, both unfavourable to our current offer. Use discovery conversations to test H2 and H3 before any sales effort.
+**Keep in comparative discovery: small schools (300–500).** Average sizes suggest this band is commercially important, especially in AP. Public evidence suggests fee collection and entry price may be deciding factors, both of which could be unfavourable to our current offer (HYP). Discovery with small schools should run **in parallel** with medium schools, so the two segments can be compared. Excluding small schools from sales is **not** a decision this research makes; the owner decides after discovery and after the fee-management direction is set.
 
 ## 2. Buyer roles to prioritise
 
@@ -58,7 +58,7 @@ State the boundaries early (fees, automatic messaging, native app), as the demo 
 | ScholaBook | Hyderabad; free tier and low monthly plans; fee-first (S19, S21) | "Why pay a setup fee?" question; fees gap |
 | Fedena, Entab, Vidyalaya, Campus 365 | National suites with fees, apps and published or quote-based prices (S03, S05, S15, S16) | Breadth and app questions |
 | Local vendors | District listings suggest local providers (S57) | Local support expectations |
-| Teachmint | Known brand; now hardware-led (S10, S12) | Clarify we do not sell classroom hardware |
+| Teachmint (adjacent / unconfirmed) | Known brand; site now hardware-led; current school ERP offering not verified (S10, S12) | Clarify we do not sell classroom hardware |
 
 ## 5. Objections that deserve preparation
 
@@ -66,18 +66,18 @@ Most already have draft answers in the [objection guide](../../sales/objection-h
 
 | Objection | Source of pressure | Status |
 |---|---|---|
-| "Does it handle fees and receipts?" | 8 of 8 competitors | Draft answer exists (not today); **needs a product decision on what to offer instead** |
-| "Is there an app on the Play Store? Push notifications?" | 6 of 8 | Draft answer exists |
-| "Can it send WhatsApp/SMS automatically?" | 6 of 8; official API claimed by a regional competitor | Draft answer exists |
+| "Does it handle fees and receipts?" | 7 of 7 compared ERP vendors | Draft answer exists (not today); the fee-management direction is undecided |
+| "Is there an app on the Play Store? Push notifications?" | 6 of 7 | Draft answer exists |
+| "Can it send WhatsApp/SMS automatically?" | 6 of 7; official API claimed by a regional competitor | Draft answer exists |
 | "Others have a free plan / trial / monthly price. Why a setup fee?" | S15, S18, S21 | **New**: needs owner-approved wording; no price talk |
-| "Why is hosting separate when others include it?" | S03 | Draft answer exists; may need strengthening |
+| "Why is hosting separate when others include it?" | One competitor states hosting is included (S03); others' terms not publicly verified | Draft answer exists; may need strengthening |
 | "Can parents get messages in Telugu?" | S18 | **New**: not available; needs a clear answer |
 | "How many schools use it?" | Competitor trust claims | **New**: answer honestly; never invent references |
 | "How fast can we go live?" | "Go live in days" claim (S18) | Draft answer exists (dates after requirements) |
 
 ## 6. Features needing further development decisions
 
-These are **product decisions for the owner**, not commitments. Each changes which segments are realistic.
+These are **product decisions for the owner**, not commitments. None is authorised by this research. Each changes which segments are realistic.
 
 | Capability | Segments affected | Note |
 |---|---|---|
@@ -97,7 +97,7 @@ These are **product decisions for the owner**, not commitments. Each changes whi
 
 | Element | Proposal |
 |---|---|
-| Sample | About 12–15 schools: about 6–8 medium (501–1,000) in Telangana, 3–4 small (300–500) across Telangana and AP, 2–3 larger (1,001–2,000) |
+| Sample | About 12–15 schools for comparison across segments: about 6–7 medium (501–1,000) in Telangana, 4–5 small (300–500) across Telangana and AP, 2–3 larger (1,001–2,000) |
 | Who | Owner/correspondent or principal; office administrator where possible |
 | How contacted | Only under the outreach controls: reasonable basis, manual messages, opt-outs respected, no scraping, attempt limit |
 | Format | 20–30 minute conversation; optional 8-minute demo at the end |
@@ -117,9 +117,9 @@ These are **product decisions for the owner**, not commitments. Each changes whi
 
 **Decision points after the conversations (proposed thresholds for owner review)**
 
-- If most medium schools say they **cannot** adopt a system without fees, prioritise the fee decision before pursuing pilots.
-- If several medium schools **can** keep fees elsewhere and respond positively to H1/H4, proceed to requirements discussions with them under the [sales process](../../sales/outreach/sales-process.md).
-- If small schools consistently require fees and a free or monthly entry option, record the small-school segment as "not yet addressable" and revisit after product decisions.
+- If most medium schools say they **cannot** adopt a system without fees, bring the fee-management direction to the owner before pursuing pilots.
+- If several medium schools **can** keep fees elsewhere and respond positively to H1/H4, propose requirements discussions with them under the [sales process](../../sales/outreach/sales-process.md), subject to owner approval.
+- Compare small-school and medium-school findings side by side. If small schools consistently require fees and a free or monthly entry option, report that to the owner, who decides how to treat the segment.
 - Revise [`target-segments.md`](../../sales/outreach/target-segments.md) with what was learned, without recording school names or quotes in Git.
 
 ## Risks

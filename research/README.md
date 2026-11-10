@@ -9,7 +9,7 @@ Start with the [executive summary](executive-summary.md).
 | File | What it covers |
 |---|---|
 | [`executive-summary.md`](executive-summary.md) | Strongest findings, uncertainties and decisions for management |
-| [`competitors/competitor-landscape.md`](competitors/competitor-landscape.md) | 15 vendors discovered, 8 compared; vendor profiles; feature comparison against M01–M12 and out-of-scope requirements |
+| [`competitors/competitor-landscape.md`](competitors/competitor-landscape.md) | 15 vendors discovered; 7 school-ERP vendors compared plus Teachmint profiled as adjacent / unconfirmed; vendor profiles; feature comparison against M01–M12 and out-of-scope requirements |
 | [`competitors/competitor-comparison.csv`](competitors/competitor-comparison.csv) | Structured comparison, one row per vendor (codes explained below) |
 | [`competitors/pricing-and-business-models.md`](competitors/pricing-and-business-models.md) | Publicly verified prices and commercial models; our model side by side; no price of our own |
 | [`competitors/source-register.md`](competitors/source-register.md) | Every source with URL, publisher, dates, supported claim, evidence class and confidence |
@@ -28,7 +28,7 @@ Start with the [executive summary](executive-summary.md).
 | DER | Our arithmetic on a cited figure |
 | HYP | Hypothesis to test with schools |
 
-Competitor capability codes (landscape and CSV): **VA** verified advertised, **NPV** not publicly verified, **NO** not offered or explicitly not claimed according to a source. A feature missing from a vendor's website is **NPV, never NO**. For our own product: **DOC** documented in the [feature catalogue](../docs/product/feature-catalogue.md) (a documented baseline, not re-verified on live staging), **NOT** not in the current product.
+Competitor capability codes (landscape and CSV): **VA** verified advertised, **NPV** not publicly verified, **NO** only where an explicit source confirms the feature is not offered (none in this round). Absence of a claim, including a vendor saying it does not claim a feature, is **NPV, never NO**. "Advertised" may mean on particular plans or add-ons only. Feature counts use the seven clearly marketed ERP vendors; Teachmint is adjacent and excluded. For our own product: **DOC** documented in the [feature catalogue](../docs/product/feature-catalogue.md) (a documented baseline, not re-verified on live staging), **NOT** not in the current product.
 
 ## Verification
 
