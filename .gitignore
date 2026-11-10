@@ -40,3 +40,10 @@ site/
 # Marketing website (Astro) — build output and local cache
 website/dist/
 website/.astro/
+
+# Outreach (GTM-OUTREACH-01): completed lead trackers and prospect notes never belong in Git.
+# Only the blank, header-only template is tracked.
+sales/outreach/private/
+lead-tracker*.csv
+lead-tracker*.xlsx
+!sales/outreach/lead-tracker-template.csv
