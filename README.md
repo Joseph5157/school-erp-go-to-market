@@ -26,6 +26,10 @@ Production application code lives in the separate `school-erp` repository. This 
 - [Thirty-minute live demonstration](demo/presenter-scripts/live-demo-30-minute.md) — detailed role-based walkthrough, requiring rehearsal.
 - [School requirements capture sheet](sales/proposals/school-requirements-capture.md) — blank discovery worksheet; store completed school details securely outside Git.
 
+## Demo automation (Playwright)
+
+- [GTM-DEMO-AUTO-01 — read-only demo automation foundation](demo/playwright/README.md) — TypeScript Playwright framework for Administrator, Teacher and Guardian scenes, mapped to the 8- and 30-minute scripts. Read-only request guard, dated live-run authorisation, no screenshots of staging. **Draft: not yet run against staging or any deployed environment**; CI runs only its offline checks.
+
 ## Commercial sales package (internal)
 
 GTM-SALES-01. **Draft — internal review only.** No prices, margins, service levels or legal terms are approved. Completed school documents are stored outside Git. These files are outside `docs/` and are never part of the documentation portal.

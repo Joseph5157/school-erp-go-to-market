@@ -1,0 +1,12 @@
+# Belt-and-braces: the root .gitignore covers these too.
+node_modules/
+.env
+.env.*
+!.env.example
+.auth/
+test-results/
+playwright-report/
+blob-report/
+demo-artifacts/
+*.webm
+*.zip
