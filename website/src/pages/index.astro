@@ -2,14 +2,12 @@
 // GTM-WEBSITE-V2 homepage (B-led product-led layout, see PR #18).
 // Section order follows the approved blueprint: hero → school-day strip →
 // two image-led feature splits → publication → roles → capabilities →
-// implementation → FAQ → demo CTA. All interface pictures are original
-// illustrations with fictional demo data and say so where they appear.
+// implementation → FAQ → demo CTA. All wording, including illustration text,
+// lives in src/data/home.ts; this file only composes sections.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroProduct from '../components/home/HeroProduct.astro';
 import SchoolDayStrip from '../components/home/SchoolDayStrip.astro';
 import FeatureShowcase from '../components/home/FeatureShowcase.astro';
-import SceneAdmission from '../components/home/SceneAdmission.astro';
-import SceneRegister from '../components/home/SceneRegister.astro';
 import PublicationFlow from '../components/home/PublicationFlow.astro';
 import RolePreview from '../components/home/RolePreview.astro';
 import CapabilityGrid from '../components/home/CapabilityGrid.astro';
@@ -17,51 +15,18 @@ import ImplementationSteps from '../components/home/ImplementationSteps.astro';
 import FaqPreview from '../components/home/FaqPreview.astro';
 import DemoCta from '../components/home/DemoCta.astro';
 import { site } from '../data/site';
+import { features, homeMeta } from '../data/home';
 import '../styles/home-v2.css';
 ---
 
 <BaseLayout
   title={site.wordmark}
-  description="School administration for private schools in Telangana and Andhra Pradesh: admissions, attendance, assessments, report cards and a guardian portal in one connected record."
+  description={homeMeta.description}
 >
   <div class="home-v2">
     <HeroProduct />
     <SchoolDayStrip />
-
-    <FeatureShowcase
-      id="v2-admin-heading"
-      eyebrow="Admissions and administration"
-      heading="Every admission decided, every placement kept"
-      text="The office registers each applicant with linked guardians, records an explicit decision, then enrols the student by class and section. Corrections need a reason, and history is kept."
-      checks={[
-        'Applicant registration with linked guardian relationships',
-        'Accept or reject, then a separate dated enrolment step',
-        'Placement history preserved when a student moves section',
-        'Dated class-teacher and subject-teacher assignments',
-      ]}
-      link={{ href: '/features/#administration', label: 'Read about school administration' }}
-    >
-      <SceneAdmission slot="visual" />
-    </FeatureShowcase>
-
-    <FeatureShowcase
-      id="v2-daily-heading"
-      eyebrow="Attendance and teacher work"
-      heading="Know what is recorded, and what is still missing"
-      text="Class teachers keep a draft register, then submit the complete roster. The office sees recorded absences and registers that have not been submitted as two different things."
-      checks={[
-        'Daily section register with Present, Absent and optional notes',
-        'Daily absentee and missing-attendance reports',
-        'A teacher home page with assigned students, attendance and periods',
-        'Marks entry limited to each teacher’s assigned subjects',
-      ]}
-      link={{ href: '/features/#daily-work', label: 'Read about daily academic work' }}
-      reverse
-      tone="pale"
-    >
-      <SceneRegister slot="visual" />
-    </FeatureShowcase>
-
+    {features.map((feature) => <FeatureShowcase feature={feature} />)}
     <PublicationFlow />
     <RolePreview />
     <CapabilityGrid />

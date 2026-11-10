@@ -70,3 +70,5 @@ No authenticated capture has been made. Each asset slot is filled by an **origin
 | V2-07 | — | Not shown | Notices are listed in the capability grid and role cards only (M09) |
 
 Illustrated marks (78/100 and so on), class names and roll numbers are invented for the drawing and are not product data or results. No people, photographs, logos, testimonials or metrics are used.
+
+**One fictional journey.** The drawings follow the same nameless student: admitted to Class 8, Section A (V2-02) → Class 8A register submitted (V2-01, V2-03) → Term 1 report card for Class 8A published to the guardian (V2-06). Class 9B appears only as a different section whose register is still missing. All drawing text lives in `src/data/home.ts` (`hero.art`, `scenes`); real captures should follow the same journey.

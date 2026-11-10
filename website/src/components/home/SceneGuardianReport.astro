@@ -1,27 +1,27 @@
 ---
 // Guardian view illustration (browser frame, not a native app): a published
 // term report card and eligible PDF download. Mirrors areas M06 and M08.
+import { scenes } from '../../data/home';
+
+const s = scenes.guardian;
 ---
 
 <figure class="v2-guardian-figure">
-  <div class="v2-browser" role="img"
-    aria-label="Illustration of the guardian portal in a web browser showing a fictional child's published Term 1 report card with three subject results and a report-card PDF download.">
-    <div class="v2-browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>Guardian portal</span></div>
+  <div class="v2-browser" role="img" aria-label={s.ariaLabel}>
+    <div class="v2-browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>{s.bar}</span></div>
     <div class="v2-browser-body" aria-hidden="true">
       <div class="v2-mock-head">
         <div>
-          <span class="v2-mock-eyebrow">Fictional child · Class 8A</span>
-          <strong>Term 1 report card</strong>
+          <span class="v2-mock-eyebrow">{s.eyebrow}</span>
+          <strong>{s.title}</strong>
         </div>
-        <span class="v2-mock-status">Published</span>
+        <span class="v2-mock-status">{s.status}</span>
       </div>
-      <div class="v2-mock-line"><span>Mathematics</span><b>78 / 100</b></div>
-      <div class="v2-mock-line"><span>English</span><b>84 / 100</b></div>
-      <div class="v2-mock-line"><span>Science</span><b>71 / 100</b></div>
-      <span class="v2-mock-button">Download report-card PDF</span>
+      {s.lines.map((l) => (
+        <div class="v2-mock-line"><span>{l.subject}</span><b>{l.marks}</b></div>
+      ))}
+      <span class="v2-mock-button">{s.button}</span>
     </div>
   </div>
-  <figcaption class="v2-guardian-caption">
-    Original illustration with fictional demo data. Not an application screenshot.
-  </figcaption>
+  <figcaption class="v2-guardian-caption">{scenes.caption}</figcaption>
 </figure>

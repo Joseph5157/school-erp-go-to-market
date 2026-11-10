@@ -1,37 +1,35 @@
 ---
-// Image-led feature split. Copy on one side, an original illustration (passed
-// through the "visual" slot) on the other. `reverse` swaps the sides on wide
-// screens; on narrow screens copy always comes first.
+// Image-led feature split. Copy on one side, an original illustration on the
+// other. `reverse` swaps the sides on wide screens; on narrow screens copy
+// always comes first. Wording comes from `features` in src/data/home.ts.
+import SceneAdmission from './SceneAdmission.astro';
+import SceneRegister from './SceneRegister.astro';
+import type { Feature } from '../../data/home';
+
 interface Props {
-  id: string;
-  eyebrow: string;
-  heading: string;
-  text: string;
-  checks: string[];
-  link: { href: string; label: string };
-  reverse?: boolean;
-  tone?: 'white' | 'pale';
+  feature: Feature;
 }
 
-const { id, eyebrow, heading, text, checks, link, reverse = false, tone = 'white' } = Astro.props;
+const { feature: f } = Astro.props;
 ---
 
 <section
-  class:list={['v2-section', 'v2-feature-section', { 'v2-feature-section--pale': tone === 'pale' }]}
-  aria-labelledby={id}
+  class:list={['v2-section', 'v2-feature-section', { 'v2-feature-section--pale': f.tone === 'pale' }]}
+  aria-labelledby={f.id}
 >
-  <div class:list={['wrap', 'v2-feature-row', { 'is-reverse': reverse }]}>
+  <div class:list={['wrap', 'v2-feature-row', { 'is-reverse': f.reverse }]}>
     <div class="v2-feature-copy">
-      <span class="v2-label">{eyebrow}</span>
-      <h2 id={id}>{heading}</h2>
-      <p>{text}</p>
+      <span class="v2-label">{f.eyebrow}</span>
+      <h2 id={f.id}>{f.heading}</h2>
+      <p>{f.text}</p>
       <ul class="v2-checks">
-        {checks.map((c) => <li>{c}</li>)}
+        {f.checks.map((c) => <li>{c}</li>)}
       </ul>
-      <a class="v2-inline-link" href={link.href}>{link.label} <span aria-hidden="true">→</span></a>
+      <a class="v2-inline-link" href={f.link.href}>{f.link.label} <span aria-hidden="true">→</span></a>
     </div>
     <div class="v2-feature-visual">
-      <slot name="visual" />
+      {f.scene === 'admission' && <SceneAdmission />}
+      {f.scene === 'register' && <SceneRegister />}
     </div>
   </div>
 </section>

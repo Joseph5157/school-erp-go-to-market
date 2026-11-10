@@ -2,27 +2,31 @@
 // Attendance illustration: a submitted section register, with recorded absence
 // kept distinct from a register that is still missing. Mirrors area M05.
 import IllustrationPanel from './IllustrationPanel.astro';
+import { scenes } from '../../data/home';
+
+const s = scenes.register;
 ---
 
-<IllustrationPanel label="Absent is not the same as missing" motif="register" tone="sage">
-  <div class="v2-mock-card" role="img"
-    aria-label="Illustration of a submitted daily register for Class 8A with fictional roll numbers marked Present or Absent, one absence note, and a separate report showing that another section's register has not yet been submitted.">
+<IllustrationPanel label={s.label} motif="register" tone="sage">
+  <div class="v2-mock-card" role="img" aria-label={s.ariaLabel}>
     <div class="v2-mock-head" aria-hidden="true">
       <div>
-        <span class="v2-mock-eyebrow">Daily register</span>
-        <strong>Class 8A</strong>
+        <span class="v2-mock-eyebrow">{s.eyebrow}</span>
+        <strong>{s.title}</strong>
       </div>
-      <span class="v2-mock-status">Submitted</span>
+      <span class="v2-mock-status">{s.status}</span>
     </div>
     <div class="v2-mock-register" aria-hidden="true">
-      <span class="v2-mock-cell">Roll 01</span><span class="v2-mock-cell state">Present</span>
-      <span class="v2-mock-cell">Roll 02</span><span class="v2-mock-cell state">Present</span>
-      <span class="v2-mock-cell">Roll 03</span><span class="v2-mock-cell state is-absent">Absent · note added</span>
-      <span class="v2-mock-cell">Roll 04</span><span class="v2-mock-cell state">Present</span>
+      {s.rows.map((r) => (
+        <>
+          <span class="v2-mock-cell">{r.roll}</span>
+          <span class:list={['v2-mock-cell', 'state', { 'is-absent': r.absent }]}>{r.mark}</span>
+        </>
+      ))}
     </div>
   </div>
   <div class="v2-mock-card v2-mock-chip" aria-hidden="true">
-    <span class="v2-mock-eyebrow">Missing-attendance report</span>
-    <strong>Class 9B · register not submitted</strong>
+    <span class="v2-mock-eyebrow">{s.chipEyebrow}</span>
+    <strong>{s.chipText}</strong>
   </div>
 </IllustrationPanel>

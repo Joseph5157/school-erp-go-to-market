@@ -2,17 +2,12 @@
 // Role overview: two short lines per role; detail lives on Who It's For.
 import SectionIntro from './SectionIntro.astro';
 import Icon from './Icon.astro';
-import { roles } from '../../data/home';
+import { roles, rolesIntro } from '../../data/home';
 ---
 
 <section class="v2-section v2-roles" aria-labelledby="v2-roles-heading">
   <div class="wrap">
-    <SectionIntro
-      id="v2-roles-heading"
-      eyebrow="Built around roles"
-      heading="The right work for each person"
-      lead="Each account sees navigation, actions and records according to its role and assignments."
-    />
+    <SectionIntro id="v2-roles-heading" intro={rolesIntro} showLink={false} />
     <div class="v2-role-grid">
       {roles.map((r) => (
         <article class="v2-role-card">
@@ -23,8 +18,10 @@ import { roles } from '../../data/home';
         </article>
       ))}
     </div>
-    <p class="v2-after-link">
-      <a class="v2-inline-link" href="/who-its-for/">See who it’s for <span aria-hidden="true">→</span></a>
-    </p>
+    {rolesIntro.link && (
+      <p class="v2-after-link">
+        <a class="v2-inline-link" href={rolesIntro.link.href}>{rolesIntro.link.label} <span aria-hidden="true">→</span></a>
+      </p>
+    )}
   </div>
 </section>

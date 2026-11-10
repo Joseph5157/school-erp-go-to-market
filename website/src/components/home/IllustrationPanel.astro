@@ -2,19 +2,15 @@
 // Mint-to-forest illustration ground with two decorative depth planes
 // (outline school objects drawn in SVG) and a visible "illustration" caption.
 // The interface card itself goes in the default slot.
+import { scenes } from '../../data/home';
+
 interface Props {
   label: string;
-  caption?: string;
   tone?: 'mint' | 'sage';
   motif?: 'register' | 'record';
 }
 
-const {
-  label,
-  caption = 'Original illustration with fictional demo data. Not an application screenshot.',
-  tone = 'mint',
-  motif = 'record',
-} = Astro.props;
+const { label, tone = 'mint', motif = 'record' } = Astro.props;
 ---
 
 <figure class:list={['v2-visual-panel', `v2-visual-panel--${tone}`]}>
@@ -42,5 +38,5 @@ const {
   <div class="v2-visual-stack">
     <slot />
   </div>
-  <figcaption class="v2-mock-caption">{caption}</figcaption>
+  <figcaption class="v2-mock-caption">{scenes.caption}</figcaption>
 </figure>

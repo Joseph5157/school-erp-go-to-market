@@ -1,19 +1,17 @@
 ---
-// V2 closing call to action on a mint-to-forest field. Same destinations and
-// wording as the site-wide CtaBand, which the other pages keep using.
+// V2 closing call to action on a mint-to-forest field. Same destinations as
+// the site-wide CtaBand, which the other pages keep using.
 import { demoHref, requirementsHref } from '../../data/site';
+import { closingCta } from '../../data/home';
 ---
 
 <section class="v2-cta" aria-labelledby="v2-cta-heading">
   <div class="wrap v2-cta-inner">
-    <h2 id="v2-cta-heading">See how it fits your school</h2>
-    <p>
-      Start with a short demonstration, or tell us which two or three workflows matter most. We confirm what
-      the current product covers before any proposal.
-    </p>
+    <h2 id="v2-cta-heading">{closingCta.heading}</h2>
+    <p>{closingCta.text}</p>
     <div class="v2-hero-actions">
-      <a class="v2-btn v2-btn-light" href={demoHref}>Request a demo <span aria-hidden="true">↗</span></a>
-      <a class="v2-btn v2-btn-outline-light" href={requirementsHref}>Discuss your requirements</a>
+      <a class="v2-btn v2-btn-light" href={demoHref}>{closingCta.primaryLabel} <span aria-hidden="true">↗</span></a>
+      <a class="v2-btn v2-btn-outline-light" href={requirementsHref}>{closingCta.secondaryLabel}</a>
     </div>
   </div>
 </section>

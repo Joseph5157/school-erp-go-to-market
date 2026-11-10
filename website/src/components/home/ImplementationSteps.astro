@@ -1,19 +1,12 @@
 ---
 // Three-step implementation timeline with one compact factual note.
 import SectionIntro from './SectionIntro.astro';
-import { onboarding } from '../../data/home';
+import { onboarding, onboardingIntro, onboardingNote } from '../../data/home';
 ---
 
 <section class="v2-section v2-onboard" aria-labelledby="v2-onboard-heading">
   <div class="wrap v2-onboard-inner">
-    <SectionIntro
-      id="v2-onboard-heading"
-      eyebrow="How it works for a school"
-      heading="Practical from the first term"
-      lead="Set up around your school’s structure, then bring in your existing records."
-    >
-      <a class="v2-inline-link" href="/implementation/">See the implementation process <span aria-hidden="true">→</span></a>
-    </SectionIntro>
+    <SectionIntro id="v2-onboard-heading" intro={onboardingIntro} />
     <div>
       <ol class="v2-onboard-steps">
         {onboarding.map((step, i) => (
@@ -26,10 +19,7 @@ import { onboarding } from '../../data/home';
           </li>
         ))}
       </ol>
-      <p class="v2-onboard-note">
-        <strong>Works in the browser.</strong> Use it on office computers and phones; it needs an internet
-        connection. WhatsApp Assist prepares messages for consenting guardians, and staff send each one.
-      </p>
+      <p class="v2-onboard-note"><strong>{onboardingNote.title}</strong> {onboardingNote.text}</p>
     </div>
   </div>
 </section>

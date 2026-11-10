@@ -2,25 +2,27 @@
 // Admissions illustration: explicit decision, then a separate dated enrolment.
 // Fictional and nameless; mirrors catalogue area M03.
 import IllustrationPanel from './IllustrationPanel.astro';
+import { scenes } from '../../data/home';
+
+const s = scenes.admission;
 ---
 
-<IllustrationPanel label="Decide, then enrol" motif="record" tone="mint">
+<IllustrationPanel label={s.label} motif="record" tone="mint">
   <div class="v2-mock-card v2-mock-back" aria-hidden="true">
-    <div class="v2-mock-head"><strong>Placement history</strong><span class="v2-mock-tag">Kept</span></div>
+    <div class="v2-mock-head"><strong>{s.backTitle}</strong><span class="v2-mock-tag">{s.backTag}</span></div>
   </div>
-  <div class="v2-mock-card" role="img"
-    aria-label="Illustration of an admission record for a fictional applicant: application registered with a linked guardian, decision recorded as accepted, then a separate dated enrolment into Class 6, Section B.">
+  <div class="v2-mock-card" role="img" aria-label={s.ariaLabel}>
     <div class="v2-mock-head" aria-hidden="true">
       <div>
-        <span class="v2-mock-eyebrow">Admissions</span>
-        <strong>Fictional applicant</strong>
+        <span class="v2-mock-eyebrow">{s.eyebrow}</span>
+        <strong>{s.title}</strong>
       </div>
-      <span class="v2-mock-tag">Class 6</span>
+      <span class="v2-mock-tag">{s.tag}</span>
     </div>
     <ol class="v2-mock-steps" aria-hidden="true">
-      <li><b>Application registered</b><span>Guardian linked</span></li>
-      <li><b>Decision recorded</b><span class="v2-mock-status">Accepted</span></li>
-      <li><b>Enrolled</b><span>Class 6 · Section B · dated</span></li>
+      {s.steps.map((step) => (
+        <li><b>{step.title}</b><span class:list={{ 'v2-mock-status': step.status }}>{step.note}</span></li>
+      ))}
     </ol>
   </div>
 </IllustrationPanel>

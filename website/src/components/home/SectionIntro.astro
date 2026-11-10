@@ -1,19 +1,23 @@
 ---
-// Shared V2 section heading: eyebrow label, H2 and optional lead.
+// Shared V2 section heading: eyebrow label, H2, optional lead and link.
+// Wording comes from src/data/home.ts.
+import type { Intro } from '../../data/home';
+
 interface Props {
   id: string;
-  eyebrow: string;
-  heading: string;
-  lead?: string;
-  align?: 'start' | 'center';
+  intro: Intro;
+  /** Render the link inside the intro (default) or leave it to the caller. */
+  showLink?: boolean;
 }
 
-const { id, eyebrow, heading, lead, align = 'start' } = Astro.props;
+const { id, intro, showLink = true } = Astro.props;
 ---
 
-<div class:list={['v2-section-intro', { 'is-center': align === 'center' }]}>
-  <span class="v2-label">{eyebrow}</span>
-  <h2 id={id}>{heading}</h2>
-  {lead && <p>{lead}</p>}
-  <slot />
+<div class="v2-section-intro">
+  <span class="v2-label">{intro.eyebrow}</span>
+  <h2 id={id}>{intro.heading}</h2>
+  {intro.lead && <p>{intro.lead}</p>}
+  {showLink && intro.link && (
+    <a class="v2-inline-link" href={intro.link.href}>{intro.link.label} <span aria-hidden="true">→</span></a>
+  )}
 </div>

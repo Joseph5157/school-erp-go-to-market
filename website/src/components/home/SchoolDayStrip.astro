@@ -2,17 +2,12 @@
 // Three-stage school-day strip: Admission → Daily work → Published result.
 import SectionIntro from './SectionIntro.astro';
 import Icon from './Icon.astro';
-import { schoolDay } from '../../data/home';
+import { schoolDay, schoolDayIntro } from '../../data/home';
 ---
 
 <section class="v2-section v2-day" aria-labelledby="v2-day-heading">
   <div class="wrap">
-    <SectionIntro
-      id="v2-day-heading"
-      eyebrow="From admission to results"
-      heading="Follow each student through one record"
-      lead="Three moments in a school year, each with a clear state. Guardians see records only after the school grants access or publishes results."
-    />
+    <SectionIntro id="v2-day-heading" intro={schoolDayIntro} showLink={false} />
     <ol class="v2-process-grid">
       {schoolDay.map((stage) => (
         <li class="v2-process-card">
@@ -26,8 +21,10 @@ import { schoolDay } from '../../data/home';
         </li>
       ))}
     </ol>
-    <p class="v2-after-link">
-      <a class="v2-inline-link" href="/features/">See every feature area <span aria-hidden="true">→</span></a>
-    </p>
+    {schoolDayIntro.link && (
+      <p class="v2-after-link">
+        <a class="v2-inline-link" href={schoolDayIntro.link.href}>{schoolDayIntro.link.label} <span aria-hidden="true">→</span></a>
+      </p>
+    )}
   </div>
 </section>

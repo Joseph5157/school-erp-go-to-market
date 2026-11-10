@@ -2,16 +2,12 @@
 // Compact eight-capability grid linking into the Features page groups.
 import SectionIntro from './SectionIntro.astro';
 import Icon from './Icon.astro';
-import { capabilities } from '../../data/home';
+import { capabilities, capabilitiesIntro } from '../../data/home';
 ---
 
 <section class="v2-section v2-capabilities" aria-labelledby="v2-cap-heading">
   <div class="wrap">
-    <SectionIntro
-      id="v2-cap-heading"
-      eyebrow="What it covers today"
-      heading="Eight connected areas of school work"
-    />
+    <SectionIntro id="v2-cap-heading" intro={capabilitiesIntro} showLink={false} />
     <ul class="v2-capability-grid">
       {capabilities.map((c) => (
         <li>
@@ -23,8 +19,10 @@ import { capabilities } from '../../data/home';
         </li>
       ))}
     </ul>
-    <p class="v2-after-link">
-      <a class="v2-inline-link" href="/features/#not-included">See what is not in the current product <span aria-hidden="true">→</span></a>
-    </p>
+    {capabilitiesIntro.link && (
+      <p class="v2-after-link">
+        <a class="v2-inline-link" href={capabilitiesIntro.link.href}>{capabilitiesIntro.link.label} <span aria-hidden="true">→</span></a>
+      </p>
+    )}
   </div>
 </section>

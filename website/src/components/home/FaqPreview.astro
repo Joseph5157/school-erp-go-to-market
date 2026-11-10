@@ -1,18 +1,12 @@
 ---
 // Short FAQ using native <details>, so it works without JavaScript.
 import SectionIntro from './SectionIntro.astro';
-import { homeFaqs } from '../../data/home';
+import { faqIntro, homeFaqs } from '../../data/home';
 ---
 
 <section class="v2-section v2-faq" aria-labelledby="v2-faq-heading">
   <div class="wrap v2-faq-grid">
-    <SectionIntro
-      id="v2-faq-heading"
-      eyebrow="Questions"
-      heading="Clear answers about what it does today"
-    >
-      <a class="v2-inline-link" href="/faq/#product-boundaries">Read all questions <span aria-hidden="true">→</span></a>
-    </SectionIntro>
+    <SectionIntro id="v2-faq-heading" intro={faqIntro} />
     <div class="v2-faq-list">
       {homeFaqs.map((f) => (
         <details>
