@@ -14,7 +14,7 @@ It runs on pull requests to `main`, on pushes to `main`, and manually (*Actions 
 |---|---|
 | Install `requirements-docs.txt` on Python 3.13 | A pinned package cannot be installed |
 | `zensical build --clean --strict` | An internal link points to a missing page, or an anchor does not exist |
-| `python scripts/ci/check_docs_site.py` | A `nav` entry points to a missing or excluded page; an internal document is no longer in `exclude_docs`; an excluded file appears in `site/` or `site/search.json` |
+| `python scripts/ci/check_docs_site.py` | A `nav` entry points to a missing or excluded page; an internal document is no longer in `exclude_docs`; an excluded file appears in `site/` or `site/search.json`; any built page contains the internal marker *Internal review only* carried by every `sales/` commercial document |
 | `git diff --exit-code` | The build changed a tracked file |
 
 The `nav` check exists because Zensical treats a nav entry that does not resolve to a page as an external URL, so the strict build alone does not catch a mistyped nav path.
@@ -85,7 +85,7 @@ If Marp hangs or times out, re-run the job once; a persistent failure is a real 
 - External links (Google Fonts, GitHub references), which are not fetched.
 - The committed PDF, PPTX and preview images: they are only checked for being unchanged, not for matching the current source.
 - The brochure, diagrams' own content, sales or social material.
-- Security scanning for personal data or secrets.
+- Security scanning for personal data or secrets. The *Internal review only* marker check catches only commercial documents that carry that exact marker; it is not a personal-data or secrets scanner.
 - Deployment: there is none.
 
 ## Updating pinned versions safely

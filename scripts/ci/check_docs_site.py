@@ -36,6 +36,10 @@ REQUIRED_EXCLUDED = (
     "guardian/overview.md",
 )
 
+# Every commercial document under sales/ starts with this marker (GTM-SALES-01).
+# It must never appear in the built portal.
+INTERNAL_MARKER = "Internal review only"
+
 
 def fail(errors: list[str], message: str) -> None:
     errors.append(message)
@@ -139,6 +143,16 @@ def main() -> int:
         title = page_title(docs_dir / rel)
         if title and title.lower() in page_titles:
             fail(errors, f"excluded page title found in search index: {rel} ({title!r})")
+
+    # Commercial and sales documents live outside docs/ and carry this marker.
+    # If any of them is ever copied or linked into the portal, the marker appears
+    # in the built site and the check fails.
+    built_text_files = [p for p in site_dir.rglob("*") if p.is_file() and p.suffix in {".html", ".json", ".txt", ".xml"}]
+    for path in built_text_files:
+        if INTERNAL_MARKER in path.read_text(encoding="utf-8", errors="replace"):
+            fail(errors, f"internal-only document published: {path.relative_to(root).as_posix()} "
+                         f"contains {INTERNAL_MARKER!r}")
+    print(f"internal-marker check: {len(built_text_files)} built file(s) scanned")
 
     if errors:
         print(f"\n{len(errors)} problem(s) found.")
