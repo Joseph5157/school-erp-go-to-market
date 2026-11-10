@@ -12,7 +12,7 @@
     "test": "playwright test --project=offline",
     "check": "npm run typecheck && npm test",
     "scenes": "node --experimental-strip-types src/print-scenes.ts",
-    "demo:auth": "playwright test --project=auth",
+    "demo:auth": "playwright test --project=auth-admin --project=auth-teacher --project=auth-guardian",
     "demo:all": "playwright test --project=admin --project=teacher --project=guardian",
     "demo:exec8": "playwright test --project=admin --project=teacher --project=guardian --grep @exec8",
     "demo:live30": "playwright test --project=admin --project=teacher --project=guardian --grep @live30"

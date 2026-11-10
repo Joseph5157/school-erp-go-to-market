@@ -21,26 +21,39 @@ export const LOGIN_PATH = '/accounts/login/';
 const SAFE_METHODS = new Set(['GET', 'HEAD', 'OPTIONS']);
 
 /**
- * Same-origin path segments that only belong to write flows or sensitive
- * downloads. Matched against the URL pathname.
+ * Same-origin paths that expose personal data or write on GET-like endpoints.
+ * Blocked for EVERY request, navigation or background (fetch, XHR, iframe,
+ * prefetch, image), so no request type can reach them.
+ */
+export const SENSITIVE_PATH_PATTERNS: readonly RegExp[] = [
+  /^\/admin(\/|$)/, // Django admin
+  /^\/notifications\/to-send\/?$/, // message queue: guardian contact details
+  /\/autosave\/?$/, // teacher register autosave
+  /\/pdf\/?$/, // documents carry personal data; open manually if needed
+  /\.(csv|xlsx|pdf)$/,
+];
+
+export function isSensitivePath(pathname: string): boolean {
+  return SENSITIVE_PATH_PATTERNS.some((re) => re.test(pathname));
+}
+
+/**
+ * Same-origin pages that only belong to write flows. Refused as navigations,
+ * in addition to every sensitive path above. Matched against the pathname.
  */
 export const BLOCKED_PATH_PATTERNS: readonly RegExp[] = [
-  /^\/admin(\/|$)/, // Django admin
+  ...SENSITIVE_PATH_PATTERNS,
   /\/(create|new|edit|delete|remove|upload|add|assign|copy|change|correct)\/?$/,
   /\/(submit|finalize|commit|discard|withdraw|prepare|decision|decide\/[^/]+|grant-access|revoke|review)\/?$/,
   /\/(reset-password|username|deactivate|reactivate|enroll|consent|status|admission-number|roll-number|end)\/?$/,
   /\/account\/link\/?$/,
   /\/(sent|dismiss)\/?$/, // message-queue outcome actions
   /\/capture\/?$/, // office attendance capture
-  /\/autosave\/?$/, // teacher register autosave
   /^\/my\/attendance\/\d+\/?$/, // teacher register entry page (editable)
   /^\/my\/assessments\/\d+\/marks\/?$/, // marks entry
   /^\/terms\/\d+\/(publication|remarks)\/?$/, // publish preview and remark entry forms
   /^\/school\/(logo\/upload|logo\/remove|edit)\/?/,
   /^\/accounts\/(logout|password)\//,
-  /^\/notifications\/to-send\/?$/, // shows guardian contact details: kept off screen
-  /\/pdf\/?$/, // documents carry personal data; open manually if needed
-  /\.(csv|xlsx|pdf)$/,
 ];
 
 export function isBlockedPath(pathname: string): boolean {
@@ -80,11 +93,11 @@ export function decideRequest(
     }
     return { allowed: false, reason: `${m} blocked (read-only)` };
   }
-  if (sameOrigin && isNavigation && isBlockedPath(url.pathname)) {
-    return { allowed: false, reason: 'write or sensitive page blocked' };
+  if (sameOrigin && isSensitivePath(url.pathname)) {
+    return { allowed: false, reason: 'sensitive endpoint blocked' };
   }
-  if (sameOrigin && !isNavigation && /\/(autosave|pdf)\/?$|\.(csv|xlsx|pdf)$/.test(url.pathname)) {
-    return { allowed: false, reason: 'background write or download blocked' };
+  if (sameOrigin && isNavigation && isBlockedPath(url.pathname)) {
+    return { allowed: false, reason: 'write page blocked' };
   }
   return { allowed: true };
 }

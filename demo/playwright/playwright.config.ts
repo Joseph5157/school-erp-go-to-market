@@ -31,6 +31,9 @@ const liveUse = {
   trace: 'off' as const,
   video: 'off' as const,
   acceptDownloads: false,
+  // context.route() cannot see requests a Service Worker answers, so the
+  // read-only guard is only reliable with Service Workers blocked.
+  serviceWorkers: 'block' as const,
 };
 
 export default defineConfig({

@@ -1,7 +1,7 @@
 /** Offline: the read-only request guard rules. */
 
 import { test, expect } from '@playwright/test';
-import { LOGIN_PATH, decideRequest, isBlockedPath, redactForLog } from '../../src/safety.ts';
+import { LOGIN_PATH, decideRequest, isBlockedPath, isSensitivePath, redactForLog } from '../../src/safety.ts';
 import { ROUTES } from '../../src/routes.ts';
 import { ORIGIN, SAMPLE_IDS } from '../../fixtures/fictional.ts';
 
@@ -90,6 +90,31 @@ test.describe('path rule', () => {
       const path = fill(route.path);
       expect(isBlockedPath(path), `${key} ${path}`).toBe(false);
       expect(decideRequest('GET', `${ORIGIN}${path}`, ORIGIN, 'scene', true).allowed, key).toBe(true);
+    }
+  });
+
+  test('sensitive endpoints are blocked for background requests too', () => {
+    for (const p of ['/notifications/to-send/', '/notifications/to-send', '/admin/', '/admin/auth/user/', '/my/attendance/7/autosave/', '/documents/42/pdf/', '/imports/42/problems.csv']) {
+      expect(isSensitivePath(p), p).toBe(true);
+      expect(decideRequest('GET', `${ORIGIN}${p}`, ORIGIN, 'scene', false).allowed, `background ${p}`).toBe(false);
+      expect(decideRequest('HEAD', `${ORIGIN}${p}?x=1`, ORIGIN, 'scene', false).allowed, `HEAD ${p}`).toBe(false);
+      expect(decideRequest('GET', `${ORIGIN}${p}`, ORIGIN, 'auth', false).allowed, `auth ${p}`).toBe(false);
+    }
+  });
+
+  test('write pages stay navigation-only blocks; ordinary pages stay open', () => {
+    // A background GET to a write form is harmless and not refused; opening it is.
+    expect(decideRequest('GET', `${ORIGIN}/students/42/enroll/`, ORIGIN, 'scene', true).allowed).toBe(false);
+    expect(decideRequest('GET', `${ORIGIN}/students/42/enroll/`, ORIGIN, 'scene', false).allowed).toBe(true);
+    // Similar-looking but distinct paths are not caught.
+    expect(isSensitivePath('/notifications/')).toBe(false);
+    expect(isSensitivePath('/announcements/')).toBe(false);
+    expect(isSensitivePath('/administration/')).toBe(false);
+  });
+
+  test('every sensitive pattern is also a navigation block', () => {
+    for (const p of ['/notifications/to-send/', '/admin/', '/documents/42/pdf/']) {
+      expect(isBlockedPath(p), p).toBe(true);
     }
   });
 

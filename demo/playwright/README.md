@@ -84,8 +84,10 @@ Copy `.env.example` to `.env` in this folder (Git-ignored), or export the variab
 1. **Live gate** (`src/config.ts`, `src/fixtures.ts`): live projects refuse to start, before any browser opens, unless target kind, URL and today's authorisation stamp are all valid. Live projects always refuse when `CI` is set.
 2. **Request guard** (`src/safety.ts`): every browser request passes through it.
    - Only `GET`, `HEAD` and `OPTIONS` are sent. The one exception is the sign-in `POST` to `/accounts/login/` during auth setup.
-   - Navigations to write or sensitive pages are refused even as `GET`: create/edit/delete forms, submit, finalize, publish preview, commit/discard, prepare/withdraw, grant/revoke, the editable teacher register `/my/attendance/<id>/` and its autosave, marks entry, the message queue (guardian contact details), logout, password pages, Django admin, and PDF/CSV/XLSX downloads.
+   - Sensitive endpoints are refused for **every** request type (navigation, fetch/XHR, iframe, prefetch): the message queue `/notifications/to-send/` (guardian contact details), the teacher register autosave, Django admin, and PDF/CSV/XLSX downloads.
+   - Navigations to write pages are refused even as `GET`: create/edit/delete forms, submit, finalize, publish preview, commit/discard, prepare/withdraw, grant/revoke, the editable teacher register `/my/attendance/<id>/`, marks entry, logout and password pages.
    - Any refused request fails the test and is listed as `METHOD /path` only (no query strings).
+   - Service Workers are blocked in every live project (`serviceWorkers: 'block'`), because requests a Service Worker answers would bypass `context.route()` interception. An offline test checks this setting.
 3. **Spec rules** (offline test): live specs may not call `fill`, `check`, `selectOption`, `setInputFiles`, `press`, API write requests or `screenshot`, and may not contain a URL.
 4. Native dialogs are dismissed automatically; downloads are disabled.
 
