@@ -348,7 +348,7 @@ ol {
   display: none;
 }
 
-@media (min-width: 1040px) {
+@media (min-width: 960px) {
   .nav-desktop {
     display: block;
   }
@@ -617,6 +617,36 @@ ol {
   }
 }
 
+/* A lone last card in a two-column row spans the full row instead of
+   leaving an empty slot (odd-numbered card sets). */
+@media (min-width: 720px) {
+  .grid-2 > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 999px) {
+  .grid-3 > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Enquiry journeys need more width than standard cards before pairing. */
+@media (min-width: 720px) and (max-width: 899px) {
+  .grid-2.journeys {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-2 > .card:last-child:nth-child(odd) ul {
+  columns: 2 280px;
+  column-gap: 32px;
+}
+
+.grid-2 > .card:last-child:nth-child(odd) li {
+  break-inside: avoid;
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--rule);
@@ -807,6 +837,16 @@ ol {
   }
 }
 
+.publish-figure {
+  margin: 0;
+}
+
+.publish-figure figcaption {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: #c9d1da;
+}
+
 .publish-flow {
   list-style: none;
   margin: 0;
@@ -981,7 +1021,7 @@ tbody th {
   color: var(--brand-strong);
 }
 
-/* Diagram figures: approved SVGs on wider screens, text steps on phones */
+/* Diagram figures: existing draft diagram assets (diagrams/svg) on wide screens, text steps below 900px */
 .diagram {
   margin: 0;
 }
@@ -1006,7 +1046,7 @@ tbody th {
   margin-top: 12px;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 900px) {
   .diagram-figure {
     display: block;
   }
@@ -1167,7 +1207,17 @@ tbody th {
   gap: 32px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) and (max-width: 899px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-grid > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 900px) {
   .footer-grid {
     grid-template-columns: 1.4fr 1fr 1fr;
   }
