@@ -1,0 +1,82 @@
+---
+// Header with a provisional text wordmark. Desktop shows inline links; phones
+// and tablets use a native <details> disclosure, which works without JavaScript
+// and is keyboard accessible. Only one of the two navs is displayed at a time.
+import { site, nav, demoHref } from '../data/site';
+
+const path = Astro.url.pathname.replace(/\/?$/, '/');
+const isCurrent = (href: string) => path === href;
+---
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="wordmark" href="/" aria-label={`${site.wordmark} home (${site.wordmarkNote.toLowerCase()})`}>
+      <span class="wordmark-name">{site.wordmark}</span>
+      <span class="wordmark-note">{site.wordmarkNote}</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Main">
+      <ul>
+        {
+          nav.map((item) => (
+            <li>
+              <a class="nav-link" href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary header-cta" href={demoHref}>Request a demo</a>
+
+      <details class="nav-mobile">
+        <summary>
+          <span class="menu-icon" aria-hidden="true"></span>
+          Menu
+        </summary>
+        <nav class="nav-mobile-panel" aria-label="Main">
+          <ul>
+            <li>
+              <a class="nav-link" href="/" aria-current={isCurrent('/') ? 'page' : undefined}>Home</a>
+            </li>
+            {
+              nav.map((item) => (
+                <li>
+                  <a class="nav-link" href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+          <a class="btn btn-primary" href={demoHref}>Request a demo</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Progressive enhancement only: close the phone menu with Escape or when
+  // focus/clicks move outside it. The menu works without this script.
+  const menu = document.querySelector<HTMLDetailsElement>('.nav-mobile');
+  if (menu) {
+    const summary = menu.querySelector('summary');
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && menu.open) {
+        menu.open = false;
+        summary?.focus();
+      }
+    });
+    document.addEventListener('click', (event) => {
+      if (menu.open && !menu.contains(event.target as Node)) menu.open = false;
+    });
+    menu.addEventListener('focusout', (event) => {
+      const next = (event as FocusEvent).relatedTarget as Node | null;
+      if (menu.open && next && !menu.contains(next)) menu.open = false;
+    });
+  }
+</script>

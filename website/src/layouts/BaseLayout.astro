@@ -1,0 +1,49 @@
+---
+// Shared page shell. Every page is marked noindex/nofollow until the owner
+// approves publication (GTM-WEBSITE-01 is a local draft only).
+import '@fontsource/noto-sans/latin-400.css';
+import '@fontsource/noto-sans/latin-700.css';
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { site } from '../data/site';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const fullTitle = title === site.wordmark ? site.titleSuffix : `${title} | ${site.titleSuffix}`;
+---
+
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#18212B" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="icon" href="data:," />
+    <!-- Canonical URL and social preview tags are added once a domain is approved. -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="draft-notice" role="note" aria-label="Draft notice">
+      <div class="wrap">
+        <p>
+          <strong>Draft preview.</strong> Not published. Product name, logo and contact details are
+          provisional and awaiting approval.
+        </p>
+      </div>
+    </div>
+    <SiteHeader />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>

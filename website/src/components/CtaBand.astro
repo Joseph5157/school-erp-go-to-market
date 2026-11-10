@@ -1,0 +1,24 @@
+---
+import { demoHref, requirementsHref } from '../data/site';
+
+interface Props {
+  heading?: string;
+  text?: string;
+}
+
+const {
+  heading = 'See how it fits your school',
+  text = 'Start with a short demonstration, or tell us which two or three workflows matter most. We confirm what the current product covers before any proposal.',
+} = Astro.props;
+---
+
+<section class="cta-band" aria-labelledby="cta-heading">
+  <div class="wrap">
+    <h2 id="cta-heading">{heading}</h2>
+    <p>{text}</p>
+    <div class="btn-row">
+      <a class="btn btn-on-dark" href={demoHref}>Request a demo</a>
+      <a class="btn btn-ghost-dark" href={requirementsHref}>Discuss your requirements</a>
+    </div>
+  </div>
+</section>

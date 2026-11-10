@@ -46,6 +46,10 @@ GTM-SALES-01. **Draft — internal review only.** No prices, margins, service le
 
 - [GTM-DOCS-01 — Zensical documentation portal](DOCUMENTATION-PORTAL.md) — searchable Administrator, Teacher, Guardian and Implementation manuals plus FAQ, built from `docs/` with [`zensical.toml`](zensical.toml). Install with `requirements-docs.txt`, preview with `zensical serve`, validate with `zensical build --clean --strict`. Draft only; local preview, no public hosting.
 
+## Marketing website draft
+
+- [GTM-WEBSITE-01 — responsive marketing website](website/README.md) — six-page static Astro site (Home, Features, Who it's for, Implementation, FAQ, Contact) in Graphite & Institutional Green. From `website/`: `npm ci`, then `npm run dev` to preview, `npm run build` for the static build and `npm run check` to build and validate. **Draft: local preview only**, `noindex` and `robots.txt` blocked, no forms, no tracking, contact details and identity pending.
+
 ## Automated quality checks
 
 Every pull request to `main` runs the **Quality checks** workflow (GTM-CI-01): a strict Zensical documentation build with link, navigation and exclusion checks, and Marp presentation validation with a 12-slide render smoke test. It is validation only, with read-only permissions and no deployment. See [`docs/CI.md`](docs/CI.md) for what is checked and how to run the checks locally.

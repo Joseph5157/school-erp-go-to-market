@@ -36,3 +36,7 @@ node_modules/
 .cache/
 site/
 .playwright-mcp/
+
+# Marketing website (Astro) — build output and local cache
+website/dist/
+website/.astro/
