@@ -36,7 +36,7 @@ import { site, demoHref } from '../data/site';
           </li>
           <li class="role-row">
             <strong>Teacher</strong>
-            <span>Takes attendance and enters marks for assigned classes</span>
+            <span>As class teacher, records attendance; enters marks for assigned subjects</span>
           </li>
           <li class="role-row">
             <strong>Guardian</strong>
@@ -129,7 +129,7 @@ import { site, demoHref } from '../data/site';
           <h3>Focus on assigned classes</h3>
           <ul>
             <li>See the day’s work and configured timetable periods</li>
-            <li>Take attendance and submit a complete class register</li>
+            <li>As class teacher, take attendance and submit the complete register</li>
             <li>Enter marks for assigned subjects</li>
             <li>Add class-teacher remarks where permitted</li>
           </ul>
@@ -160,12 +160,15 @@ import { site, demoHref } from '../data/site';
         </p>
         <p><a href="/features/#daily-work">Read about assessments and report cards</a></p>
       </div>
-      <ol class="publish-flow" aria-label="Report card publication stages">
-        <li>Teacher enters marks and remarks <span class="state">Draft</span></li>
-        <li>Office finalises the assessment <span class="state">Finalised</span></li>
-        <li>Office previews the report card <span class="state">Preview</span></li>
-        <li>Office publishes it <span class="state state-live">Visible to guardian</span></li>
-      </ol>
+      <figure class="publish-figure">
+        <ol class="publish-flow" aria-label="Report card publication stages (illustration)">
+          <li>Teacher enters marks and remarks <span class="state">Not visible</span></li>
+          <li>Office finalises the assessment <span class="state">Not visible</span></li>
+          <li>Office previews the report card <span class="state">Not visible</span></li>
+          <li>Office publishes it <span class="state state-live">Visible to guardian</span></li>
+        </ol>
+        <figcaption>Illustration of the stages, not a product screenshot.</figcaption>
+      </figure>
     </div>
   </section>
 

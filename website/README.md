@@ -52,12 +52,19 @@ The same check runs in CI (`.github/workflows/quality-checks.yml`, job "Marketin
 - Graphite & Institutional Green tokens from `brand/brand-guidelines.md`; cobalt is used only for the information callout
 - Noto Sans 400/700 (Latin subset) self-hosted through `@fontsource/noto-sans`; system fallbacks
 - Provisional text wordmark labelled "Provisional wordmark"; no logo is invented
-- Visuals are CSS explanations or the approved SVGs in `diagrams/svg/` (imported directly so there is one source). Diagrams show from 760 px wide; phones get the same steps as text
+- Visuals are CSS explanations or the existing draft diagram assets in `diagrams/svg/` (imported directly so there is one source; their content-register status is Draft). Diagrams show from 900 px wide; narrower screens get the same steps as text, and each diagram has full alt text
+- Desktop navigation shows from 960 px; below that the `<details>` menu is used
+- Odd-numbered card sets: a lone last card spans the full row instead of leaving an empty slot
 - No application screenshots are used. The documentation-portal screenshots in `screenshots/docs-portal/` are not used on the site
 
 ## Screenshots
 
-`screenshots/marketing-site/` holds QA captures of this draft site only (390 px and 1440 px for each page, plus the open phone menu). They contain no school data.
+`screenshots/marketing-site/` holds current QA captures of this draft site only: every page at 390 px and 1440 px, Home and Features also at 768 px and 1024 px, and the open phone menu. They contain no school data and are not application screenshots. Refreshed in GTM-WEBSITE-02.
+
+## Publication readiness and copy review
+
+- [`PUBLICATION-READINESS.md`](PUBLICATION-READINESS.md) — the 13 approval gates (owner, evidence, status) and the controlled process for removing `noindex`, the robots block and draft notices. All gates are Pending or Draft evidence.
+- [`COPY-REVIEW.md`](COPY-REVIEW.md) — page-by-page comparison with the feature catalogue, deck and sales FAQ; corrections made and open questions for the owner.
 
 ## Pending decisions before publication
 
