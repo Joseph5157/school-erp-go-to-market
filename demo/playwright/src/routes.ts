@@ -56,12 +56,12 @@ export const ROUTES = {
   myGradebook: { path: '/my/gradebook/:pk/', urlName: 'core:my-gradebook', role: 'teacher', title: 'Gradebook ', titleMatch: 'prefix', source: 'core/templates/core/my_gradebook.html' },
 
   // Guardian Portal (nav "Guardian Portal")
-  portalHome: { path: '/guardian/', urlName: 'portal:home', role: 'guardian', title: 'Home', titleMatch: 'exact', source: 'templates/portal/home.html' },
+  portalHome: { path: '/guardian/', urlName: 'portal:home', role: 'guardian', title: 'Home · School ERP', titleMatch: 'exact', source: 'templates/portal/home.html (portal/base.html appends " · School ERP")' },
   portalChild: { path: '/guardian/children/:uuid/', urlName: 'portal:child', role: 'guardian', title: '', titleMatch: 'none', source: 'templates/portal/child.html (title is the child name)' },
   portalAttendance: { path: '/guardian/children/:uuid/attendance/', urlName: 'portal:attendance', role: 'guardian', title: 'Attendance', titleMatch: 'prefix', source: 'templates/portal/attendance.html' },
   portalReportCards: { path: '/guardian/children/:uuid/report-cards/', urlName: 'portal:report-cards', role: 'guardian', title: 'Report cards', titleMatch: 'prefix', source: 'templates/portal/report_cards.html' },
   portalReportCard: { path: '/guardian/children/:uuid/report-cards/:uuid/', urlName: 'portal:report-card', role: 'guardian', title: '', titleMatch: 'none', source: 'templates/portal/report_card.html' },
-  portalNotices: { path: '/guardian/notices/', urlName: 'portal:notices', role: 'guardian', title: 'Notices', titleMatch: 'exact', source: 'templates/portal/notices.html' },
+  portalNotices: { path: '/guardian/notices/', urlName: 'portal:notices', role: 'guardian', title: 'Notices · School ERP', titleMatch: 'exact', source: 'templates/portal/notices.html (portal/base.html appends " · School ERP")' },
 } as const satisfies Record<string, RouteInfo>;
 
 export type RouteKey = keyof typeof ROUTES;
