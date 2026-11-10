@@ -1,0 +1,19 @@
+---
+// Shared V2 section heading: eyebrow label, H2 and optional lead.
+interface Props {
+  id: string;
+  eyebrow: string;
+  heading: string;
+  lead?: string;
+  align?: 'start' | 'center';
+}
+
+const { id, eyebrow, heading, lead, align = 'start' } = Astro.props;
+---
+
+<div class:list={['v2-section-intro', { 'is-center': align === 'center' }]}>
+  <span class="v2-label">{eyebrow}</span>
+  <h2 id={id}>{heading}</h2>
+  {lead && <p>{lead}</p>}
+  <slot />
+</div>

@@ -1,0 +1,28 @@
+---
+// Attendance illustration: a submitted section register, with recorded absence
+// kept distinct from a register that is still missing. Mirrors area M05.
+import IllustrationPanel from './IllustrationPanel.astro';
+---
+
+<IllustrationPanel label="Absent is not the same as missing" motif="register" tone="sage">
+  <div class="v2-mock-card" role="img"
+    aria-label="Illustration of a submitted daily register for Class 8A with fictional roll numbers marked Present or Absent, one absence note, and a separate report showing that another section's register has not yet been submitted.">
+    <div class="v2-mock-head" aria-hidden="true">
+      <div>
+        <span class="v2-mock-eyebrow">Daily register</span>
+        <strong>Class 8A</strong>
+      </div>
+      <span class="v2-mock-status">Submitted</span>
+    </div>
+    <div class="v2-mock-register" aria-hidden="true">
+      <span class="v2-mock-cell">Roll 01</span><span class="v2-mock-cell state">Present</span>
+      <span class="v2-mock-cell">Roll 02</span><span class="v2-mock-cell state">Present</span>
+      <span class="v2-mock-cell">Roll 03</span><span class="v2-mock-cell state is-absent">Absent · note added</span>
+      <span class="v2-mock-cell">Roll 04</span><span class="v2-mock-cell state">Present</span>
+    </div>
+  </div>
+  <div class="v2-mock-card v2-mock-chip" aria-hidden="true">
+    <span class="v2-mock-eyebrow">Missing-attendance report</span>
+    <strong>Class 9B · register not submitted</strong>
+  </div>
+</IllustrationPanel>

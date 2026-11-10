@@ -1,0 +1,88 @@
+---
+// Original 24px line icons for the V2 homepage (thin navy stroke, mint fill
+// accent). Decorative only: always rendered with aria-hidden.
+import type { IconName } from '../../data/home';
+
+interface Props {
+  name: IconName;
+  size?: number;
+}
+
+const { name, size = 24 } = Astro.props;
+---
+
+<svg
+  class="v2-icon"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.6"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  {name === 'admissions' && (
+    <>
+      <rect x="4" y="3" width="13" height="18" rx="2" class="v2-icon-fill" />
+      <path d="M8 8h5M8 12h5M8 16h3" />
+      <circle cx="18" cy="17" r="3.5" fill="#fff" />
+      <path d="m16.6 17 1 1 1.8-2" />
+    </>
+  )}
+  {name === 'attendance' && (
+    <>
+      <rect x="3.5" y="5" width="17" height="15" rx="2" class="v2-icon-fill" />
+      <path d="M3.5 9.5h17M8 3v4M16 3v4" />
+      <path d="m8 14.5 1.5 1.5 3-3" />
+      <path d="M15 15h2" />
+    </>
+  )}
+  {name === 'teacher' && (
+    <>
+      <rect x="3" y="4" width="14" height="10" rx="1.5" class="v2-icon-fill" />
+      <path d="M6 8h6M6 11h4" />
+      <circle cx="18" cy="15" r="2.5" />
+      <path d="M14 21c.4-2.2 2-3.4 4-3.4s3.6 1.2 4 3.4" />
+    </>
+  )}
+  {name === 'assessment' && (
+    <>
+      <rect x="4" y="3" width="16" height="18" rx="2" class="v2-icon-fill" />
+      <path d="M8 8h8M8 12h3M14 12h2M8 16h3M14 16h2" />
+    </>
+  )}
+  {name === 'report' && (
+    <>
+      <path d="M6 3h9l4 4v14H6z" class="v2-icon-fill" />
+      <path d="M15 3v4h4" />
+      <path d="M9 12h6M9 15.5h4" />
+      <circle cx="17.5" cy="18.5" r="3" fill="#fff" />
+      <path d="m16.3 18.5.9.9 1.6-1.7" />
+    </>
+  )}
+  {name === 'guardian' && (
+    <>
+      <path d="M12 3 5 6v5c0 4.5 3 8.2 7 10 4-1.8 7-5.5 7-10V6z" class="v2-icon-fill" />
+      <circle cx="12" cy="10" r="2.2" />
+      <path d="M8.5 16c.6-1.8 2-2.8 3.5-2.8s2.9 1 3.5 2.8" />
+    </>
+  )}
+  {name === 'notice' && (
+    <>
+      <path d="M4 10v4l3 .5V9.5z" class="v2-icon-fill" />
+      <path d="M7 9.5 18 5v14L7 14.5" />
+      <path d="M8 15l1.2 4.5h2.3L10.6 15.4" />
+    </>
+  )}
+  {name === 'setup' && (
+    <>
+      <rect x="3.5" y="3.5" width="7" height="7" rx="1.5" class="v2-icon-fill" />
+      <rect x="13.5" y="3.5" width="7" height="7" rx="1.5" />
+      <rect x="3.5" y="13.5" width="7" height="7" rx="1.5" />
+      <rect x="13.5" y="13.5" width="7" height="7" rx="1.5" class="v2-icon-fill" />
+    </>
+  )}
+</svg>

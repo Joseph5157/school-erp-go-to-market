@@ -54,3 +54,19 @@ Before replacing the PR #18 CSS pilot, verify:
 - [ ] Product owner reviews the homepage before any separate preview deployment
 
 **Not yet achieved:** these are capture requirements, not evidence that any authentic application screenshots have been obtained.
+
+## Current homepage illustration status (PR #18, 10 November 2026)
+
+No authenticated capture has been made. Each asset slot is filled by an **original illustration** drawn in HTML/CSS/SVG with fictional, nameless data, captioned on the page as "Original illustration with fictional demo data. Not an application screenshot." Replace each with a real capture only after the gate above is passed.
+
+| Asset ID | Homepage component | Current state | What it shows (verified capability) |
+|---|---|---|---|
+| V2-01 | `HeroProduct.astro` | Illustration | Overview with admissions decision, submitted register, publication stages (M01, M03, M05, M06) |
+| V2-02 | `SceneAdmission.astro` | Illustration | Registered → decision recorded (Accepted) → separate dated enrolment; placement history (M03) |
+| V2-03 | `SceneRegister.astro` | Illustration | Submitted Class 8A register, Present/Absent with note, separate missing-attendance report (M05) |
+| V2-04 | — | Not shown | Teacher marks entry is described in text only (School-day strip, Daily-work split) |
+| V2-05 | `PublicationFlow.astro` | Illustration | Four stages with guardian visibility per stage (M06) |
+| V2-06 | `SceneGuardianReport.astro` | Illustration | Published Term 1 report card in a browser frame, report-card PDF download (M06, M08) |
+| V2-07 | — | Not shown | Notices are listed in the capability grid and role cards only (M09) |
+
+Illustrated marks (78/100 and so on), class names and roll numbers are invented for the drawing and are not product data or results. No people, photographs, logos, testimonials or metrics are used.

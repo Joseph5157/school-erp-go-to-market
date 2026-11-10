@@ -1,0 +1,37 @@
+---
+// Image-led feature split. Copy on one side, an original illustration (passed
+// through the "visual" slot) on the other. `reverse` swaps the sides on wide
+// screens; on narrow screens copy always comes first.
+interface Props {
+  id: string;
+  eyebrow: string;
+  heading: string;
+  text: string;
+  checks: string[];
+  link: { href: string; label: string };
+  reverse?: boolean;
+  tone?: 'white' | 'pale';
+}
+
+const { id, eyebrow, heading, text, checks, link, reverse = false, tone = 'white' } = Astro.props;
+---
+
+<section
+  class:list={['v2-section', 'v2-feature-section', { 'v2-feature-section--pale': tone === 'pale' }]}
+  aria-labelledby={id}
+>
+  <div class:list={['wrap', 'v2-feature-row', { 'is-reverse': reverse }]}>
+    <div class="v2-feature-copy">
+      <span class="v2-label">{eyebrow}</span>
+      <h2 id={id}>{heading}</h2>
+      <p>{text}</p>
+      <ul class="v2-checks">
+        {checks.map((c) => <li>{c}</li>)}
+      </ul>
+      <a class="v2-inline-link" href={link.href}>{link.label} <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="v2-feature-visual">
+      <slot name="visual" />
+    </div>
+  </div>
+</section>

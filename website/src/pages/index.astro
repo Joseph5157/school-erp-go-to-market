@@ -1,7 +1,22 @@
 ---
+// GTM-WEBSITE-V2 homepage (B-led product-led layout, see PR #18).
+// Section order follows the approved blueprint: hero → school-day strip →
+// two image-led feature splits → publication → roles → capabilities →
+// implementation → FAQ → demo CTA. All interface pictures are original
+// illustrations with fictional demo data and say so where they appear.
 import BaseLayout from '../layouts/BaseLayout.astro';
-import CtaBand from '../components/CtaBand.astro';
-import { site, demoHref } from '../data/site';
+import HeroProduct from '../components/home/HeroProduct.astro';
+import SchoolDayStrip from '../components/home/SchoolDayStrip.astro';
+import FeatureShowcase from '../components/home/FeatureShowcase.astro';
+import SceneAdmission from '../components/home/SceneAdmission.astro';
+import SceneRegister from '../components/home/SceneRegister.astro';
+import PublicationFlow from '../components/home/PublicationFlow.astro';
+import RolePreview from '../components/home/RolePreview.astro';
+import CapabilityGrid from '../components/home/CapabilityGrid.astro';
+import ImplementationSteps from '../components/home/ImplementationSteps.astro';
+import FaqPreview from '../components/home/FaqPreview.astro';
+import DemoCta from '../components/home/DemoCta.astro';
+import { site } from '../data/site';
 import '../styles/home-v2.css';
 ---
 
@@ -9,252 +24,49 @@ import '../styles/home-v2.css';
   title={site.wordmark}
   description="School administration for private schools in Telangana and Andhra Pradesh: admissions, attendance, assessments, report cards and a guardian portal in one connected record."
 >
-  <!-- GTM-WEBSITE-V2 P1: first-screen design pilot. Demo composition, not a product screenshot. -->
   <div class="home-v2">
-    <section class="v2-hero" aria-labelledby="v2-hero-heading">
-      <div class="wrap v2-hero-grid">
-        <div class="v2-hero-copy">
-          <span class="v2-label">For private schools in Telangana &amp; Andhra Pradesh</span>
-          <h1 id="v2-hero-heading">A clearer way to <span>run your school.</span></h1>
-          <p class="v2-hero-lead">
-            From admission to published report cards, keep everyday school work connected.
-            Administrators, teachers and guardians see information according to their roles.
-          </p>
-          <div class="v2-hero-actions">
-            <a class="v2-btn v2-btn-primary" href={demoHref}>Request a demo <span aria-hidden="true">↗</span></a>
-            <a class="v2-btn v2-btn-secondary" href="/features/">Explore the features <span aria-hidden="true">→</span></a>
-          </div>
-          <p class="v2-hero-note">
-            A dedicated installation, configured for each school's classes, terms and policies.
-          </p>
-        </div>
-        <figure class="v2-hero-art" aria-labelledby="v2-art-caption">
-          <div class="v2-float v2-float-one" aria-hidden="true">
-            <strong><span class="v2-float-dot"></span>Attendance</strong>
-            <span>Class 8A register submitted</span>
-          </div>
-          <div class="v2-product-window" role="img"
-            aria-label="Original illustrative school administration interface showing an overview, a reviewed admission, submitted attendance and report-card publication stages. Not a screenshot of the application.">
-            <div class="v2-product-sidebar" aria-hidden="true">
-              <div class="v2-sidebar-brand"><i class="v2-sidebar-mark"></i>School ERP</div>
-              <span class="v2-sidebar-link is-active">Overview</span>
-              <span class="v2-sidebar-link">Students</span>
-              <span class="v2-sidebar-link">Attendance</span>
-              <span class="v2-sidebar-link">Assessments</span>
-              <span class="v2-sidebar-link">Reports</span>
-            </div>
-            <div class="v2-ui-main" aria-hidden="true">
-              <div class="v2-ui-top">
-                <div>
-                  <div class="v2-ui-eyebrow">Fictional demo school</div>
-                  <div class="v2-ui-title">School overview</div>
-                </div>
-                <span class="v2-ui-year">Academic year</span>
-              </div>
-              <div class="v2-ui-grid">
-                <div class="v2-ui-tile">
-                  <span>Admissions</span>
-                  <strong>Application reviewed</strong>
-                  <span class="v2-ui-pill">Decision recorded</span>
-                </div>
-                <div class="v2-ui-tile">
-                  <span>Daily attendance</span>
-                  <strong>Class 8A</strong>
-                  <span class="v2-ui-pill">Register submitted</span>
-                </div>
-              </div>
-              <div class="v2-ui-bottom">
-                <div class="v2-ui-row"><span>Teacher marks entry</span><b class="v2-ui-state">Recorded</b></div>
-                <div class="v2-ui-row"><span>School review</span><b class="v2-ui-state">Preview first</b></div>
-                <div class="v2-ui-row"><span>Guardian report view</span><b class="v2-ui-state">After publication</b></div>
-              </div>
-            </div>
-          </div>
-          <div class="v2-float v2-float-two" aria-hidden="true">
-            <strong><span class="v2-float-dot"></span>Publication control</strong>
-            <span>Results visible only after the school publishes</span>
-          </div>
-          <figcaption id="v2-art-caption" class="v2-art-caption">
-            Original illustrative demo composition. Not an application screenshot.
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-    <div class="v2-proof-strip" aria-label="Core school workflow">
-      <div class="wrap v2-proof-inner">
-        <span class="v2-proof-lead">One connected school record</span>
-        <span>Admissions</span>
-        <span aria-hidden="true">→</span>
-        <span>Daily work</span>
-        <span aria-hidden="true">→</span>
-        <span>Published results</span>
-      </div>
-    </div>
+    <HeroProduct />
+    <SchoolDayStrip />
+
+    <FeatureShowcase
+      id="v2-admin-heading"
+      eyebrow="Admissions and administration"
+      heading="Every admission decided, every placement kept"
+      text="The office registers each applicant with linked guardians, records an explicit decision, then enrols the student by class and section. Corrections need a reason, and history is kept."
+      checks={[
+        'Applicant registration with linked guardian relationships',
+        'Accept or reject, then a separate dated enrolment step',
+        'Placement history preserved when a student moves section',
+        'Dated class-teacher and subject-teacher assignments',
+      ]}
+      link={{ href: '/features/#administration', label: 'Read about school administration' }}
+    >
+      <SceneAdmission slot="visual" />
+    </FeatureShowcase>
+
+    <FeatureShowcase
+      id="v2-daily-heading"
+      eyebrow="Attendance and teacher work"
+      heading="Know what is recorded, and what is still missing"
+      text="Class teachers keep a draft register, then submit the complete roster. The office sees recorded absences and registers that have not been submitted as two different things."
+      checks={[
+        'Daily section register with Present, Absent and optional notes',
+        'Daily absentee and missing-attendance reports',
+        'A teacher home page with assigned students, attendance and periods',
+        'Marks entry limited to each teacher’s assigned subjects',
+      ]}
+      link={{ href: '/features/#daily-work', label: 'Read about daily academic work' }}
+      reverse
+      tone="pale"
+    >
+      <SceneRegister slot="visual" />
+    </FeatureShowcase>
+
+    <PublicationFlow />
+    <RolePreview />
+    <CapabilityGrid />
+    <ImplementationSteps />
+    <FaqPreview />
+    <DemoCta />
   </div>
-
-  <section class="section" aria-labelledby="problem-heading">
-    <div class="wrap split">
-      <div>
-        <span class="eyebrow">Why schools look for a system</span>
-        <h2 id="problem-heading">When school work is spread across registers, files and spreadsheets</h2>
-        <p class="lead">
-          It becomes hard to see what is complete, what is missing and what is ready to share with families.
-        </p>
-      </div>
-      <ul class="check-list">
-        <li>Admissions records, registers, marks and reports often sit in different places.</li>
-        <li>Teachers need a clear view of the classes and work assigned to them.</li>
-        <li>Management needs to review progress before results reach families.</li>
-        <li>Guardians need secure access to information about their own children.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section-white" aria-labelledby="journey-heading">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">From admission to results</span>
-        <h2 id="journey-heading">Follow each student through one record</h2>
-        <p>
-          The office decides admissions. Guardians see records only after the school grants access or publishes
-          results.
-        </p>
-      </div>
-      <ol class="steps steps-3">
-        <li>
-          <h3>Register the applicant</h3>
-          <p>The office records the application and the guardians linked to it.</p>
-        </li>
-        <li>
-          <h3>Decide admission</h3>
-          <p>Each application is explicitly accepted or rejected.</p>
-        </li>
-        <li>
-          <h3>Enrol the student</h3>
-          <p>Assign the academic year, class and section, with history kept.</p>
-        </li>
-        <li>
-          <h3>Record school work</h3>
-          <p>Attendance and marks follow the student through the year.</p>
-        </li>
-        <li>
-          <h3>Review and publish</h3>
-          <p>The office finalises assessments and releases report cards.</p>
-        </li>
-        <li>
-          <h3>Family access</h3>
-          <p>The guardian views the child’s released records.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="roles-heading">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Built around roles</span>
-        <h2 id="roles-heading">The right work for each person</h2>
-      </div>
-      <div class="grid grid-3">
-        <article class="card">
-          <span class="card-label">Administrator</span>
-          <h3>Coordinate school work</h3>
-          <ul>
-            <li>Set up years, terms, classes, sections, subjects and the calendar</li>
-            <li>Review applications, admit students and keep placement history</li>
-            <li>Manage teaching assignments and check attendance and assessment progress</li>
-            <li>Control report-card publication, notices and documents</li>
-          </ul>
-        </article>
-        <article class="card">
-          <span class="card-label">Teacher</span>
-          <h3>Focus on assigned classes</h3>
-          <ul>
-            <li>See the day’s work and configured timetable periods</li>
-            <li>As class teacher, take attendance and submit the complete register</li>
-            <li>Enter marks for assigned subjects</li>
-            <li>Add class-teacher remarks where permitted</li>
-          </ul>
-        </article>
-        <article class="card">
-          <span class="card-label">Guardian</span>
-          <h3>See the right information</h3>
-          <ul>
-            <li>Sign in to view children the school has approved access for</li>
-            <li>Read submitted attendance and the monthly calendar</li>
-            <li>Open published report cards and eligible PDF downloads</li>
-            <li>Read notices meant for the child’s school, class or section</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band" aria-labelledby="publish-heading">
-    <div class="wrap band-grid">
-      <div>
-        <span class="eyebrow">Review before release</span>
-        <h2 id="publish-heading">Marks stay private until the school publishes</h2>
-        <p>
-          Teachers enter results. The office finalises assessments, previews the report card and explicitly
-          publishes it. Only then does it appear in the guardian portal. If a relevant correction is made later,
-          the old publication is flagged for review.
-        </p>
-        <p><a href="/features/#daily-work">Read about assessments and report cards</a></p>
-      </div>
-      <figure class="publish-figure">
-        <ol class="publish-flow" aria-label="Report card publication stages (illustration)">
-          <li>Teacher enters marks and remarks <span class="state">Not visible</span></li>
-          <li>Office finalises the assessment <span class="state">Not visible</span></li>
-          <li>Office previews the report card <span class="state">Not visible</span></li>
-          <li>Office publishes it <span class="state state-live">Visible to guardian</span></li>
-        </ol>
-        <figcaption>Illustration of the stages, not a product screenshot.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="fit-heading">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">How it works for a school</span>
-        <h2 id="fit-heading">Practical from the first term</h2>
-      </div>
-      <div class="grid grid-2">
-        <article class="card">
-          <h3>Your own installation</h3>
-          <p>
-            Each school has its own installation, configured with its academic year, terms, classes, subjects,
-            weekly pattern, holidays and grading scales.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Start from your spreadsheets</h3>
-          <p>
-            Import students, guardians and class placements from the Excel template. Every row is checked, and
-            problems are shown before anything is saved.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Works in the browser</h3>
-          <p>
-            Use it on office computers and phones. On supported phones it can be added to the home screen. It
-            needs an internet connection; there is no offline mode.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Staff-assisted WhatsApp messages</h3>
-          <p>
-            WhatsApp Assist prepares messages, such as same-day absence alerts, for guardians who have consented.
-            Staff send each one from WhatsApp; nothing is sent automatically.
-          </p>
-        </article>
-      </div>
-      <p class="mt-lg">
-        <a href="/faq/#product-boundaries">See what the current product does not include</a>
-      </p>
-    </div>
-  </section>
-
-  <CtaBand />
 </BaseLayout>
