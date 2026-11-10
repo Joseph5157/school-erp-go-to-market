@@ -70,10 +70,10 @@ A one-time setup and implementation fee, initial data migration and training, th
 Hosting is a third-party cost that depends on the provider and the hosting arrangement chosen. Showing it separately makes clear what the school pays for software support and what it pays for infrastructure.
 
 **Who owns the software?**
-The school receives the right to use the software under terms still to be finalised. Ownership of the software and its source code is not transferred. Licensing terms are pending commercial and legal approval.
+The school receives the right to use the software under licensing terms still to be finalised. The proposed commercial model does not include transfer of software or source-code ownership, subject to final licensing terms and approval.
 
-**Who owns our data?**
-The school's data belongs to the school. How data is handled, exported and returned at the end of the engagement will be set out in the agreement; these terms are pending legal approval.
+**What happens to our data?**
+The school determines how its records are used and is responsible for providing data it is authorised to share. The written agreement will define our data-processing responsibilities, applicable rights, export arrangements and handover procedures, in line with applicable law. These terms are pending legal approval.
 
 **Is the product DPDP compliant?**
 We do not claim that the software, or any school using it, is automatically compliant with the Digital Personal Data Protection Act, 2023 or its Rules. The product includes controls such as role-based access, explicit guardian access grants, consent records for WhatsApp messages and audit history. Each school should confirm its own obligations with its legal or compliance adviser.

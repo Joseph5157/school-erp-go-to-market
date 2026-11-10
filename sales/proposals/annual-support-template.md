@@ -87,7 +87,7 @@ The vendor confirms the priority after first review. Change requests are not sup
 | Restoration commitment | **Not yet decided** |
 | Availability target | **Not yet decided** |
 | Penalties or service credits | **Not yet decided** |
-| Charges | Under C5 in the quotation |
+| Charges | Amounts invoiced by the vendor: C5 in the quotation. Provider charges paid by the school directly: not invoiced by the vendor |
 
 ## 7. Renewal
 
@@ -99,4 +99,4 @@ The vendor confirms the priority after first review. Change requests are not sup
 
 ## 8. Pending terms
 
-The following are **not offered** by this template and remain pending commercial and legal approval: support hours, response and resolution times, availability targets, restoration commitments, penalties or service credits, warranties, limitation of liability, data-processing terms, licensing, and exit and handover arrangements. Ownership of the software and its source code is not transferred.
+The following are **not offered** by this template and remain pending commercial and legal approval: support hours, response and resolution times, availability targets, restoration commitments, penalties or service credits, warranties, limitation of liability, data-processing terms, licensing, and exit and handover arrangements. The proposed commercial model does not include transfer of software or source-code ownership, subject to final licensing terms and approval.

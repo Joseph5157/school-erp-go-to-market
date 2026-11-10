@@ -121,7 +121,7 @@ Training uses fictional or test records unless the school agrees otherwise in wr
 *Choose one arrangement. Keep C5 as a separate quotation line in every case.*
 
 - [ ] **Vendor-managed hosting:** {{VENDOR_LEGAL_NAME}} arranges and administers the hosting account and backups. Provider charges are shown in C5.
-- [ ] **School-managed hosting:** the school holds the hosting account and pays the provider directly; vendor administration effort, if requested, is quoted in C5.
+- [ ] **School-managed hosting:** the school holds the hosting account and pays the provider directly. Those provider charges are **not** invoiced by the vendor or included in C5; C5 then covers only vendor administration effort, if requested.
 - [ ] **Other:** {{HOSTING_ARRANGEMENT}}
 
 | Responsibility | Owner |
@@ -180,7 +180,7 @@ Payment milestones, validity and terms: as stated in the quotation, once approve
 
 **Pending commercial and legal approval** (not offered by this proposal until approved and written into a signed agreement):
 
-- Software licensing and permitted use. Ownership of the School ERP software and its source code is **not** transferred.
+- Software licensing and permitted use. The proposed commercial model does not include transfer of software or source-code ownership, subject to final licensing terms and approval.
 - Data-processing terms, including roles and responsibilities under the Digital Personal Data Protection Act, 2023 and applicable Rules. This proposal does not claim that the software or the school is compliant.
 - Limitation of liability, warranties and indemnities.
 - Exit, data export and handover arrangements.

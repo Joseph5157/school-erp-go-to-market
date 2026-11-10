@@ -32,7 +32,7 @@ These component codes are used, unchanged, in every template of this package. Do
 | **C2** | Initial data migration | One-time | Effort, driven by data volume and quality |
 | **C3** | Training and onboarding | One-time (repeat sessions optional) | Sessions or effort |
 | **C4** | Annual support and maintenance | Recurring, per year | Effort allowance plus fixed operating overhead |
-| **C5** | Hosting and infrastructure (including backups) | Recurring | Pass-through cost plus management effort |
+| **C5** | Hosting and infrastructure (including backups) | Recurring | Vendor-invoiced amounts only: pass-through cost (vendor-managed hosting) plus management effort |
 | **C6** | Optional customization | One-time per approved change | Effort, per written estimate |
 | **C7** | Applicable taxes | Per invoice | Confirmed rate and treatment only |
 
@@ -73,6 +73,8 @@ Fill these in a private working copy for each school. Leave the repository copy 
 | S10 | Customization requests needing estimate | ______ |
 
 ### 3.3 Infrastructure assumptions
+
+For each item, also record who pays the provider: **vendor-invoiced** or **paid directly by the school** (see section 4.3).
 
 | Ref | Assumption | Value | Notes |
 |---|---|---|---|
@@ -122,15 +124,25 @@ Annual support price  = calculated with ONE method from section 5
 
 ### 4.3 Hosting and infrastructure (C5)
 
+C5 contains **only amounts the vendor invoices**. First mark each H1–H6 item as *vendor-invoiced* or *paid directly by the school*. Provider charges the school pays directly are never added to C5, so they cannot be billed twice.
+
 ```
-Pass-through cost   = Σ monthly provider charges (H1–H6) × 12
-Management effort   = hours per year to administer hosting and verify backups × R4
-Total hosting cost  = Pass-through cost + Management effort
-Hosting price       = calculated with ONE method from section 5,
-                      or pass-through at cost plus a separate management fee
+Vendor-invoiced provider cost = Σ monthly provider charges marked vendor-invoiced × 12
+                                (zero under school-managed hosting)
+Management effort             = hours per year to administer hosting and verify backups × R4
+Total hosting cost            = Vendor-invoiced provider cost + Management effort
+Hosting price (C5)            = calculated with ONE method from section 5,
+                                or vendor-invoiced provider cost at cost plus a separate management fee
+School-paid provider charges  = listed in the quotation for information only; not invoiced, not in any total
 ```
 
-Record in the quotation whether provider price increases are passed on, and how. Keep that wording pending until approved.
+| Arrangement | Provider charges | What C5 contains |
+|---|---|---|
+| Vendor-managed | Vendor pays the provider and re-invoices | Vendor-invoiced provider cost + management effort |
+| School-managed | School pays the provider directly | Management effort only, if the school requests it |
+| Other | As agreed in writing | Only what the vendor invoices |
+
+Record in the quotation whether vendor-invoiced provider price increases are passed on, and how. Keep that wording pending until approved.
 
 ### 4.4 Applicable taxes (C7)
 

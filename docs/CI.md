@@ -85,7 +85,7 @@ If Marp hangs or times out, re-run the job once; a persistent failure is a real 
 - External links (Google Fonts, GitHub references), which are not fetched.
 - The committed PDF, PPTX and preview images: they are only checked for being unchanged, not for matching the current source.
 - The brochure, diagrams' own content, sales or social material.
-- Security scanning for personal data or secrets.
+- Security scanning for personal data or secrets. The *Internal review only* marker check catches only commercial documents that carry that exact marker; it is not a personal-data or secrets scanner.
 - Deployment: there is none.
 
 ## Updating pinned versions safely

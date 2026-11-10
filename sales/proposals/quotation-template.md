@@ -41,7 +41,7 @@ If these assumptions change, the quotation may be revised.
 | **C3** | Training and onboarding | {{SESSION_COUNT}} sessions: administrators {{N}}, teachers {{N}}; format {{ON_SITE_OR_REMOTE}} | {{BASIS}} | ______ | ______ |
 | | | | **One-time subtotal (C1 + C2 + C3)** | | ______ |
 | **C4** | Annual support and maintenance | Per the annual support terms; period {{SUPPORT_START}} to {{SUPPORT_END}} | Per year | ______ | ______ |
-| **C5** | Hosting and infrastructure (including backups) | {{HOSTING_DESCRIPTION}}; arrangement as in proposal section 9 | {{BASIS}} | ______ | ______ |
+| **C5** | Hosting and infrastructure (including backups) | Amounts invoiced by the vendor only: {{HOSTING_DESCRIPTION}}; arrangement as in proposal section 9 | {{BASIS}} | ______ | ______ |
 | | | | **Recurring subtotal (C4 + C5)** | | ______ |
 | **C6** | Optional customization | Not included unless listed below and approved separately | — | — | — |
 | C6.1 | {{CHANGE_REQUEST_TITLE}} | Per written specification {{SPEC_REF}} | {{BASIS}} | ______ | ______ |
@@ -51,7 +51,13 @@ If these assumptions change, the quotation may be revised.
 
 **Tax note:** tax is shown only when the applicable rate, classification and treatment have been confirmed. Until then, C7 stays blank and the total is shown **before tax**.
 
-**Hosting note:** C5 depends on third-party provider prices on the quotation date. How later provider price changes are handled: ______________________ *(pending approval)*.
+**Hosting note:** C5 contains only amounts the vendor invoices. Under school-managed hosting, provider charges the school pays directly are **not** included in C5 and are listed below for information only, so nothing is billed twice. Vendor-invoiced provider charges depend on third-party prices on the quotation date.
+
+| Provider charges paid directly by the school (information only, not invoiced) | Provider | Paid by school |
+|---|---|---|
+| {{SERVICE}} | {{PROVIDER}} | Yes |
+
+How later provider price changes are handled for vendor-invoiced charges: ______________________ *(pending approval)*.
 
 ## 3. Payment milestones
 
@@ -76,7 +82,7 @@ Payment method and invoicing details: ______________________
 | Quotation validity | ______________________ |
 | Renewal of C4 and C5 | ______________________ |
 | Annual price revision | ______________________ |
-| Software licence and permitted use | Pending legal approval. Ownership of the software and its source code is not transferred. |
+| Software licence and permitted use | Pending legal approval. The proposed commercial model does not include transfer of software or source-code ownership, subject to final licensing terms and approval. |
 | Data-processing terms | Pending legal approval |
 | Warranties and limitation of liability | Pending legal approval |
 | Service levels (hours, response times, availability) | Not offered; pending approval |

@@ -80,9 +80,9 @@
 
 **Acknowledge:** It is sensible to think about this before starting.
 
-**Response:** The school's data belongs to the school. How data is exported and handed over at the end of the engagement, and the related timelines and formats, will be set out in the agreement. Those exit terms are still being finalised with our legal advisers, and we will share them in writing before the school signs.
+**Response:** The school determines how its records are used and is responsible for providing data it is authorised to share. The written agreement will define our data-processing responsibilities, applicable rights, export arrangements and handover procedures, in line with applicable law. The related timelines and formats will be set out there too. Those exit terms are still being finalised with our legal advisers, and we will share them in writing before the school signs.
 
-**Do not say:** a specific export format, a handover period, that source code is transferred, or any other portability term not yet agreed.
+**Do not say:** a specific export format, a handover period, an unconditional data-ownership promise, that source code is transferred, or any other portability term not yet agreed.
 
 ---
 
