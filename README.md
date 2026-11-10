@@ -26,6 +26,14 @@ Production application code lives in the separate `school-erp` repository. This 
 - [Thirty-minute live demonstration](demo/presenter-scripts/live-demo-30-minute.md) — detailed role-based walkthrough, requiring rehearsal.
 - [School requirements capture sheet](sales/proposals/school-requirements-capture.md) — blank discovery worksheet; store completed school details securely outside Git.
 
+## Commercial sales package (internal)
+
+GTM-SALES-01. **Draft — internal review only.** No prices, margins, service levels or legal terms are approved. Completed school documents are stored outside Git. These files are outside `docs/` and are never part of the documentation portal.
+
+- [Pricing framework](sales/pricing/pricing-framework.md) — internal method, formulas and editable assumptions for components C1–C7.
+- [School proposal template](sales/proposals/school-proposal-template.md), [quotation template](sales/proposals/quotation-template.md), [implementation scope template](sales/proposals/implementation-scope-template.md) and [annual support template](sales/proposals/annual-support-template.md) — one set with shared references and component codes.
+- [Sales FAQ](sales/faq/sales-faq.md) and [common objections](sales/objection-handling/common-objections.md) — factual answers within current product boundaries.
+
 ## Presentation draft
 
 - [GTM-PRESENTATION-01 — 12-slide Marp school-management deck](presentations/marp/README.md) — source, Graphite & Institutional Green theme, speaker notes and export instructions. Draft only; identity, price and live demo verification remain pending.
