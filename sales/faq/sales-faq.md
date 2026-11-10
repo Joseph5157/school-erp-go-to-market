@@ -53,7 +53,7 @@ No. Assessments use marks, maximum marks, optional pass marks and grading scales
 Yes, for students, guardians and class/section placement, using the product's Excel template. Every row is checked and problems are shown before anything is saved; possible duplicates are flagged for the school to review. Data in other formats, or historical attendance and marks, would need to be assessed.
 
 **Who prepares the data?**
-The school owns its data and is responsible for cleaning it. We provide the template, explain the validation messages and run the trial and final imports as agreed.
+The school is responsible for preparing and cleaning the records it is authorised to share. We provide the template, explain the validation messages and run the trial and final imports as agreed.
 
 **How long does implementation take?**
 It depends on the school's size, data quality and how quickly decisions and data are available. We agree stages and any target dates after requirements are confirmed; we do not commit to a date before that.

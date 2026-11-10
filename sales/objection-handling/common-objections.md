@@ -50,7 +50,7 @@
 
 **Acknowledge:** Re-typing records is a real concern.
 
-**Response:** Yes, for students, guardians and class/section placement, using our Excel template. Every row is checked before anything is saved, problems are listed row by row, and possible duplicates are flagged for the school to review. The school owns and cleans the data; we support the trial and final imports. Historical attendance, marks or other formats would need to be assessed separately.
+**Response:** Yes, for students, guardians and class/section placement, using our Excel template. Every row is checked before anything is saved, problems are listed row by row, and possible duplicates are flagged for the school to review. The school is responsible for preparing and cleaning the records it is authorised to share; we support the trial and final imports. Historical attendance, marks or other formats would need to be assessed separately.
 
 **Do not say:** that any spreadsheet can be imported as it is, or that past years' data is included.
 
