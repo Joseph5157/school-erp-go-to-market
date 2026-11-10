@@ -38,6 +38,16 @@ GTM-SALES-01. **Draft — internal review only.** No prices, margins, service le
 - [School proposal template](sales/proposals/school-proposal-template.md), [quotation template](sales/proposals/quotation-template.md), [implementation scope template](sales/proposals/implementation-scope-template.md) and [annual support template](sales/proposals/annual-support-template.md) — one set with shared references and component codes.
 - [Sales FAQ](sales/faq/sales-faq.md) and [common objections](sales/objection-handling/common-objections.md) — factual answers within current product boundaries.
 
+## School outreach kit (internal)
+
+GTM-OUTREACH-01. **Draft — internal review only.** Nothing has been sent, published or scheduled; every message is reviewed and sent by hand, one school at a time. Real prospect records stay outside Git.
+
+- [Outreach kit index](sales/outreach/README.md) — placeholders and sources of truth.
+- [Privacy and outreach controls](sales/outreach/privacy-and-outreach-controls.md) — no scraping, no bulk messages, opt-outs, no credentials or staging URLs.
+- [Target-school segments](sales/outreach/target-segments.md), [outreach templates](sales/outreach/outreach-templates.md), [lead qualification guide](sales/outreach/lead-qualification.md) and [sales process](sales/outreach/sales-process.md).
+- [Blank lead tracker](sales/outreach/lead-tracker-template.csv) with its [permitted-use guide](sales/outreach/lead-tracker-guide.md). Copy it outside Git before use.
+- [Starter social campaign](social/campaigns/starter-campaign.md) — six draft [LinkedIn](social/linkedin/starter-posts.md) and [WhatsApp](social/whatsapp/starter-posts.md) posts with Graphite & Institutional Green visual guidance.
+
 ## Presentation draft
 
 - [GTM-PRESENTATION-01 — 12-slide Marp school-management deck](presentations/marp/README.md) — source, Graphite & Institutional Green theme, speaker notes and export instructions. Draft only; identity, price and live demo verification remain pending.
