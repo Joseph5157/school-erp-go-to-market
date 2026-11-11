@@ -2,12 +2,16 @@
 // Role overview: two short lines per role; detail lives on Who It's For.
 import SectionIntro from './SectionIntro.astro';
 import Icon from './Icon.astro';
-import { roles, rolesIntro } from '../../data/home';
+import { roles, rolesIntro, teamPhoto } from '../../data/home';
 ---
 
 <section class="v2-section v2-roles" aria-labelledby="v2-roles-heading">
   <div class="wrap">
     <SectionIntro id="v2-roles-heading" intro={rolesIntro} showLink={false} />
+    <figure class="v2-team-photo">
+      <img src={teamPhoto.src} width={teamPhoto.width} height={teamPhoto.height} alt={teamPhoto.alt} loading="lazy" decoding="async" />
+      <figcaption>{teamPhoto.caption}</figcaption>
+    </figure>
     <div class="v2-role-grid">
       {roles.map((r) => (
         <article class="v2-role-card">

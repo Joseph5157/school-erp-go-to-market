@@ -1,8 +1,8 @@
 ---
 // Dark publication band: four stages, guardian visibility stated per stage,
-// plus an illustrative guardian view of the published result.
-import SceneGuardianReport from './SceneGuardianReport.astro';
-import { publication, publicationStages } from '../../data/home';
+// plus a real guardian-portal screenshot (demo school, fictional data).
+import ProductShot from './ProductShot.astro';
+import { publication, publicationStages, shots } from '../../data/home';
 ---
 
 <section class="v2-section v2-publication" aria-labelledby="v2-publish-heading">
@@ -24,7 +24,7 @@ import { publication, publicationStages } from '../../data/home';
           </li>
         ))}
       </ol>
-      <SceneGuardianReport />
+      <ProductShot shot={shots.guardian} tone="dark" />
     </div>
     <a class="v2-publication-link v2-inline-link" href={publication.link.href}>
       {publication.link.label} <span aria-hidden="true">→</span>
