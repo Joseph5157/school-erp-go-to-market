@@ -1,15 +1,15 @@
-/* GTM-WEBSITE-V2 — Draft homepage; original CSS/SVG illustration language.
-   Scoped to .home-v2 so the other five pages stay unchanged. */
+/* GTM-WEBSITE-V2 homepage layout. Colours come from the shared tokens in
+   global.css, so the homepage and the other pages always match. */
 
 .home-v2 {
-  --v2-ink: #10283b;
-  --v2-forest: #1f6653;
-  --v2-forest-dark: #144e3e;
+  --v2-ink: var(--ink);
+  --v2-forest: var(--brand);
+  --v2-forest-dark: var(--brand-strong);
   --v2-mint: #a7d8c7;
-  --v2-paper: #fbfcfa;
-  --v2-surface: #f4f8f5;
-  --v2-line: #dce8e2;
-  --v2-muted: #4b5e67;
+  --v2-paper: var(--paper);
+  --v2-surface: var(--surface-tint);
+  --v2-line: var(--rule);
+  --v2-muted: var(--ink-soft);
   --v2-night: #102332;
   color: var(--v2-ink);
   background: var(--v2-paper);
