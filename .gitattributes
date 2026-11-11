@@ -1,0 +1,2 @@
+*.sh text eol=lf
+website/Caddyfile.preview text eol=lf
