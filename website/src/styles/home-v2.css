@@ -52,10 +52,6 @@
 .home-v2 .v2-btn-primary:hover { color: #fff; background: var(--v2-forest-dark); }
 .home-v2 .v2-btn-secondary { color: var(--v2-ink); background: #fff; border: 1px solid #b8d2c7; }
 .home-v2 .v2-btn-secondary:hover { color: var(--v2-forest); background: #f7fbf9; }
-.home-v2 .v2-btn-light { color: var(--v2-ink); background: #fff; }
-.home-v2 .v2-btn-light:hover { color: var(--v2-forest-dark); background: #eef8f3; }
-.home-v2 .v2-btn-outline-light { color: #fff; border: 1px solid #ffffffa6; }
-.home-v2 .v2-btn-outline-light:hover { color: #fff; background: #ffffff1f; border-color: #fff; }
 
 .home-v2 .v2-section { padding: 96px 0; }
 .home-v2 .v2-section-intro { max-width: 720px; margin-bottom: 44px; }
@@ -262,26 +258,19 @@
 
 /* 09 Closing CTA */
 .home-v2 .v2-cta {
-  position: relative; isolation: isolate; color: #fff; text-align: center; padding: 96px 0;
-  background: linear-gradient(180deg, #3d8670 0%, var(--v2-forest) 45%, #174f40 100%);
-}
-.home-v2 .v2-cta::before {
-  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  background-image: linear-gradient(#ffffff12 1px, transparent 1px), linear-gradient(90deg, #ffffff12 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: radial-gradient(ellipse at 50% 40%, #000 20%, transparent 75%);
+  position: relative; color: var(--v2-ink); text-align: center; padding: 120px 0;
+  background: #f3f9f6 url('/images/product/cta-background.webp') center / cover no-repeat;
 }
 .home-v2 .v2-cta-inner { max-width: 760px; }
 .home-v2 .v2-cta h2 { margin: 0 0 16px; }
-.home-v2 .v2-cta p { color: #f0f8f4; font-size: 1.08rem; margin: 0 auto; max-width: 600px; }
+.home-v2 .v2-cta p { color: #35515a; font-size: 1.08rem; margin: 0 auto; max-width: 600px; }
 .home-v2 .v2-cta .v2-hero-actions { justify-content: center; margin-top: 32px; }
 
 /* Focus rings for V2 controls */
 .home-v2 .v2-btn:focus-visible, .home-v2 .v2-inline-link:focus-visible, .home-v2 .v2-capability:focus-visible {
   outline: 3px solid var(--v2-forest); outline-offset: 3px;
 }
-.home-v2 .v2-publication .v2-inline-link:focus-visible,
-.home-v2 .v2-cta .v2-btn:focus-visible { outline-color: #fff; }
+.home-v2 .v2-publication .v2-inline-link:focus-visible { outline-color: #fff; }
 
 /* Responsive behaviour: keep illustration text readable at every width */
 @media (max-width: 1120px) {
