@@ -2,6 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageIntro from '../components/PageIntro.astro';
 import CtaBand from '../components/CtaBand.astro';
+import IconCard from '../components/IconCard.astro';
+import Photo from '../components/home/Photo.astro';
+import { teamPhoto } from '../data/home';
 ---
 
 <BaseLayout
@@ -12,7 +15,9 @@ import CtaBand from '../components/CtaBand.astro';
     eyebrow="Who it’s for"
     title="Built for the people who run a private school"
     lead="For private schools in Telangana and Andhra Pradesh that want admissions, attendance, assessments and family access in one place, with each person seeing only their own work."
-  />
+  >
+    <Photo slot="media" photo={teamPhoto} />
+  </PageIntro>
 
   <section class="section" aria-labelledby="leaders-heading">
     <div class="wrap">
@@ -20,30 +25,23 @@ import CtaBand from '../components/CtaBand.astro';
         <span class="eyebrow">School leadership</span>
         <h2 id="leaders-heading">For owners, management and principals</h2>
       </div>
-      <div class="grid grid-2">
-        <article class="card">
-          <h3>School owners and management</h3>
-          <p>Control, visibility and accountable workflows.</p>
+      <div class="grid grid-2 leadership-grid">
+        <IconCard icon="setup" title="School owners and management" summary="Control, visibility and accountable workflows.">
           <ul>
             <li>An overview of students, teachers, classes and guardian access</li>
             <li>Permissions that decide who can do what</li>
             <li>History kept for important records and corrections</li>
             <li>An installation set up for your school, with agreed implementation support</li>
           </ul>
-        </article>
-        <article class="card">
-          <h3>Principals</h3>
-          <p>
-            A clear view of academic progress before anything reaches families, using an administrator account with
-            the permissions the school assigns.
-          </p>
+        </IconCard>
+        <IconCard icon="assessment" title="Principals" summary="A clear view of academic progress before anything reaches families, using an administrator account with the permissions the school assigns.">
           <ul>
             <li>See missing attendance as well as recorded absences</li>
             <li>Check assessment progress and finalise results</li>
             <li>Preview report cards and publish them when reviewed</li>
             <li>Send notices to the whole school, a class or a section</li>
           </ul>
-        </article>
+        </IconCard>
       </div>
     </div>
   </section>
@@ -136,7 +134,7 @@ import CtaBand from '../components/CtaBand.astro';
       <div>
         <span class="eyebrow">Is it a good fit?</span>
         <h2 id="fit-heading">A good fit when your school wants to</h2>
-        <ul class="check-list">
+        <ul class="check-list fit-list">
           <li>Move admissions, registers and marks out of separate files and into one record</li>
           <li>Give teachers access limited to their own classes and subjects</li>
           <li>Review results before they are shared with families</li>

@@ -1,0 +1,28 @@
+---
+interface Step {
+  title: string;
+  text: string;
+  meta?: string;
+}
+
+interface Props {
+  steps: Step[];
+  label: string;
+  compact?: boolean;
+}
+
+const { steps, label, compact = false } = Astro.props;
+---
+
+<ol class:list={['step-flow', { 'step-flow-compact': compact }]} aria-label={label}>
+  {steps.map((step, index) => (
+    <li>
+      <span class="step-flow-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+      <div>
+        {step.meta && <small>{step.meta}</small>}
+        <h3>{step.title}</h3>
+        <p>{step.text}</p>
+      </div>
+    </li>
+  ))}
+</ol>

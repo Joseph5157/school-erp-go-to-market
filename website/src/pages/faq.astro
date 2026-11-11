@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageIntro from '../components/PageIntro.astro';
 import CtaBand from '../components/CtaBand.astro';
+import { demoHref } from '../data/site';
 
 // Public-safe answers adapted from sales/faq/sales-faq.md and the feature
 // catalogue. Licensing, legal, support-hours and pricing figures are omitted
@@ -153,38 +154,39 @@ const groups = [
     eyebrow="FAQ"
     title="Questions school management often ask"
     lead="Straight answers about what the product does today, what it does not, and how implementation and pricing work."
-  >
-    <nav aria-label="FAQ sections">
-      <ul class="jump-links">
-        {groups.map((group) => <li><a href={`#${group.id}`}>{group.title}</a></li>)}
-      </ul>
-    </nav>
-  </PageIntro>
+  />
 
   <section class="section" aria-label="Questions and answers">
-    <div class="wrap" style="max-width: 880px;">
-      {
-        groups.map((group) => (
+    <div class="wrap faq-layout">
+      <aside class="faq-sidebar">
+        <nav aria-label="FAQ sections">
+          <span class="card-label">Browse by topic</span>
+          <ul class="faq-topic-links">
+            {groups.map((group, index) => <li><a href={`#${group.id}`}><span>{String(index + 1).padStart(2, '0')}</span>{group.title}</a></li>)}
+          </ul>
+        </nav>
+        <div class="faq-help-card">
+          <h2>Still have questions?</h2>
+          <a class="btn btn-primary" href={demoHref}>Request a demo</a>
+        </div>
+      </aside>
+      <div class="faq-content">
+        {groups.map((group) => (
           <section class="faq-group group" id={group.id} aria-labelledby={`${group.id}-heading`}>
+            <span class="eyebrow">FAQ topic</span>
             <h2 id={`${group.id}-heading`}>{group.title}</h2>
             <div class="faq-list">
               {group.items.map((item) => (
                 <details>
                   <summary>{item.q}</summary>
-                  <div class="answer">
-                    {item.a.map((para) => (
-                      <p>{para}</p>
-                    ))}
-                  </div>
+                  <div class="answer">{item.a.map((para) => <p>{para}</p>)}</div>
                 </details>
               ))}
             </div>
           </section>
-        ))
-      }
-      <p class="mt-lg muted">
-        Support hours, response times and licensing terms will be stated in the written agreement once approved.
-      </p>
+        ))}
+        <p class="mt-lg muted">Support hours, response times and licensing terms will be stated in the written agreement once approved.</p>
+      </div>
     </div>
   </section>
 
