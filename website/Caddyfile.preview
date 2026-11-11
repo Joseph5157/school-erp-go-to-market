@@ -1,18 +1,16 @@
-# ALL routes, including assets and robots.txt, require HTTP Basic Auth.
-# The externally supplied hash is a bcrypt hash; plaintext passwords are never stored here.
+# Open preview: password protection removed on the owner's instruction (2026-11-11).
+# Search-engine locks (noindex header, Astro noindex meta, robots.txt) stay in place
+# until the public launch gates in website/PUBLICATION-READINESS.md are approved.
 # Railway terminates HTTPS at the edge. Never expose port 8080 directly without HTTPS.
 :{$PORT:8080} {
     root * /srv
     encode zstd gzip
     header {
         X-Robots-Tag "noindex, nofollow, noarchive"
-        Cache-Control "private, no-store"
+        Cache-Control "no-cache"
         X-Frame-Options "DENY"
         X-Content-Type-Options "nosniff"
         Referrer-Policy "no-referrer"
-    }
-    basic_auth {
-        preview {$PREVIEW_PASSWORD_HASH}
     }
     file_server
 }
