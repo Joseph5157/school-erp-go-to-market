@@ -1272,3 +1272,14 @@ tbody th {
 .page-photo { margin: 0 0 32px; }
 .page-photo img { display: block; width: 100%; height: auto; max-height: 440px; object-fit: cover; object-position: center 35%; border-radius: 16px; }
 .page-photo figcaption { margin-top: 10px; font-size: .78rem; color: #4a5f5b; }
+
+/* Photo beside short copy (who-its-for guardians row) */
+.photo-split { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 40px; align-items: center; margin-top: 40px; }
+.photo-split .page-photo { margin: 0; }
+.page-photo--portrait img { max-height: none; aspect-ratio: 4 / 5; }
+.photo-split-copy h3 { margin: 8px 0 14px; }
+.photo-split-copy p { margin: 0 0 10px; max-width: 460px; }
+@media (max-width: 700px) {
+  .photo-split { grid-template-columns: 1fr; gap: 20px; }
+  .photo-split .page-photo { max-width: 340px; }
+}
