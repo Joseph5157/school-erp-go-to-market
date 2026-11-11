@@ -1,13 +1,12 @@
 // GTM-WEBSITE-V2 homepage content model — the single source for homepage
-// wording, including the text drawn inside the illustrations and the
-// screenshot descriptions.
+// wording, including image descriptions and captions.
 // Every claim restates a capability already listed in ./site.ts (areas
 // M01–M12) or the existing draft copy. Do not add capabilities, figures,
 // testimonials or customer names here.
 //
 // The hero, attendance and guardian visuals are real screenshots from the demo
-// school (fictional data). The admission visual is still an original
-// illustration, because no admission screenshot exists yet.
+// school (fictional data). The admission and roles visuals are AI-generated
+// illustrative images of people (brochure cover; Gamma), captioned as such.
 
 export type IconName =
   | 'admissions'
@@ -22,7 +21,6 @@ export type IconName =
 export type Link = { href: string; label: string };
 export type Intro = { eyebrow: string; heading: string; lead?: string; link?: Link };
 
-const illustrationCaption = 'Original illustration with fictional demo data. Not an application screenshot.';
 const shotCaption = 'Screenshot of School ERP in a demo school. All names and figures are fictional.';
 
 // Real screenshots ----------------------------------------------------------
@@ -69,12 +67,23 @@ export const shots = {
   },
 } satisfies Record<string, Shot>;
 
-export const teamPhoto = {
+export type Photo = { src: string; width: number; height: number; alt: string; caption: string };
+const photoCaption = 'Illustrative image. The people shown are not real staff, guardians or students.';
+
+export const admissionPhoto: Photo = {
+  src: '/images/product/admissions-desk.webp',
+  width: 1000,
+  height: 750,
+  alt: 'Illustration of a school office: a staff member at the front desk helps a parent and her young daughter fill in admission papers.',
+  caption: photoCaption,
+};
+
+export const teamPhoto: Photo = {
   src: '/images/product/school-team.webp',
   width: 1000,
   height: 666,
   alt: 'Illustration of a teacher with a tablet, a principal at a laptop, and a guardian with a student, all looking at the school system together.',
-  caption: 'Illustrative image. The people shown are not real staff, guardians or students.',
+  caption: photoCaption,
 };
 
 // Page metadata --------------------------------------------------------------
@@ -172,26 +181,6 @@ export const features: Feature[] = [
     tone: 'pale',
   },
 ];
-
-// Illustration content (fictional, nameless; one consistent journey) --------
-export const scenes = {
-  caption: illustrationCaption,
-  admission: {
-    label: 'Decide, then enrol',
-    ariaLabel:
-      'Illustration of an admission record for a fictional applicant: application registered with a linked guardian, decision recorded as accepted, then a separate dated enrolment into Class 8, Section A.',
-    backTitle: 'Placement history',
-    backTag: 'Kept',
-    eyebrow: 'Admissions',
-    title: 'Fictional applicant',
-    tag: 'Class 8',
-    steps: [
-      { title: 'Application registered', note: 'Guardian linked' },
-      { title: 'Decision recorded', note: 'Accepted', status: true },
-      { title: 'Enrolled', note: 'Class 8 · Section A · dated' },
-    ],
-  },
-};
 
 // 04 Publication band -------------------------------------------------------
 export type PublicationStage = { who: string; action: string; visibility: string; live?: boolean };

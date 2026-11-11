@@ -80,9 +80,11 @@ The owner approved the demo school's screenshots for website use (all names and 
 | Asset ID | Homepage component | Now shows | File |
 |---|---|---|---|
 | V2-01 | `HeroProduct.astro` via `ProductShot.astro` | Admin overview attendance charts (desktop); overview "Needs attention" crop below 600px | `overview-desktop.webp`, `overview-phone.webp` |
-| V2-02 | `SceneAdmission.astro` | Still an original illustration (no admission screenshot exists) | — |
+| V2-02 | `FeatureShowcase.astro` via `Photo.astro` | AI-generated image (Gamma) of a school office admission, captioned "Illustrative image"; no admission screenshot exists | `admissions-desk.webp` |
 | V2-03 | `FeatureShowcase.astro` via `ProductShot.astro` | Teacher attendance register on a phone, in draft with 2 unmarked | `attendance-register.webp` |
 | V2-06 | `PublicationFlow.astro` via `ProductShot.astro` | Guardian portal home on a phone: attendance, latest report card, notices | `guardian-home.webp` |
-| — | `RolePreview.astro` | Brochure cover image, captioned "Illustrative image" | `school-team.webp` |
+| — | `RolePreview.astro` via `Photo.astro` | Brochure cover image, captioned "Illustrative image" | `school-team.webp` |
 
 Each screenshot is captioned "Screenshot of School ERP in a demo school. All names and figures are fictional." The screenshots predate some later app changes; recapture before public launch. The provenance checklist above is still open for a public launch.
+
+The hand-drawn illustration components (`IllustrationPanel`, `SceneAdmission`, `SceneRegister`, `SceneGuardianReport`) have been removed. AI images must contain no readable text and are always captioned as illustrative, never as real people or real schools.

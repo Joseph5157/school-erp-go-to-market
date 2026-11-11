@@ -1,0 +1,17 @@
+---
+// Illustrative image of people (not real staff, guardians or students),
+// captioned as such. Image details come from src/data/home.ts.
+import type { Photo } from '../../data/home';
+
+interface Props {
+  photo: Photo;
+  variant?: 'banner' | 'card';
+}
+
+const { photo, variant = 'card' } = Astro.props;
+---
+
+<figure class:list={['v2-photo', `v2-photo--${variant}`]}>
+  <img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} loading="lazy" decoding="async" />
+  <figcaption>{photo.caption}</figcaption>
+</figure>
