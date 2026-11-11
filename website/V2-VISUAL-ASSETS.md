@@ -88,3 +88,5 @@ The owner approved the demo school's screenshots for website use (all names and 
 Each screenshot is captioned "Screenshot of School ERP in a demo school. All names and figures are fictional." The screenshots predate some later app changes; recapture before public launch. The provenance checklist above is still open for a public launch.
 
 The hand-drawn illustration components (`IllustrationPanel`, `SceneAdmission`, `SceneRegister`, `SceneGuardianReport`) have been removed. AI images must contain no readable text and are always captioned as illustrative, never as real people or real schools.
+
+Other pages: `/who-its-for/` shows `teacher-attendance.webp` (Gamma AI image of a teacher taking attendance on a phone) at the top of the Daily users section, captioned as illustrative.
