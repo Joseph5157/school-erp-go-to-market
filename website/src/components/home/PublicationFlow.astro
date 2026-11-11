@@ -1,0 +1,33 @@
+---
+// Dark publication band: four stages, guardian visibility stated per stage,
+// plus a real guardian-portal screenshot (demo school, fictional data).
+import ProductShot from './ProductShot.astro';
+import { publication, publicationStages, shots } from '../../data/home';
+---
+
+<section class="v2-section v2-publication" aria-labelledby="v2-publish-heading">
+  <div class="wrap">
+    <div class="v2-publication-header">
+      <div>
+        <span class="v2-label">{publication.eyebrow}</span>
+        <h2 id="v2-publish-heading">{publication.heading}</h2>
+      </div>
+      <p>{publication.text}</p>
+    </div>
+    <div class="v2-publication-body">
+      <ol class="v2-pub-flow" aria-label={publication.listLabel}>
+        {publicationStages.map((stage, i) => (
+          <li class:list={['v2-pub-stage', { 'is-live': stage.live }]}>
+            <small>{publication.stepLabel} {i + 1} · {stage.who}</small>
+            <strong>{stage.action}</strong>
+            <span class="v2-pub-visibility">{stage.visibility}</span>
+          </li>
+        ))}
+      </ol>
+      <ProductShot shot={shots.guardian} tone="dark" />
+    </div>
+    <a class="v2-publication-link v2-inline-link" href={publication.link.href}>
+      {publication.link.label} <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>

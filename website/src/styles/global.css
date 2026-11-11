@@ -1,14 +1,19 @@
-/* GTM-WEBSITE-01 — Graphite & Institutional Green (brand/brand-guidelines.md) */
+/* GTM-WEBSITE-01 — Graphite & Institutional Green (brand/brand-guidelines.md).
+   2026-11-11: colours and component styles follow the V2 homepage site-wide
+   (owner request); see the "V2 look" block at the end of this file. */
 
 :root {
-  --ink: #18212b;
-  --ink-soft: #4a5562;
-  --paper: #f5f6f3;
+  --ink: #10283b;
+  --ink-soft: #4b5e67;
+  --paper: #fbfcfa;
   --surface: #ffffff;
-  --rule: #dde1dc;
-  --brand: #1f6b52;
-  --brand-strong: #185842;
-  --brand-wash: #e3efe9;
+  --rule: #dce8e2;
+  --brand: #1f6653; /* owner decision 2026-11-11: keep the V2 homepage green on the website (brand guideline #1F6B52 is for app/print) */
+  --brand-strong: #144e3e;
+  --brand-wash: #e1f2e9;
+  --surface-tint: #f4f8f5;
+  --line-strong: #b8d2c7;
+  --label: #3f7a63;
   --info: #1d5fa8;
   --info-wash: #e6eef8;
   --caution: #9a5b00;
@@ -1266,4 +1271,96 @@ tbody th {
   html {
     scroll-behavior: smooth;
   }
+}
+
+/* Illustrative photo inside a page section (people are not real) */
+.page-photo { margin: 0 0 32px; }
+.page-photo img { display: block; width: 100%; height: auto; max-height: 440px; object-fit: cover; object-position: center 35%; border-radius: 16px; }
+.page-photo figcaption { margin-top: 10px; font-size: .78rem; color: #4a5f5b; }
+
+/* Photo beside short copy (who-its-for guardians row) */
+.photo-split { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 40px; align-items: center; margin-top: 40px; }
+.photo-split .page-photo { margin: 0; }
+.page-photo--portrait img { max-height: none; aspect-ratio: 4 / 5; }
+.photo-split-copy h3 { margin: 8px 0 14px; }
+.photo-split-copy p { margin: 0 0 10px; max-width: 460px; }
+@media (max-width: 700px) {
+  .photo-split { grid-template-columns: 1fr; gap: 20px; }
+  .photo-split .page-photo { max-width: 340px; }
+}
+
+/* ------------------------------------------------------------------
+   V2 look, site-wide (owner request 2026-11-11): the components on the
+   other pages use the homepage's spacing, buttons, cards, page top and
+   closing band. Headings keep the bold sizes defined at the top.
+   ------------------------------------------------------------------ */
+.lead { line-height: 1.75; }
+.section-head p { font-size: 1.05rem; line-height: 1.75; }
+
+.btn {
+  gap: 12px; min-height: 50px; padding: 12px 22px; font-size: .95rem;
+  transition: background .2s ease, transform .2s ease, color .2s ease, border-color .2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-secondary { color: var(--ink); border-color: var(--line-strong); }
+.btn-secondary:hover { color: var(--brand); background: #f7fbf9; }
+
+@media (min-width: 720px) {
+  .section { padding: 96px 0; }
+}
+.section-head { margin-bottom: 44px; }
+
+/* Page top: the homepage's mint field with faint vertical lines */
+.page-intro {
+  position: relative; isolation: isolate;
+  background: radial-gradient(ellipse at 85% 28%, #d1ecdf 0%, transparent 49%),
+    linear-gradient(165deg, #fff 10%, #f3faf5 56%, #dceee5 100%);
+}
+.page-intro::before {
+  position: absolute; inset: 0; z-index: -1; pointer-events: none; content: "";
+  background-image: linear-gradient(to right, #2163510d 1px, transparent 1px);
+  background-size: 116px 100%;
+  mask-image: linear-gradient(to bottom, #0009, transparent 88%);
+}
+@media (min-width: 720px) {
+  .page-intro { padding: 104px 0 88px; }
+}
+.page-intro .lead { font-size: 1.12rem; }
+
+.card { border-radius: 15px; padding: 30px; }
+.card-label { color: var(--label); letter-spacing: .1em; }
+
+.check-list li::before {
+  top: .45em; left: 2px; width: 12px; height: 7px; border-radius: 0; background: none; box-shadow: none;
+  border-left: 2px solid var(--brand); border-bottom: 2px solid var(--brand); transform: rotate(-45deg);
+}
+
+.steps li { border-radius: 15px; padding: 22px 22px 22px 70px; }
+.steps li::before { left: 22px; top: 22px; width: 36px; height: 36px; background: var(--brand-wash); color: var(--brand); font-size: .82rem; }
+
+.callout { border-radius: 10px; }
+
+.faq-list summary { padding: 20px 40px 20px 0; font-size: 1.02rem; }
+.faq-list summary::after {
+  content: ""; right: 8px; top: 50%; width: 10px; height: 10px; margin-top: -7px;
+  border-right: 2px solid var(--brand); border-bottom: 2px solid var(--brand);
+  transform: rotate(45deg); transition: transform .2s ease;
+}
+.faq-list details[open] summary::after { content: ""; transform: rotate(-135deg); margin-top: -2px; }
+
+/* Closing band: the homepage's light Gamma background */
+.cta-band {
+  color: var(--ink); text-align: center; padding: 120px 0;
+  background: #f3f9f6 url('/images/product/cta-background.webp') center / cover no-repeat;
+}
+.cta-band h2 { color: var(--ink); margin-inline: auto; }
+.cta-band p { color: #35515a; margin-inline: auto; font-size: 1.08rem; }
+.cta-band .btn-row { justify-content: center; margin-top: 32px; }
+@media (max-width: 700px) {
+  .cta-band { padding: 68px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+  .btn:hover { transform: none; }
 }

@@ -1,0 +1,25 @@
+---
+// V2 first screen: copy left, a real School ERP overview screenshot right
+// (demo school, fictional data). Narrow screens get a phone crop instead.
+import ProductShot from './ProductShot.astro';
+import { demoHref } from '../../data/site';
+import { hero, shots } from '../../data/home';
+---
+
+<section class="v2-hero" aria-labelledby="v2-hero-heading">
+  <div class="wrap v2-hero-grid">
+    <div class="v2-hero-copy">
+      <span class="v2-label v2-hero-label">{hero.eyebrow}</span>
+      <h1 id="v2-hero-heading">{hero.heading.lead} <span>{hero.heading.accent}</span></h1>
+      <p class="v2-hero-lead">{hero.lead}</p>
+      <div class="v2-hero-actions">
+        <a class="v2-btn v2-btn-primary" href={demoHref}>{hero.primaryLabel} <span aria-hidden="true">↗</span></a>
+        <a class="v2-btn v2-btn-secondary" href={hero.secondary.href}>{hero.secondary.label} <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="v2-hero-note">{hero.note}</p>
+    </div>
+    <div class="v2-hero-art">
+      <ProductShot shot={shots.overview} eager />
+    </div>
+  </div>
+</section>

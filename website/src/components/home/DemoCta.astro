@@ -1,0 +1,17 @@
+---
+// V2 closing call to action on a light green abstract background (Gamma). Same destinations as
+// the site-wide CtaBand, which the other pages keep using.
+import { demoHref, requirementsHref } from '../../data/site';
+import { closingCta } from '../../data/home';
+---
+
+<section class="v2-cta" aria-labelledby="v2-cta-heading">
+  <div class="wrap v2-cta-inner">
+    <h2 id="v2-cta-heading">{closingCta.heading}</h2>
+    <p>{closingCta.text}</p>
+    <div class="v2-hero-actions">
+      <a class="v2-btn v2-btn-primary" href={demoHref}>{closingCta.primaryLabel} <span aria-hidden="true">↗</span></a>
+      <a class="v2-btn v2-btn-secondary" href={requirementsHref}>{closingCta.secondaryLabel}</a>
+    </div>
+  </div>
+</section>

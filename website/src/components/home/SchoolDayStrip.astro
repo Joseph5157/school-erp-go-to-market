@@ -1,0 +1,30 @@
+---
+// Three-stage school-day strip: Admission → Daily work → Published result.
+import SectionIntro from './SectionIntro.astro';
+import Icon from './Icon.astro';
+import { schoolDay, schoolDayIntro } from '../../data/home';
+---
+
+<section class="v2-section v2-day" aria-labelledby="v2-day-heading">
+  <div class="wrap">
+    <SectionIntro id="v2-day-heading" intro={schoolDayIntro} showLink={false} />
+    <ol class="v2-process-grid">
+      {schoolDay.map((stage) => (
+        <li class="v2-process-card">
+          <div class="v2-process-top">
+            <span class="v2-process-icon"><Icon name={stage.icon} /></span>
+            <span class="v2-step-no">{stage.step}</span>
+          </div>
+          <h3>{stage.title}</h3>
+          <p>{stage.text}</p>
+          <span class="v2-mini-state">{stage.state}</span>
+        </li>
+      ))}
+    </ol>
+    {schoolDayIntro.link && (
+      <p class="v2-after-link">
+        <a class="v2-inline-link" href={schoolDayIntro.link.href}>{schoolDayIntro.link.label} <span aria-hidden="true">→</span></a>
+      </p>
+    )}
+  </div>
+</section>

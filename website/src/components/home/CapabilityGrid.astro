@@ -1,0 +1,28 @@
+---
+// Compact eight-capability grid linking into the Features page groups.
+import SectionIntro from './SectionIntro.astro';
+import Icon from './Icon.astro';
+import { capabilities, capabilitiesIntro } from '../../data/home';
+---
+
+<section class="v2-section v2-capabilities" aria-labelledby="v2-cap-heading">
+  <div class="wrap">
+    <SectionIntro id="v2-cap-heading" intro={capabilitiesIntro} showLink={false} />
+    <ul class="v2-capability-grid">
+      {capabilities.map((c) => (
+        <li>
+          <a class="v2-capability" href={c.href}>
+            <span class="v2-capability-icon"><Icon name={c.icon} /></span>
+            <strong>{c.title}</strong>
+            <span class="v2-capability-text">{c.text}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    {capabilitiesIntro.link && (
+      <p class="v2-after-link">
+        <a class="v2-inline-link" href={capabilitiesIntro.link.href}>{capabilitiesIntro.link.label} <span aria-hidden="true">→</span></a>
+      </p>
+    )}
+  </div>
+</section>

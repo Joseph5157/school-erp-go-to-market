@@ -1,0 +1,25 @@
+---
+// Three-step implementation timeline with one compact factual note.
+import SectionIntro from './SectionIntro.astro';
+import { onboarding, onboardingIntro, onboardingNote } from '../../data/home';
+---
+
+<section class="v2-section v2-onboard" aria-labelledby="v2-onboard-heading">
+  <div class="wrap v2-onboard-inner">
+    <SectionIntro id="v2-onboard-heading" intro={onboardingIntro} />
+    <div>
+      <ol class="v2-onboard-steps">
+        {onboarding.map((step, i) => (
+          <li class="v2-onboard-step">
+            <span aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <div>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+      <p class="v2-onboard-note"><strong>{onboardingNote.title}</strong> {onboardingNote.text}</p>
+    </div>
+  </div>
+</section>

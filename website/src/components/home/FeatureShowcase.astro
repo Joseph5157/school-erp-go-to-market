@@ -1,0 +1,35 @@
+---
+// Image-led feature split. Copy on one side, an illustrative photo or a
+// real demo-school screenshot on the other. `reverse` swaps the sides on wide screens; on narrow screens copy
+// always comes first. Wording comes from `features` in src/data/home.ts.
+import Photo from './Photo.astro';
+import ProductShot from './ProductShot.astro';
+import { admissionPhoto, shots, type Feature } from '../../data/home';
+
+interface Props {
+  feature: Feature;
+}
+
+const { feature: f } = Astro.props;
+---
+
+<section
+  class:list={['v2-section', 'v2-feature-section', { 'v2-feature-section--pale': f.tone === 'pale' }]}
+  aria-labelledby={f.id}
+>
+  <div class:list={['wrap', 'v2-feature-row', { 'is-reverse': f.reverse }]}>
+    <div class="v2-feature-copy">
+      <span class="v2-label">{f.eyebrow}</span>
+      <h2 id={f.id}>{f.heading}</h2>
+      <p>{f.text}</p>
+      <ul class="v2-checks">
+        {f.checks.map((c) => <li>{c}</li>)}
+      </ul>
+      <a class="v2-inline-link" href={f.link.href}>{f.link.label} <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="v2-feature-visual">
+      {f.scene === 'admission' && <Photo photo={admissionPhoto} />}
+      {f.scene === 'register' && <ProductShot shot={shots.register} />}
+    </div>
+  </div>
+</section>
