@@ -139,19 +139,6 @@
 .home-v2 .v2-feature-copy h2 { margin: 16px 0 20px; max-width: 520px; }
 .home-v2 .v2-feature-copy > p { font-size: 1.05rem; line-height: 1.8; max-width: 500px; }
 .home-v2 .v2-feature-visual { min-width: 0; }
-/* Square green panel that frames each feature image */
-.home-v2 .v2-feature-panel {
-  aspect-ratio: 1; max-width: 560px; margin-inline: auto;
-  display: grid; place-items: center; padding: 40px; border-radius: 8px;
-  background: repeating-linear-gradient(90deg, #ffffff0d 0 1px, transparent 1px 58px),
-    linear-gradient(160deg, #6aae94 0%, #2f7a63 48%, #1f6653 100%);
-  box-shadow: 0 30px 60px #10283b26;
-}
-.home-v2 .v2-feature-panel .v2-photo { width: 100%; }
-.home-v2 .v2-feature-panel .v2-photo figcaption,
-.home-v2 .v2-feature-panel .v2-shot-caption { color: #e3f2ea; }
-.home-v2 .v2-feature-panel .v2-shot--phone { width: 250px; }
-.home-v2 .v2-feature-panel .v2-shot--phone img { aspect-ratio: 9 / 14; object-fit: cover; object-position: top; }
 .home-v2 .v2-checks { margin: 24px 0 16px; }
 .home-v2 .v2-checks li { padding: 9px 0 9px 30px; position: relative; font-size: .96rem; color: #35515a; border-top: 1px solid var(--v2-line); }
 .home-v2 .v2-checks li:last-child { border-bottom: 1px solid var(--v2-line); }
@@ -331,7 +318,6 @@
 @media (max-width: 700px) {
   .home-v2 .v2-section, .home-v2 .v2-cta { padding: 68px 0; }
   .home-v2 .v2-section-intro { margin-bottom: 30px; }
-  .home-v2 .v2-feature-panel { aspect-ratio: auto; padding: 28px 22px; }
 }
 @media (max-width: 600px) {
   .home-v2 .v2-capability-grid, .home-v2 .v2-pub-flow { grid-template-columns: 1fr; }
