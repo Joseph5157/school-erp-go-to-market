@@ -91,3 +91,4 @@ The hand-drawn illustration components (`IllustrationPanel`, `SceneAdmission`, `
 
 Other pages: `/who-its-for/` shows `teacher-attendance.webp` (Gamma AI image of a teacher taking attendance on a phone) at the top of the Daily users section, captioned as illustrative.
 `/who-its-for/` also shows `guardian-home-photo.webp` (Gamma AI image of a mother and son looking at a phone) in a row below the three role cards, next to guardian copy reused from the homepage roles section.
+`/implementation/` shows `implementation-meeting.webp` (Gamma AI image of a principal reviewing spreadsheets with two implementation team members) at the top of the Who does what section.
