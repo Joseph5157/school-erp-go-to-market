@@ -1,13 +1,16 @@
 ---
-// V2 first screen: copy left, a real School ERP overview screenshot right
-// (demo school, fictional data). Narrow screens get a phone crop instead.
+// V3 first screen: centred copy, then a real School ERP overview screenshot
+// (demo school, fictional data) rising out of a green band at the bottom of
+// the section, with three floating chips on wide screens. Narrow screens get
+// a phone crop of the overview instead.
 import ProductShot from './ProductShot.astro';
+import Icon from './Icon.astro';
 import { demoHref } from '../../data/site';
 import { hero, shots } from '../../data/home';
 ---
 
 <section class="v2-hero" aria-labelledby="v2-hero-heading">
-  <div class="wrap v2-hero-grid">
+  <div class="wrap">
     <div class="v2-hero-copy">
       <span class="v2-label v2-hero-label">{hero.eyebrow}</span>
       <h1 id="v2-hero-heading">{hero.heading.lead} <span>{hero.heading.accent}</span></h1>
@@ -18,8 +21,16 @@ import { hero, shots } from '../../data/home';
       </div>
       <p class="v2-hero-note">{hero.note}</p>
     </div>
-    <div class="v2-hero-art">
-      <ProductShot shot={shots.overview} eager />
+    <div class="v2-hero-stage">
+      <ProductShot shot={shots.overview} eager bleed />
+      <ul class="v2-hero-chips" aria-label={hero.chipsLabel}>
+        {hero.chips.map((c) => (
+          <li class="v2-chip">
+            <span class="v2-chip-icon"><Icon name={c.icon} size={20} /></span>
+            <span><strong>{c.title}</strong> {c.text}</span>
+          </li>
+        ))}
+      </ul>
     </div>
   </div>
 </section>
