@@ -1267,3 +1267,8 @@ tbody th {
     scroll-behavior: smooth;
   }
 }
+
+/* Illustrative photo inside a page section (people are not real) */
+.page-photo { margin: 0 0 32px; }
+.page-photo img { display: block; width: 100%; height: auto; max-height: 440px; object-fit: cover; object-position: center 35%; border-radius: 16px; }
+.page-photo figcaption { margin-top: 10px; font-size: .78rem; color: #4a5f5b; }
