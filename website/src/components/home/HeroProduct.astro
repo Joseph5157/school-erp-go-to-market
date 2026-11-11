@@ -1,11 +1,9 @@
 ---
-// V2 first screen: copy left, original illustrative product composition right.
-// The composition is drawn in HTML/CSS with fictional, nameless demo data and
-// is captioned as an illustration, not an application screenshot.
-import { demoHref, site } from '../../data/site';
-import { hero } from '../../data/home';
-
-const { art } = hero;
+// V2 first screen: copy left, a real School ERP overview screenshot right
+// (demo school, fictional data). Narrow screens get a phone crop instead.
+import ProductShot from './ProductShot.astro';
+import { demoHref } from '../../data/site';
+import { hero, shots } from '../../data/home';
 ---
 
 <section class="v2-hero" aria-labelledby="v2-hero-heading">
@@ -20,47 +18,8 @@ const { art } = hero;
       </div>
       <p class="v2-hero-note">{hero.note}</p>
     </div>
-    <figure class="v2-hero-art" aria-labelledby="v2-art-caption">
-      <div class="v2-float v2-float-one" aria-hidden="true">
-        <strong><span class="v2-float-dot"></span>{art.floats[0].title}</strong>
-        <span>{art.floats[0].text}</span>
-      </div>
-      <div class="v2-product-window" role="img" aria-label={art.ariaLabel}>
-        <div class="v2-product-sidebar" aria-hidden="true">
-          <div class="v2-sidebar-brand"><i class="v2-sidebar-mark"></i><span>{site.wordmark}</span></div>
-          {art.sidebar.map((item, i) => (
-            <span class:list={['v2-sidebar-link', { 'is-active': i === 0 }]}>{item}</span>
-          ))}
-        </div>
-        <div class="v2-ui-main" aria-hidden="true">
-          <div class="v2-ui-top">
-            <div>
-              <div class="v2-ui-eyebrow">{art.eyebrow}</div>
-              <div class="v2-ui-title">{art.title}</div>
-            </div>
-            <span class="v2-ui-year">{art.year}</span>
-          </div>
-          <div class="v2-ui-grid">
-            {art.tiles.map((t) => (
-              <div class="v2-ui-tile">
-                <span>{t.label}</span>
-                <strong>{t.value}</strong>
-                <span class="v2-ui-pill">{t.state}</span>
-              </div>
-            ))}
-          </div>
-          <div class="v2-ui-bottom">
-            {art.rows.map((r) => (
-              <div class="v2-ui-row"><span>{r.label}</span><b class="v2-ui-state">{r.state}</b></div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div class="v2-float v2-float-two" aria-hidden="true">
-        <strong><span class="v2-float-dot"></span>{art.floats[1].title}</strong>
-        <span>{art.floats[1].text}</span>
-      </div>
-      <figcaption id="v2-art-caption" class="v2-art-caption">{art.caption}</figcaption>
-    </figure>
+    <div class="v2-hero-art">
+      <ProductShot shot={shots.overview} eager />
+    </div>
   </div>
 </section>

@@ -1,13 +1,13 @@
 // GTM-WEBSITE-V2 homepage content model — the single source for homepage
-// wording, including the text drawn inside the illustrations.
+// wording, including the text drawn inside the illustrations and the
+// screenshot descriptions.
 // Every claim restates a capability already listed in ./site.ts (areas
 // M01–M12) or the existing draft copy. Do not add capabilities, figures,
 // testimonials or customer names here.
 //
-// Illustrations follow ONE fictional, nameless journey so the drawings agree
-// with each other: an applicant is admitted to Class 8, Section A; Class 8A's
-// register is submitted; the child's Term 1 report card is published. Class 9B
-// appears only as a different section whose register is still missing.
+// The hero, attendance and guardian visuals are real screenshots from the demo
+// school (fictional data). The admission visual is still an original
+// illustration, because no admission screenshot exists yet.
 
 export type IconName =
   | 'admissions'
@@ -23,7 +23,59 @@ export type Link = { href: string; label: string };
 export type Intro = { eyebrow: string; heading: string; lead?: string; link?: Link };
 
 const illustrationCaption = 'Original illustration with fictional demo data. Not an application screenshot.';
-const demoClass = 'Class 8A';
+const shotCaption = 'Screenshot of School ERP in a demo school. All names and figures are fictional.';
+
+// Real screenshots ----------------------------------------------------------
+// Captured from the School ERP demo school on 5 November 2026. Every name and
+// figure is fictional demo data (owner approved for website use 2026-11-11).
+// Source PNGs: school-erp/marketing-assets/screenshots/ (not in this repo).
+export type Shot = {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+  caption: string;
+  frame: 'browser' | 'phone';
+  bar?: string;
+  narrow?: { src: string; width: number; height: number };
+};
+
+export const shots = {
+  overview: {
+    src: '/images/product/overview-desktop.webp',
+    width: 1600,
+    height: 997,
+    narrow: { src: '/images/product/overview-phone.webp', width: 480, height: 533 },
+    alt: 'School ERP administrator overview for a demo school: term attendance against an 80% target, today’s present and absent count, registers, marks and results still to finish, a daily attendance line chart and a four-week attendance heatmap.',
+    caption: shotCaption,
+    frame: 'browser',
+    bar: 'School overview',
+  },
+  register: {
+    src: '/images/product/attendance-register.webp',
+    width: 440,
+    height: 952,
+    alt: 'Teacher attendance register for Grade 10 A on a phone, still in draft: 2 students unmarked, 7 present and 1 absent, with each student marked Present or Absent and a bar reminding the teacher to mark everyone before submitting.',
+    caption: shotCaption,
+    frame: 'phone',
+  },
+  guardian: {
+    src: '/images/product/guardian-home.webp',
+    width: 440,
+    height: 797,
+    alt: 'Guardian portal on a phone: a demo child’s attendance of 84.6%, a link to the latest Term 2 report card, and the latest school notices.',
+    caption: shotCaption,
+    frame: 'phone',
+  },
+} satisfies Record<string, Shot>;
+
+export const teamPhoto = {
+  src: '/images/product/school-team.webp',
+  width: 1000,
+  height: 666,
+  alt: 'Illustration of a teacher with a tablet, a principal at a laptop, and a guardian with a student, all looking at the school system together.',
+  caption: 'Illustrative image. The people shown are not real staff, guardians or students.',
+};
 
 // Page metadata --------------------------------------------------------------
 export const homeMeta = {
@@ -39,28 +91,6 @@ export const hero = {
   primaryLabel: 'Request a demo',
   secondary: { href: '/features/', label: 'Explore the features' },
   note: 'A dedicated installation, configured for each school’s classes, terms and policies.',
-  art: {
-    ariaLabel:
-      'Original illustrative school administration interface showing an overview, a reviewed admission, submitted attendance and report-card publication stages. Not a screenshot of the application.',
-    caption: 'Original illustrative demo composition. Not an application screenshot.',
-    sidebar: ['Overview', 'Students', 'Attendance', 'Assessments', 'Reports'],
-    eyebrow: 'Fictional demo school',
-    title: 'School overview',
-    year: 'Academic year',
-    tiles: [
-      { label: 'Admissions', value: 'Application reviewed', state: 'Decision recorded' },
-      { label: 'Daily attendance', value: demoClass, state: 'Register submitted' },
-    ],
-    rows: [
-      { label: 'Teacher marks entry', state: 'Recorded' },
-      { label: 'School review', state: 'Preview first' },
-      { label: 'Guardian report view', state: 'After publication' },
-    ],
-    floats: [
-      { title: 'Attendance', text: `${demoClass} register submitted` },
-      { title: 'Publication control', text: 'Results visible only after the school publishes' },
-    ],
-  },
 };
 
 // 02 School-day strip ------------------------------------------------------
@@ -160,34 +190,6 @@ export const scenes = {
       { title: 'Decision recorded', note: 'Accepted', status: true },
       { title: 'Enrolled', note: 'Class 8 · Section A · dated' },
     ],
-  },
-  register: {
-    label: 'Absent is not the same as missing',
-    ariaLabel: `Illustration of a submitted daily register for ${demoClass} with fictional roll numbers marked Present or Absent, one absence note, and a separate report showing that another section's register has not yet been submitted.`,
-    eyebrow: 'Daily register',
-    title: demoClass,
-    status: 'Submitted',
-    rows: [
-      { roll: 'Roll 01', mark: 'Present' },
-      { roll: 'Roll 02', mark: 'Present' },
-      { roll: 'Roll 03', mark: 'Absent · note added', absent: true },
-      { roll: 'Roll 04', mark: 'Present' },
-    ],
-    chipEyebrow: 'Missing-attendance report',
-    chipText: 'Class 9B · register not submitted',
-  },
-  guardian: {
-    ariaLabel: `Illustration of the guardian portal in a web browser showing a fictional child's published Term 1 report card for ${demoClass} with three subject results and a report-card PDF download.`,
-    bar: 'Guardian portal',
-    eyebrow: `Fictional child · ${demoClass}`,
-    title: 'Term 1 report card',
-    status: 'Published',
-    lines: [
-      { subject: 'Mathematics', marks: '78 / 100' },
-      { subject: 'English', marks: '84 / 100' },
-      { subject: 'Science', marks: '71 / 100' },
-    ],
-    button: 'Download report-card PDF',
   },
 };
 

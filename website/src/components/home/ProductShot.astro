@@ -1,0 +1,37 @@
+---
+// Real School ERP screenshot from the demo school (fictional data, owner
+// approved 2026-11-11), shown in a light browser or phone frame.
+// Image details and wording come from `shots` in src/data/home.ts.
+import type { Shot } from '../../data/home';
+
+interface Props {
+  shot: Shot;
+  eager?: boolean;
+  tone?: 'light' | 'dark';
+}
+
+const { shot, eager = false, tone = 'light' } = Astro.props;
+---
+
+<figure class:list={['v2-shot', `v2-shot--${shot.frame}`, `v2-shot--${tone}`]}>
+  <div class="v2-shot-frame">
+    {shot.frame === 'browser' && (
+      <div class="v2-shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>{shot.bar}</span></div>
+    )}
+    <picture>
+      {shot.narrow && (
+        <source media="(max-width: 600px)" srcset={shot.narrow.src} width={shot.narrow.width} height={shot.narrow.height} />
+      )}
+      <img
+        src={shot.src}
+        width={shot.width}
+        height={shot.height}
+        alt={shot.alt}
+        loading={eager ? 'eager' : 'lazy'}
+        decoding="async"
+        fetchpriority={eager ? 'high' : undefined}
+      />
+    </picture>
+  </div>
+  <figcaption class="v2-shot-caption">{shot.caption}</figcaption>
+</figure>

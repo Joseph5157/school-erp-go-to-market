@@ -72,3 +72,17 @@ No authenticated capture has been made. Each asset slot is filled by an **origin
 Illustrated marks (78/100 and so on), class names and roll numbers are invented for the drawing and are not product data or results. No people, photographs, logos, testimonials or metrics are used.
 
 **One fictional journey.** The drawings follow the same nameless student: admitted to Class 8, Section A (V2-02) → Class 8A register submitted (V2-01, V2-03) → Term 1 report card for Class 8A published to the guardian (V2-06). Class 9B appears only as a different section whose register is still missing. All drawing text lives in `src/data/home.ts` (`hero.art`, `scenes`); real captures should follow the same journey.
+
+## Update 2026-11-11: real screenshots in use
+
+The owner approved the demo school's screenshots for website use (all names and figures are fictional) and asked to continue with the screenshots captured on 5 November 2026 rather than new captures. Source PNGs are in `school-erp/marketing-assets/screenshots/` (not committed here). Optimised WebP copies are in `website/public/images/product/`.
+
+| Asset ID | Homepage component | Now shows | File |
+|---|---|---|---|
+| V2-01 | `HeroProduct.astro` via `ProductShot.astro` | Admin overview attendance charts (desktop); overview "Needs attention" crop below 600px | `overview-desktop.webp`, `overview-phone.webp` |
+| V2-02 | `SceneAdmission.astro` | Still an original illustration (no admission screenshot exists) | — |
+| V2-03 | `FeatureShowcase.astro` via `ProductShot.astro` | Teacher attendance register on a phone, in draft with 2 unmarked | `attendance-register.webp` |
+| V2-06 | `PublicationFlow.astro` via `ProductShot.astro` | Guardian portal home on a phone: attendance, latest report card, notices | `guardian-home.webp` |
+| — | `RolePreview.astro` | Brochure cover image, captioned "Illustrative image" | `school-team.webp` |
+
+Each screenshot is captioned "Screenshot of School ERP in a demo school. All names and figures are fictional." The screenshots predate some later app changes; recapture before public launch. The provenance checklist above is still open for a public launch.

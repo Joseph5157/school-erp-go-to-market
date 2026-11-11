@@ -1,10 +1,10 @@
 ---
-// Image-led feature split. Copy on one side, an original illustration on the
-// other. `reverse` swaps the sides on wide screens; on narrow screens copy
+// Image-led feature split. Copy on one side, an original illustration or a
+// real demo-school screenshot on the other. `reverse` swaps the sides on wide screens; on narrow screens copy
 // always comes first. Wording comes from `features` in src/data/home.ts.
 import SceneAdmission from './SceneAdmission.astro';
-import SceneRegister from './SceneRegister.astro';
-import type { Feature } from '../../data/home';
+import ProductShot from './ProductShot.astro';
+import { shots, type Feature } from '../../data/home';
 
 interface Props {
   feature: Feature;
@@ -29,7 +29,7 @@ const { feature: f } = Astro.props;
     </div>
     <div class="v2-feature-visual">
       {f.scene === 'admission' && <SceneAdmission />}
-      {f.scene === 'register' && <SceneRegister />}
+      {f.scene === 'register' && <ProductShot shot={shots.register} />}
     </div>
   </div>
 </section>

@@ -93,50 +93,13 @@
 .home-v2 .v2-hero-lead { font-size: 1.12rem; line-height: 1.75; max-width: 520px; }
 .home-v2 .v2-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .home-v2 .v2-hero-note { font-size: .875rem; margin: 22px 0 0; max-width: 480px; }
-.home-v2 .v2-hero-art { margin: 0; min-width: 0; position: relative; padding: 72px 0 30px 12px; }
+.home-v2 .v2-hero-art { margin: 0; min-width: 0; position: relative; padding: 24px 0 12px 12px; }
 .home-v2 .v2-hero-art::before {
   content: ""; width: 90%; aspect-ratio: 1; border-radius: 50%;
   position: absolute; top: -7%; left: 4%;
   background: radial-gradient(circle, #b8e4ceab, transparent 68%);
   filter: blur(8px); z-index: -1;
 }
-.home-v2 .v2-product-window {
-  min-width: 0; display: grid; grid-template-columns: 134px minmax(0, 1fr);
-  background: #fff; border: 1px solid #bfd7cd; border-radius: 17px;
-  overflow: hidden; box-shadow: 0 34px 70px #10283b1c, 0 10px 22px #10283b0b;
-  min-height: 370px;
-}
-.home-v2 .v2-product-sidebar { background: #112839; color: #eaf5f0; padding: 18px 12px; }
-.home-v2 .v2-sidebar-brand { font-weight: 700; font-size: .8rem; margin-bottom: 28px; }
-.home-v2 .v2-sidebar-mark { display: inline-block; width: 10px; height: 10px; border-radius: 3px; background: #79c8aa; margin-right: 7px; }
-.home-v2 .v2-sidebar-link { display: block; padding: 9px; border-radius: 7px; font-size: .75rem; color: #c6d6d6; margin-bottom: 5px; }
-.home-v2 .v2-sidebar-link.is-active { background: #275568; color: #fff; }
-.home-v2 .v2-ui-main { min-width: 0; padding: 19px; }
-.home-v2 .v2-ui-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; border-bottom: 1px solid #e5ebe9; padding-bottom: 15px; }
-.home-v2 .v2-ui-eyebrow { text-transform: uppercase; color: #4c6766; letter-spacing: .09em; font-size: .75rem; font-weight: 700; }
-.home-v2 .v2-ui-title { color: #122f3c; font-size: 1.1rem; font-weight: 700; margin-top: 3px; }
-.home-v2 .v2-ui-year { background: #eaf5ef; color: #22594a; font-size: .75rem; border-radius: 20px; padding: 7px 10px; white-space: nowrap; }
-.home-v2 .v2-ui-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 17px 0; }
-.home-v2 .v2-ui-tile { background: #f4f8f6; border: 1px solid #e1eae5; padding: 14px; border-radius: 10px; min-height: 103px; }
-.home-v2 .v2-ui-tile span { color: #4e6562; font-size: .75rem; }
-.home-v2 .v2-ui-tile strong { display: block; font-size: .86rem; line-height: 1.35; margin-top: 10px; color: #143642; }
-.home-v2 .v2-ui-tile .v2-ui-pill { font-size: .75rem; margin-top: 9px; display: inline-block; padding: 4px 8px; color: #1f5c46; background: #d9eee4; border-radius: 20px; }
-.home-v2 .v2-ui-bottom { border: 1px solid #e2ebe6; border-radius: 10px; padding: 12px; }
-.home-v2 .v2-ui-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 3px; font-size: .78rem; border-bottom: 1px solid #edf1ef; }
-.home-v2 .v2-ui-row:last-child { border-bottom: none; }
-.home-v2 .v2-ui-row span { color: #314f58; }
-.home-v2 .v2-ui-state { color: #1f6148; font-weight: 700; text-align: right; }
-.home-v2 .v2-float {
-  position: absolute; background: #fff; border: 1px solid #d9e6df;
-  box-shadow: 0 17px 38px #10283b20; padding: 14px 16px;
-  border-radius: 11px; z-index: 2; max-width: 200px;
-}
-.home-v2 .v2-float strong { display: block; font-size: .82rem; color: var(--v2-ink); }
-.home-v2 .v2-float span { display: block; font-size: .75rem; line-height: 1.5; margin-top: 5px; color: #44605a; }
-.home-v2 .v2-float-one { top: 0; right: -18px; }
-.home-v2 .v2-float-two { left: -20px; bottom: 78px; }
-.home-v2 .v2-float-dot { display: inline-block; width: 7px; height: 7px; background: #2c9869; border-radius: 50%; margin-right: 6px; }
-.home-v2 .v2-art-caption { font-size: .78rem; text-align: right; color: #4a5f5b; margin-top: 12px; }
 
 
 /* 02 School-day strip */
@@ -229,7 +192,6 @@
 }
 .home-v2 .v2-mock-steps b { color: #1f4550; }
 .home-v2 .v2-mock-steps span { color: #4b6160; font-size: .8rem; }
-.home-v2 .v2-mock-register { display: grid; grid-template-columns: 1fr 1.3fr; gap: 7px; margin-top: 16px; }
 .home-v2 .v2-mock-cell { background: #f3f7f4; border-radius: 7px; padding: 10px 12px; font-size: .82rem; color: #2f4d53; }
 .home-v2 .v2-mock-cell.state { background: #ddf0e6; color: #175a43; font-weight: 700; }
 .home-v2 .v2-mock-cell.state.is-absent { background: #fbf0dc; color: #7a4800; }
@@ -265,16 +227,28 @@
 .home-v2 .v2-publication-link { margin-top: 28px; color: #b8e6d1; }
 .home-v2 .v2-publication-link:hover { color: #fff; }
 
-.home-v2 .v2-guardian-figure { margin: 0; min-width: 0; }
-.home-v2 .v2-browser { background: #fff; color: var(--v2-ink); border-radius: 14px; overflow: hidden; box-shadow: 0 30px 60px #00000040; }
-.home-v2 .v2-browser-bar { display: flex; align-items: center; gap: 6px; padding: 11px 14px; background: #eef3f1; border-bottom: 1px solid #dde7e2; }
-.home-v2 .v2-browser-bar i { width: 9px; height: 9px; border-radius: 50%; background: #c5d3cd; }
-.home-v2 .v2-browser-bar span { margin-left: 10px; font-size: .78rem; color: #3e5552; background: #fff; border-radius: 6px; padding: 3px 10px; }
-.home-v2 .v2-browser-body { padding: 20px; }
-.home-v2 .v2-mock-button { display: inline-block; margin-top: 16px; padding: 9px 14px; border-radius: 8px; background: var(--v2-forest); color: #fff; font-size: .8rem; font-weight: 700; }
-.home-v2 .v2-guardian-caption { margin-top: 12px; font-size: .78rem; color: #c3d6d4; }
+/* Real screenshots (demo school, fictional data) */
+.home-v2 .v2-shot { margin: 0; min-width: 0; }
+.home-v2 .v2-shot-frame {
+  background: #fff; border: 1px solid #bfd7cd; border-radius: 14px; overflow: hidden;
+  box-shadow: 0 34px 70px #10283b1c, 0 10px 22px #10283b0b;
+}
+.home-v2 .v2-shot--dark .v2-shot-frame { border-color: #44606a; box-shadow: 0 30px 60px #00000040; }
+.home-v2 .v2-shot--dark.v2-shot--phone .v2-shot-frame { border-color: #2c4a5a; }
+.home-v2 .v2-shot-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #eef3f1; border-bottom: 1px solid #dde7e2; }
+.home-v2 .v2-shot-bar i { width: 9px; height: 9px; border-radius: 50%; background: #c5d3cd; }
+.home-v2 .v2-shot-bar span { margin-left: 10px; font-size: .75rem; color: #3e5552; background: #fff; border-radius: 6px; padding: 3px 10px; }
+.home-v2 .v2-shot img { display: block; width: 100%; height: auto; }
+.home-v2 .v2-shot--phone { max-width: 330px; margin-inline: auto; }
+.home-v2 .v2-shot--phone .v2-shot-frame { border: 8px solid #112839; border-radius: 30px; }
+.home-v2 .v2-shot-caption { margin-top: 12px; font-size: .78rem; color: #4a5f5b; }
+.home-v2 .v2-shot--dark .v2-shot-caption { color: #c3d6d4; }
+.home-v2 .v2-hero-art .v2-shot-caption { text-align: right; }
 
 /* 05 Roles */
+.home-v2 .v2-team-photo { margin: 0 0 28px; }
+.home-v2 .v2-team-photo img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: cover; object-position: center 30%; border-radius: 16px; }
+.home-v2 .v2-team-photo figcaption { margin-top: 10px; font-size: .78rem; color: #4a5f5b; }
 .home-v2 .v2-roles { background: #fff; border-top: 1px solid var(--v2-line); }
 .home-v2 .v2-role-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .home-v2 .v2-role-card { padding: 30px; border-radius: 15px; background: var(--v2-paper); border: 1px solid var(--v2-line); }
@@ -363,14 +337,10 @@
 /* Responsive behaviour: keep illustration text readable at every width */
 @media (max-width: 1120px) {
   .home-v2 .v2-hero-grid { gap: 26px; }
-  .home-v2 .v2-product-window { grid-template-columns: 108px minmax(0, 1fr); }
-  .home-v2 .v2-product-sidebar { padding: 15px 8px; }
-  .home-v2 .v2-float { display: none; }
   .home-v2 .v2-hero-art { padding-left: 0; }
-  .home-v2 .v2-ui-main { padding: 15px; }
   .home-v2 .v2-capability-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .home-v2 .v2-publication-body { grid-template-columns: 1fr; }
-  .home-v2 .v2-guardian-figure { max-width: 560px; }
+  .home-v2 .v2-publication-body .v2-shot--phone { margin-left: 0; }
 }
 @media (max-width: 960px) {
   .home-v2 .v2-hero-grid,
@@ -383,8 +353,7 @@
   .home-v2 .v2-hero-grid { padding-top: 72px; padding-bottom: 64px; gap: 28px; }
   .home-v2 .v2-hero-copy h1 { max-width: 700px; }
   .home-v2 .v2-hero-art { width: min(100%, 680px); padding-top: 8px; }
-  .home-v2 .v2-art-caption { text-align: left; }
-  .home-v2 .v2-product-window { grid-template-columns: 134px minmax(0, 1fr); }
+  .home-v2 .v2-hero-art .v2-shot-caption { text-align: left; }
   .home-v2 .v2-feature-row { gap: 40px; }
   .home-v2 .v2-feature-visual { max-width: 620px; }
   .home-v2 .v2-process-grid, .home-v2 .v2-role-grid { grid-template-columns: 1fr; }
@@ -399,23 +368,9 @@
   .home-v2 .v2-mock-chip { margin-right: 0; }
   .home-v2 .v2-mock-back { margin-inline: 14px; }
 }
-/* Phones: drop the sidebar and show one readable task panel instead of a
-   miniature desktop. Text stays at or above 0.75rem. */
 @media (max-width: 600px) {
-  .home-v2 .v2-product-window { grid-template-columns: 1fr; min-height: 0; border-radius: 14px; }
-  .home-v2 .v2-product-sidebar { display: none; }
-  .home-v2 .v2-ui-main { padding: 16px; }
-  .home-v2 .v2-ui-eyebrow { font-size: .75rem; }
-  .home-v2 .v2-ui-year { font-size: .75rem; }
-  .home-v2 .v2-ui-grid { gap: 8px; margin: 14px 0; }
-  .home-v2 .v2-ui-tile { padding: 12px; min-height: 0; }
-  .home-v2 .v2-ui-tile span { font-size: .75rem; }
-  .home-v2 .v2-ui-tile strong { font-size: .88rem; }
-  .home-v2 .v2-ui-tile .v2-ui-pill { font-size: .75rem; }
-  .home-v2 .v2-ui-row { font-size: .8rem; }
   .home-v2 .v2-capability-grid, .home-v2 .v2-pub-flow { grid-template-columns: 1fr; }
   .home-v2 .v2-pub-stage { min-height: 0; }
-  .home-v2 .v2-mock-register { grid-template-columns: 1fr 1.4fr; }
 }
 @media (max-width: 440px) {
   .home-v2 h1 { font-size: 2.45rem; }
@@ -423,9 +378,7 @@
   .home-v2 .v2-hero-lead { font-size: 1.02rem; }
   .home-v2 .v2-hero-actions { flex-direction: column; }
   .home-v2 .v2-btn { width: 100%; }
-  .home-v2 .v2-ui-grid { grid-template-columns: 1fr; }
   .home-v2 .v2-mock-card { padding: 16px; }
-  .home-v2 .v2-browser-body { padding: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .home-v2 .v2-btn, .home-v2 .v2-capability, .home-v2 .v2-faq summary::after { transition: none; }
