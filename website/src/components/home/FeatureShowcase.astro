@@ -1,6 +1,7 @@
 ---
-// Image-led feature split. Copy on one side; on the other, a square green
-// panel holding an illustrative photo or a real demo-school screenshot. `reverse` swaps the sides on wide screens; on narrow screens copy
+// Image-led feature split. Copy on one side; on the other, an illustrative
+// photo or a real demo-school screenshot, shown at full size (owner preferred
+// this to the green square panel, 2026-11-11). `reverse` swaps the sides on wide screens; on narrow screens copy
 // always comes first. Wording comes from `features` in src/data/home.ts.
 import Photo from './Photo.astro';
 import ProductShot from './ProductShot.astro';
@@ -28,10 +29,8 @@ const { feature: f } = Astro.props;
       <a class="v2-inline-link" href={f.link.href}>{f.link.label} <span aria-hidden="true">→</span></a>
     </div>
     <div class="v2-feature-visual">
-      <div class="v2-feature-panel">
-        {f.scene === 'admission' && <Photo photo={admissionPhoto} />}
-        {f.scene === 'register' && <ProductShot shot={shots.register} tone="dark" />}
-      </div>
+      {f.scene === 'admission' && <Photo photo={admissionPhoto} />}
+      {f.scene === 'register' && <ProductShot shot={shots.register} />}
     </div>
   </div>
 </section>
