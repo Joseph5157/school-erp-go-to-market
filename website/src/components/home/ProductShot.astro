@@ -8,12 +8,14 @@ interface Props {
   shot: Shot;
   eager?: boolean;
   tone?: 'light' | 'dark';
+  /** Runs into the bottom edge of its section; caption sits above the frame. */
+  bleed?: boolean;
 }
 
-const { shot, eager = false, tone = 'light' } = Astro.props;
+const { shot, eager = false, tone = 'light', bleed = false } = Astro.props;
 ---
 
-<figure class:list={['v2-shot', `v2-shot--${shot.frame}`, `v2-shot--${tone}`]}>
+<figure class:list={['v2-shot', `v2-shot--${shot.frame}`, `v2-shot--${tone}`, { 'v2-shot--bleed': bleed }]}>
   <div class="v2-shot-frame">
     {shot.frame === 'browser' && (
       <div class="v2-shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>{shot.bar}</span></div>

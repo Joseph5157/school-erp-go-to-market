@@ -1,8 +1,10 @@
 ---
-// Compact eight-capability grid linking into the Features page groups.
+// Compact eight-capability grid linking into the Features page groups,
+// closed by a dark call-to-action card.
 import SectionIntro from './SectionIntro.astro';
 import Icon from './Icon.astro';
-import { capabilities, capabilitiesIntro } from '../../data/home';
+import { demoHref } from '../../data/site';
+import { capabilities, capabilitiesCta, capabilitiesIntro } from '../../data/home';
 ---
 
 <section class="v2-section v2-capabilities" aria-labelledby="v2-cap-heading">
@@ -18,6 +20,11 @@ import { capabilities, capabilitiesIntro } from '../../data/home';
           </a>
         </li>
       ))}
+      <li class="v2-cap-cta">
+        <strong>{capabilitiesCta.heading}</strong>
+        <span>{capabilitiesCta.text}</span>
+        <a class="v2-btn v2-btn-on-dark" href={demoHref}>{capabilitiesCta.label} <span aria-hidden="true">↗</span></a>
+      </li>
     </ul>
     {capabilitiesIntro.link && (
       <p class="v2-after-link">

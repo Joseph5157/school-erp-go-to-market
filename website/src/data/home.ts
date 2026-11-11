@@ -100,6 +100,14 @@ export const hero = {
   primaryLabel: 'Request a demo',
   secondary: { href: '/features/', label: 'Explore the features' },
   note: 'A dedicated installation, configured for each school’s classes, terms and policies.',
+  // Floating chips beside the hero screenshot (wide screens only). Each one
+  // restates a capability already described on the site.
+  chipsLabel: 'Key controls',
+  chips: [
+    { icon: 'attendance' as IconName, title: 'Attendance', text: 'Draft, then submitted' },
+    { icon: 'report' as IconName, title: 'Report cards', text: 'Visible after publishing' },
+    { icon: 'guardian' as IconName, title: 'Guardian access', text: 'Approved by the school' },
+  ],
 };
 
 // 02 School-day strip ------------------------------------------------------
@@ -248,6 +256,13 @@ export const capabilitiesIntro: Intro = {
   eyebrow: 'What it covers today',
   heading: 'Eight connected areas of school work',
   link: { href: '/features/#not-included', label: 'See what is not in the current product' },
+};
+
+// Dark call-to-action card that closes the capability grid.
+export const capabilitiesCta = {
+  heading: 'See how it fits your school',
+  text: 'Start with a short demonstration of the workflows that matter most to you.',
+  label: 'Request a demo',
 };
 
 export const capabilities: Capability[] = [
