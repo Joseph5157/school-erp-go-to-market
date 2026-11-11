@@ -1,0 +1,26 @@
+---
+import Icon from './home/Icon.astro';
+import type { IconName } from '../data/home';
+
+interface Props {
+  icon: IconName;
+  title: string;
+  summary?: string;
+  tag?: string;
+  headingLevel?: 'h2' | 'h3';
+  class?: string;
+}
+
+const { icon, title, summary, tag, headingLevel = 'h3', class: className } = Astro.props;
+const Heading = headingLevel;
+---
+
+<article class:list={['icon-card', className]}>
+  <div class="icon-card-head">
+    <span class="icon-card-symbol"><Icon name={icon} size={26} /></span>
+    {tag && <span class="tag icon-card-tag">{tag}</span>}
+  </div>
+  <Heading>{title}</Heading>
+  {summary && <p class="icon-card-summary">{summary}</p>}
+  <slot />
+</article>
