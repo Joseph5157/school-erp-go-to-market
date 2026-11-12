@@ -1470,9 +1470,9 @@ tbody th {
 .feature-group-visual .v2-shot-bar { display: flex; align-items: center; gap: 6px; padding: 9px 13px; background: #eef3f1; border-bottom: 1px solid #dde7e2; }
 .feature-group-visual .v2-shot-bar i { width: 8px; height: 8px; border-radius: 50%; background: #c5d3cd; }
 .feature-group-visual .v2-shot-bar span { margin-left: 8px; color: #3e5552; font-size: .7rem; }
-.feature-group-visual .v2-shot img { width: 100%; max-height: 360px; object-fit: cover; object-position: top; }
-.feature-group-visual .v2-shot--phone { max-width: 260px; margin-inline: auto; }
-.feature-group-visual .v2-shot--phone .v2-shot-frame { border: 7px solid #112839; border-radius: 26px; }
+.feature-group-visual .v2-shot img { display: block; width: 100%; height: auto; }
+.feature-group-visual .v2-shot--phone { max-width: 300px; margin-inline: auto; }
+.feature-group-visual .v2-shot--phone .v2-shot-frame { border: 8px solid #112839; border-radius: 30px; }
 .feature-card-grid { display: grid; gap: 14px; }
 .feature-ticks { list-style: none; padding: 0 !important; }
 .feature-ticks li { position: relative; padding-left: 25px; }
