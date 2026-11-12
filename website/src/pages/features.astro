@@ -2,10 +2,49 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageIntro from '../components/PageIntro.astro';
 import CtaBand from '../components/CtaBand.astro';
+import IconCard from '../components/IconCard.astro';
+import StatusList from '../components/StatusList.astro';
+import StepFlow from '../components/StepFlow.astro';
+import ProductShot from '../components/home/ProductShot.astro';
 import { areaGroups, boundaries } from '../data/site';
-// Existing draft diagram assets, read from the single source in diagrams/svg.
-import publicationSvg from '../../../diagrams/svg/04_Report_Publication.svg?url';
-import whatsappSvg from '../../../diagrams/svg/05_WhatsApp_Assist.svg?url';
+import { shots } from '../data/home';
+import type { IconName, Shot } from '../data/home';
+
+const overviewPhone: Shot = {
+  src: '/images/product/overview-phone.webp',
+  width: 480,
+  height: 533,
+  alt: 'School ERP administrator overview for a demo school: term attendance against an 80% target, today’s present and absent count, registers, marks and results still to finish.',
+  caption: shots.overview.caption,
+  frame: 'phone',
+};
+
+const groupShots: Record<string, Shot> = {
+  administration: shots.overview,
+  'daily-work': shots.register,
+  family: shots.guardian,
+  'data-access': overviewPhone,
+};
+
+const icons: Record<string, IconName> = {
+  M01: 'setup', M02: 'attendance', M03: 'admissions', M04: 'teacher',
+  M05: 'attendance', M06: 'assessment', M07: 'teacher', M08: 'guardian',
+  M09: 'notice', M10: 'report', M11: 'admissions', M12: 'setup',
+};
+
+const publicationSteps = [
+  { title: 'Teacher entry', text: 'Marks, Marked Absent results and term remarks.' },
+  { title: 'Office review', text: 'Finalise assessments, then preview the publication.' },
+  { title: 'Published snapshot', text: 'Guardian view and the eligible report-card PDF.' },
+  { title: 'Relevant correction', text: 'The old publication becomes stale until reviewed again.' },
+];
+
+const whatsappSteps = [
+  { title: 'Consent and access', text: 'Only eligible guardians who have opted in.' },
+  { title: 'Prepare message', text: 'The queue holds approved, minimal text.' },
+  { title: 'Staff open WhatsApp', text: 'Number and message are prefilled.' },
+  { title: 'Staff record the outcome', text: 'Mark it sent, or dismiss it with a reason.' },
+];
 ---
 
 <BaseLayout
@@ -23,119 +62,75 @@ import whatsappSvg from '../../../diagrams/svg/05_WhatsApp_Assist.svg?url';
         <li><a href="#not-included">Not included</a></li>
       </ul>
     </nav>
+    <ProductShot slot="media" shot={shots.overview} eager />
   </PageIntro>
 
-  <section class="section" aria-label="Product areas">
-    <div class="wrap">
-      {
-        areaGroups.map((group) => (
-          <section class="group" id={group.slug} aria-labelledby={`${group.slug}-heading`}>
-            <div class="group-head">
+  <div aria-label="Product areas">
+    {areaGroups.map((group, index) => (
+      <section class:list={['section', 'feature-group', { 'section-white': index % 2 === 1 }]} id={group.slug} aria-labelledby={`${group.slug}-heading`}>
+        <div class="wrap">
+          <div class:list={['feature-group-lead', { 'is-reverse': index % 2 === 1 }]}>
+            <div class="feature-group-copy">
+              <span class="eyebrow">Product area {String(index + 1).padStart(2, '0')}</span>
               <h2 id={`${group.slug}-heading`}>{group.title}</h2>
               <p>{group.intro}</p>
             </div>
-            <div class="grid grid-2">
-              {group.areas.map((area) => (
-                <article class="card">
-                  <span class="area-id">{area.id}</span>
-                  <h3>{area.title}</h3>
-                  <p>{area.summary}</p>
-                  <p class="area-users">For: {area.users}</p>
-                  <ul>
-                    {area.points.map((point) => (
-                      <li>{point}</li>
-                    ))}
-                  </ul>
-                </article>
-              ))}
-            </div>
-          </section>
-        ))
-      }
-    </div>
-  </section>
+            <div class="feature-group-visual"><ProductShot shot={groupShots[group.slug]} /></div>
+          </div>
+          <div class="feature-card-grid">
+            {group.areas.map((area) => (
+              <IconCard icon={icons[area.id]} title={area.title} summary={area.summary} tag={area.users}>
+                <ul class="feature-ticks">
+                  {area.points.map((point) => <li>{point}</li>)}
+                </ul>
+              </IconCard>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))}
+  </div>
 
-  <section class="section section-white" aria-labelledby="workflows-heading">
+  <section class="section workflow-section" aria-labelledby="workflows-heading">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Two workflows in detail</span>
         <h2 id="workflows-heading">Controlled publication and staff-assisted messages</h2>
       </div>
-
-      <div class="workflows">
-        <div>
-          <h3>Report card publication</h3>
-          <figure class="diagram diagram-figure">
-            <img
-              src={publicationSvg}
-              width="1000"
-              height="390"
-              alt="Report publication flow: teacher entry of marks or Absent results and term remarks; office review to finalise assessments and preview publication; a published snapshot for the guardian view and eligible report PDF; after a relevant correction, the old publication becomes stale until reviewed again."
-            />
-            <figcaption>The office checks and explicitly publishes a report card before guardians can see it.</figcaption>
-          </figure>
-          <ol class="steps diagram-text">
-            <li><h3>Teacher entry</h3><p>Marks, Marked Absent results and term remarks.</p></li>
-            <li><h3>Office review</h3><p>Finalise assessments, then preview the publication.</p></li>
-            <li><h3>Published snapshot</h3><p>Guardian view and the eligible report-card PDF.</p></li>
-            <li><h3>Relevant correction</h3><p>The old publication becomes stale until reviewed again.</p></li>
-          </ol>
-        </div>
-
-        <div>
-          <h3>WhatsApp Assist</h3>
-          <figure class="diagram diagram-figure">
-            <img
-              src={whatsappSvg}
-              width="1000"
-              height="390"
-              alt="WhatsApp Assist flow: consent and access checks so only eligible opted-in guardians are included; a queue holds approved minimal message text; staff open WhatsApp with the number and message prefilled; staff record the outcome by marking it sent or dismissing it with a reason."
-            />
-            <figcaption>The system prepares the message; a member of staff sends it in WhatsApp.</figcaption>
-          </figure>
-          <ol class="steps diagram-text">
-            <li><h3>Consent and access</h3><p>Only eligible guardians who have opted in.</p></li>
-            <li><h3>Prepare message</h3><p>The queue holds approved, minimal text.</p></li>
-            <li><h3>Staff open WhatsApp</h3><p>Number and message are prefilled.</p></li>
-            <li><h3>Staff record the outcome</h3><p>Mark it sent, or dismiss it with a reason.</p></li>
-          </ol>
-        </div>
+      <div class="workflow-grid">
+        <article class="workflow-card">
+          <div class="workflow-card-head">
+            <span class="icon-card-symbol"><span aria-hidden="true">01</span></span>
+            <div>
+              <h3>Report card publication</h3>
+              <p>The office checks and explicitly publishes a report card before guardians can see it.</p>
+            </div>
+          </div>
+          <StepFlow steps={publicationSteps} label="Report card publication flow" compact />
+        </article>
+        <article class="workflow-card">
+          <div class="workflow-card-head">
+            <span class="icon-card-symbol"><span aria-hidden="true">02</span></span>
+            <div>
+              <h3>WhatsApp Assist</h3>
+              <p>The system prepares the message; a member of staff sends it in WhatsApp.</p>
+            </div>
+          </div>
+          <StepFlow steps={whatsappSteps} label="WhatsApp Assist flow" compact />
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="not-included" aria-labelledby="not-included-heading">
-    <div class="wrap">
-      <div class="section-head">
+  <section class="section section-white" id="not-included" aria-labelledby="not-included-heading">
+    <div class="wrap boundaries-layout">
+      <div class="section-head boundaries-intro">
         <span class="eyebrow">Clear boundaries</span>
         <h2 id="not-included-heading">Not in the current product</h2>
-        <p>
-          These requests need a separate decision, estimate or development. Listing them here does not mean they are
-          available today or included in a standard proposal.
-        </p>
+        <p>These requests need a separate decision, estimate or development. Listing them here does not mean they are available today or included in a standard proposal.</p>
+        <p class="muted small">The interface and student names are in English. PDFs include Telugu fonts, but the interface is not translated into Telugu.</p>
       </div>
-      <div class="table-wrap">
-        <table class="stack-table">
-          <caption class="visually-hidden">Requests outside the current product and their position</caption>
-          <thead>
-            <tr><th scope="col">Request</th><th scope="col">Current position</th></tr>
-          </thead>
-          <tbody>
-            {
-              boundaries.map((row) => (
-                <tr>
-                  <th scope="row">{row.area}</th>
-                  <td>{row.position}</td>
-                </tr>
-              ))
-            }
-          </tbody>
-        </table>
-      </div>
-      <p class="mt-lg muted small">
-        The interface and student names are in English. PDFs include Telugu fonts, but the interface is not
-        translated into Telugu.
-      </p>
+      <StatusList items={boundaries} label="Requests outside the current product and their position" />
     </div>
   </section>
 

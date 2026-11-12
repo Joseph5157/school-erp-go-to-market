@@ -9,10 +9,13 @@ const { eyebrow, title, lead } = Astro.props;
 ---
 
 <section class="page-intro">
-  <div class="wrap">
-    <span class="eyebrow">{eyebrow}</span>
-    <h1>{title}</h1>
-    <p class="lead">{lead}</p>
-    <slot />
+  <div class:list={['wrap', 'page-intro-grid', { 'has-media': Astro.slots.has('media') }]}>
+    <div class="page-intro-copy">
+      <span class="eyebrow">{eyebrow}</span>
+      <h1>{title}</h1>
+      <p class="lead">{lead}</p>
+      <slot />
+    </div>
+    {Astro.slots.has('media') && <div class="page-intro-media"><slot name="media" /></div>}
   </div>
 </section>

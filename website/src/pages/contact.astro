@@ -1,10 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageIntro from '../components/PageIntro.astro';
+import Icon from '../components/home/Icon.astro';
+import Photo from '../components/home/Photo.astro';
+import type { Photo as PhotoType } from '../data/home';
 
 // Draft enquiry journey. This page deliberately has no form and collects no
 // personal details. Contact channels stay as pending placeholders until the
 // owner approves them; do not invent addresses, numbers or domains.
+
+const contactPhoto: PhotoType = {
+  src: '/images/product/implementation-meeting.webp',
+  width: 1200,
+  height: 675,
+  alt: 'Illustration of a school principal at his desk going over printed spreadsheets with two members of the implementation team.',
+  caption: 'Illustrative image. The people shown are not real staff, guardians or students.',
+};
 ---
 
 <BaseLayout
@@ -23,13 +34,16 @@ import PageIntro from '../components/PageIntro.astro';
         <li><a href="#contact-details">Contact details</a></li>
       </ul>
     </nav>
+    <Photo slot="media" photo={contactPhoto} />
   </PageIntro>
 
   <section class="section" aria-label="Enquiry options">
     <div class="wrap grid grid-2 journeys">
       <article class="card journey" id="request-a-demo" aria-labelledby="demo-heading">
-        <span class="card-label">Option 1</span>
-        <h2 id="demo-heading">Request a demo</h2>
+        <div class="journey-head">
+          <span class="icon-card-symbol"><Icon name="assessment" size={28} /></span>
+          <div><span class="card-label">Option 1</span><h2 id="demo-heading">Request a demo</h2></div>
+        </div>
         <p>
           A guided walkthrough of the administrator, teacher and guardian views using a demonstration school with fictional data. A short
           executive version or a longer, detailed session can be arranged, subject to scheduling and demo readiness.
@@ -44,8 +58,10 @@ import PageIntro from '../components/PageIntro.astro';
       </article>
 
       <article class="card journey" id="discuss-your-requirements" aria-labelledby="req-heading">
-        <span class="card-label">Option 2</span>
-        <h2 id="req-heading">Discuss your requirements</h2>
+        <div class="journey-head">
+          <span class="icon-card-symbol"><Icon name="setup" size={28} /></span>
+          <div><span class="card-label">Option 2</span><h2 id="req-heading">Discuss your requirements</h2></div>
+        </div>
         <p>
           A structured conversation about how your school works today, so we can confirm what the current product
           covers and what would need separate scope before any quotation.
@@ -64,7 +80,7 @@ import PageIntro from '../components/PageIntro.astro';
   </section>
 
   <section class="section section-white" id="contact-details" aria-labelledby="contact-heading">
-    <div class="wrap split">
+    <div class="wrap contact-details-layout">
       <div>
         <span class="eyebrow">Contact details</span>
         <h2 id="contact-heading">Contact channels are pending approval</h2>
@@ -73,14 +89,12 @@ import PageIntro from '../components/PageIntro.astro';
           the owner approves them. This page has no form and does not collect or send any information.
         </p>
       </div>
-      <div class="card">
-        <ul class="pending-list" aria-label="Contact channels">
-          <li><span>Enquiry email</span><span class="tag tag-pending">Pending approval</span></li>
-          <li><span>Phone or WhatsApp</span><span class="tag tag-pending">Pending approval</span></li>
-          <li><span>Office address</span><span class="tag tag-pending">Pending approval</span></li>
-          <li><span>Areas served</span><span>Telangana and Andhra Pradesh</span></li>
-        </ul>
-      </div>
+      <ul class="contact-status-line" aria-label="Contact channels">
+        <li><span>Enquiry email</span><span class="tag tag-pending">Pending approval</span></li>
+        <li><span>Phone or WhatsApp</span><span class="tag tag-pending">Pending approval</span></li>
+        <li><span>Office address</span><span class="tag tag-pending">Pending approval</span></li>
+        <li><span>Areas served</span><strong>Telangana and Andhra Pradesh</strong></li>
+      </ul>
     </div>
   </section>
 
@@ -91,15 +105,18 @@ import PageIntro from '../components/PageIntro.astro';
         <h2 id="prepare-heading">Questions worth thinking about</h2>
       </div>
       <div class="grid grid-3">
-        <article class="card">
+        <article class="card question-card">
+          <span class="icon-card-symbol"><Icon name="notice" size={25} /></span>
           <h3>What matters most?</h3>
           <p>Which two or three workflows would you improve first?</p>
         </article>
-        <article class="card">
+        <article class="card question-card">
+          <span class="icon-card-symbol"><Icon name="report" size={25} /></span>
           <h3>What must it follow?</h3>
           <p>Which formats, policies and approval steps must the system respect?</p>
         </article>
-        <article class="card">
+        <article class="card question-card">
+          <span class="icon-card-symbol"><Icon name="teacher" size={25} /></span>
           <h3>Who decides?</h3>
           <p>Who will coordinate requirements and approve the scope?</p>
         </article>

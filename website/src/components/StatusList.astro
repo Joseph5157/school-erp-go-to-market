@@ -1,0 +1,14 @@
+---
+interface Item { area: string; position: string }
+interface Props { items: Item[]; label: string }
+const { items, label } = Astro.props;
+---
+
+<ul class="status-list" aria-label={label}>
+  {items.map((item) => (
+    <li>
+      <strong>{item.area}</strong>
+      <span class="status-pill">{item.position}</span>
+    </li>
+  ))}
+</ul>
