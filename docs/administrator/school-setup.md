@@ -29,7 +29,7 @@ The school details are the identity used on documents and in guardian messages.
 3. Enter the school name, address, affiliation number and principal name.
 4. Choose how guardian messages are handled:
     - **Portal only** — guardians see messages after signing in to the Guardian Portal.
-    - **Prepare WhatsApp messages for office staff to send** — School ERP prepares the message text; office staff send each message themselves and record whether it was sent or skipped. School ERP never sends WhatsApp messages automatically.
+    - **Prepare WhatsApp messages for office staff to send** — Everclass ERP prepares the message text; office staff send each message themselves and record whether it was sent or skipped. Everclass ERP never sends WhatsApp messages automatically.
 5. Select **Save school details**.
 
 !!! note
@@ -66,7 +66,7 @@ The calendar decides which days are school days. Attendance is expected only on 
 5. Use **Check** to see how any date is treated, **Edit label** to rename an exception, or **Remove** to delete it.
 
 !!! warning "Calendar safeguards"
-    School ERP protects dates that already have attendance. You cannot turn a date into a holiday, or remove an exception, while an attendance register exists for that date; the change is refused with an explanation. Plan holidays before the term starts where possible.
+    Everclass ERP protects dates that already have attendance. You cannot turn a date into a holiday, or remove an exception, while an attendance register exists for that date; the change is refused with an explanation. Plan holidays before the term starts where possible.
 
 ## Next steps
 

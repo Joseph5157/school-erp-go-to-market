@@ -1,13 +1,13 @@
 ---
 title: Implementation Guide
-description: The recommended order for bringing a new school onto School ERP, from configuration and data preparation to Excel import and acceptance checks.
+description: The recommended order for bringing a new school onto Everclass ERP, from configuration and data preparation to Excel import and acceptance checks.
 ---
 
 # Implementation Guide
 
 <p class="erp-draft" data-search-exclude><strong>Draft.</strong> Verify against the deployed build before sharing.</p>
 
-This guide is for the team that brings a school onto School ERP: the implementation lead and the school's nominated administrator. It sets out what to do, in what order, and how to check the result before the school goes live.
+This guide is for the team that brings a school onto Everclass ERP: the implementation lead and the school's nominated administrator. It sets out what to do, in what order, and how to check the result before the school goes live.
 
 ## Recommended order
 

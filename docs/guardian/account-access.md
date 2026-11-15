@@ -17,7 +17,7 @@ The school creates your Guardian Portal login. You cannot register yourself.
 
 ## First sign-in
 
-1. Open the School ERP address your school gave you.
+1. Open the Everclass ERP address your school gave you.
 2. Enter your **Username** and the temporary **Password**, and select **Log in**.
 3. On **Change your password**, enter the temporary password and then a new password twice.
 4. Select **Change password**.

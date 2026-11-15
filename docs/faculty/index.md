@@ -1,13 +1,13 @@
 ---
 title: Teacher Manual
-description: How class teachers and subject teachers use School ERP for daily attendance, assessment marks, student information and term remarks.
+description: How class teachers and subject teachers use Everclass ERP for daily attendance, assessment marks, student information and term remarks.
 ---
 
 # Teacher Manual
 
 <p class="erp-draft" data-search-exclude><strong>Draft.</strong> Verify against the deployed build before sharing.</p>
 
-School ERP gives teachers a focused workspace for the classes, students and subjects assigned to them by the school office.
+Everclass ERP gives teachers a focused workspace for the classes, students and subjects assigned to them by the school office.
 
 ## Your four tabs
 
@@ -37,4 +37,4 @@ If a class or subject is missing, ask the school office: assignments are set by 
 5. [Class-teacher term remarks](term-remarks.md)
 6. [Permissions and corrections](permissions-and-corrections.md)
 
-New to School ERP? Start with [Signing in and passwords](../getting-started/signing-in.md).
+New to Everclass ERP? Start with [Signing in and passwords](../getting-started/signing-in.md).

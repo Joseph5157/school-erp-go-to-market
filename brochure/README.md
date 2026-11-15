@@ -11,7 +11,7 @@ Status: **Draft**. This package is ready for internal content and print review. 
 | `assets/hero.jpg` | Text-free cover illustration, optimized for the PDF |
 | `source-review.md` | Source history, checksums and QA record |
 
-The company name, product name, phone, email and website areas are intentionally blank. Add approved identity details only after review.
+The product name is decided (**Everclass ERP**, 2026-11-15) but is not yet placed in the brochure layout. The company name, phone, email and website areas are intentionally blank. Add approved identity details only after review.
 
 ## Narrative
 

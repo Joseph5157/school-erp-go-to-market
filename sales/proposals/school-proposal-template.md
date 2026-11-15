@@ -1,4 +1,4 @@
-# School ERP — School Proposal Template
+# Everclass ERP — School Proposal Template
 
 > **Draft — Internal review only.** Blank template. Do not send to a school until the owner approves the template, pricing, company identity and terms. Completed proposals contain school information and must be stored securely **outside this Git repository**.
 
@@ -8,7 +8,7 @@
 
 **Proposal for:** {{SCHOOL_NAME}}, {{SCHOOL_CITY}}
 **Prepared by:** {{VENDOR_LEGAL_NAME}} *(company name not yet approved; do not invent)*
-**Product:** School ERP *(temporary working name)*, version {{PRODUCT_VERSION}}
+**Product:** Everclass ERP, version {{PRODUCT_VERSION}}
 **Proposal reference:** {{PROPOSAL_REF}} **Date:** {{DATE}} **Revision:** {{REVISION}}
 **Related quotation:** {{QUOTATION_REF}}
 **Valid until:** {{VALIDITY_DATE}} *(validity period to be approved)*
@@ -19,7 +19,7 @@
 
 *Three to five sentences. State the school's goals in its own words, what will be installed, and how the engagement is structured. Do not promise dates or outcomes.*
 
-{{SCHOOL_NAME}} wants to {{SCHOOL_GOAL_SUMMARY}}. We propose a customized installation of School ERP for {{SCHOOL_NAME}}, configured for the school's academic structure, attendance, assessment and communication practices. The engagement has a one-time setup and implementation stage, followed by annual support and maintenance. Hosting and infrastructure are shown separately, and any additional development is quoted only after a written specification.
+{{SCHOOL_NAME}} wants to {{SCHOOL_GOAL_SUMMARY}}. We propose a customized installation of Everclass ERP for {{SCHOOL_NAME}}, configured for the school's academic structure, attendance, assessment and communication practices. The engagement has a one-time setup and implementation stage, followed by annual support and maintenance. Hosting and infrastructure are shown separately, and any additional development is quoted only after a written specification.
 
 ## 2. School requirements
 
@@ -48,7 +48,7 @@ Approximate size: {{STUDENT_COUNT}} students, {{TEACHER_COUNT}} teachers, {{ADMI
 
 ## 4. Proposed solution
 
-A school-specific installation of School ERP, used through a web browser by:
+A school-specific installation of Everclass ERP, used through a web browser by:
 
 - **Administrators** — school setup, admissions, enrollment, teacher assignments, attendance review, assessments, report cards, notices, documents and account management, within their assigned permissions.
 - **Teachers** — attendance for their assigned class, marks entry within their assignments, term remarks and their daily view.

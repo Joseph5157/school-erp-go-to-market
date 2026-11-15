@@ -1,4 +1,4 @@
-# School ERP — Pre-Demo Readiness Checklist
+# Everclass ERP — Pre-Demo Readiness Checklist
 
 **Status: Draft.** Internal operator runbook. Use only fictional records. Do not publish account identifiers, credentials, private contact data or staging URLs in this repository.
 

@@ -7,7 +7,7 @@ description: Register applicants, record admission decisions, progress accepted 
 
 <p class="erp-draft" data-search-exclude><strong>Draft.</strong> Verify against the deployed build before sharing.</p>
 
-Admission in School ERP is a series of explicit steps. Nothing moves forward automatically:
+Admission in Everclass ERP is a series of explicit steps. Nothing moves forward automatically:
 
 1. **Register** the child as an Applicant.
 2. **Associate** the child's guardians.
@@ -16,7 +16,7 @@ Admission in School ERP is a series of explicit steps. Nothing moves forward aut
 5. **Place** the Student in a Class/Grade and Section for the Academic Year.
 
 !!! note "Bulk onboarding"
-    When a school first moves to School ERP, existing students are usually brought in with the Excel import instead of one by one. See [Excel import validation](../implementation/excel-import.md).
+    When a school first moves to Everclass ERP, existing students are usually brought in with the Excel import instead of one by one. See [Excel import validation](../implementation/excel-import.md).
 
 ## 1. Register an applicant
 
@@ -24,7 +24,7 @@ Admission in School ERP is a series of explicit steps. Nothing moves forward aut
 2. Enter the child's full name, and optionally date of birth, email and phone.
 3. Select **Register applicant**.
 
-If School ERP finds a possible duplicate, it shows the matching Students or Applicants and saves nothing yet. Open the matches to check them. Then either correct the details and select **Check again**, or select **Register as new anyway** if the child really is new.
+If Everclass ERP finds a possible duplicate, it shows the matching Students or Applicants and saves nothing yet. Open the matches to check them. Then either correct the details and select **Check again**, or select **Register as new anyway** if the child really is new.
 
 !!! note "Names"
     Student and applicant names currently accept English characters only.

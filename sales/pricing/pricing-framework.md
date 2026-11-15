@@ -1,4 +1,4 @@
-# School ERP — Internal Pricing Framework
+# Everclass ERP — Internal Pricing Framework
 
 > **Draft — Internal review only.** Not for distribution to schools. Contains no approved prices, margins, discounts or rates. Every figure in a quotation must come from an owner-approved rate card kept **outside this repository**.
 
@@ -16,7 +16,7 @@ This document explains **how** a price is built for one school. It does not set 
 
 The commercial model is:
 
-1. **Customized installation for each school.** The product is a school-specific installation of the existing School ERP, not a shared multi-tenant subscription service.
+1. **Customized installation for each school.** The product is a school-specific installation of the existing Everclass ERP, not a shared multi-tenant subscription service.
 2. **One-time setup and implementation fee.**
 3. **Annual support and maintenance** charged separately from setup.
 4. **Hosting and infrastructure** shown as its own line, never hidden inside support.

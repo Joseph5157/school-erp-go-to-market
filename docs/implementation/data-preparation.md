@@ -1,13 +1,13 @@
 ---
 title: Data preparation
-description: Prepare the school's student and guardian data in the School ERP import template, with column rules, formats and common problems to fix before upload.
+description: Prepare the school's student and guardian data in the Everclass ERP import template, with column rules, formats and common problems to fix before upload.
 ---
 
 # Data preparation
 
 <p class="erp-draft" data-search-exclude><strong>Draft.</strong> Verify against the deployed build before sharing.</p>
 
-Good data preparation is the most important part of onboarding. School ERP checks every row before importing anything, but correcting the source data first saves time.
+Good data preparation is the most important part of onboarding. Everclass ERP checks every row before importing anything, but correcting the source data first saves time.
 
 ## Get the template
 
@@ -58,7 +58,7 @@ So, for siblings, make sure the guardian's name and phone are written identicall
 - [ ] No formulas; values only.
 - [ ] No example or test rows on the Students sheet.
 - [ ] No blank rows in the middle of the data.
-- [ ] Class and Section names match exactly what is in School ERP (or are on the Classes sheet).
+- [ ] Class and Section names match exactly what is in Everclass ERP (or are on the Classes sheet).
 - [ ] Every phone number is a 10-digit mobile number with no spaces or country code.
 - [ ] Sibling guardians use identical names and phone numbers.
 - [ ] Names use English characters.

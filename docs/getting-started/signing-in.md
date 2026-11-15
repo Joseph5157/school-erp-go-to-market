@@ -11,7 +11,7 @@ Everyone uses the same **Log in** page. What you see after signing in depends on
 
 ## Sign in
 
-1. Open the School ERP address your school gave you.
+1. Open the Everclass ERP address your school gave you.
 2. Enter the **Username** the school gave you. Usernames are not case-sensitive.
 3. Enter your **Password**. Select **Show** if you want to check what you typed.
 4. Select **Log in**.
@@ -20,7 +20,7 @@ If the username or password is wrong, the page shows a general error message. Fo
 
 ## First sign-in: change your temporary password
 
-New teacher and guardian logins are created with a **temporary password**, printed on a credential slip by the school office. The first time you sign in, School ERP shows **Change your password** and you must choose a new password before you continue.
+New teacher and guardian logins are created with a **temporary password**, printed on a credential slip by the school office. The first time you sign in, Everclass ERP shows **Change your password** and you must choose a new password before you continue.
 
 1. Enter the temporary password as your old password.
 2. Enter a new password twice. The page checks it as you type. A new password must:
@@ -45,7 +45,7 @@ After repeated failed sign-ins, the username is refused for a short time. The lo
 
 ## Staying signed in
 
-For security, School ERP signs you out automatically:
+For security, Everclass ERP signs you out automatically:
 
 - after about **30 minutes** without activity, and
 - after about **8 hours** in total, even if you are active.
@@ -54,8 +54,8 @@ Unsaved work on an open page may be lost when this happens, so save drafts regul
 
 ## If you have more than one role
 
-Some staff members have both office and teacher responsibilities. School ERP may ask you to **choose where to go** after signing in. Each area shows only the actions your permissions allow.
+Some staff members have both office and teacher responsibilities. Everclass ERP may ask you to **choose where to go** after signing in. Each area shows only the actions your permissions allow.
 
 ## Installing on a phone
 
-On supported phones and browsers, School ERP can be added to the home screen like an app. It still needs an internet connection: there is no offline mode and no push notifications.
+On supported phones and browsers, Everclass ERP can be added to the home screen like an app. It still needs an internet connection: there is no offline mode and no push notifications.

@@ -1,6 +1,6 @@
 # Brand Guidelines: Graphite & Institutional Green
 
-Status: **Draft**. The palette name and collateral typography were approved by the owner on 2026-11-09. Company/product names and approved logo assets remain pending.
+Status: **Draft**. The palette name and collateral typography were approved by the owner on 2026-11-09. The product name **Everclass ERP** was decided by the owner on 2026-11-15. The company name and approved logo assets remain pending.
 
 ## 1. Source of truth
 
@@ -182,7 +182,7 @@ Approved by the owner on 2026-11-09:
 
 Still pending:
 
-1. Final company and product names
+1. Final company name (product name decided: **Everclass ERP**)
 2. Approved logo files and logo rules
 3. Any formal colour-usage ratio
 4. Telugu marketing-copy conventions

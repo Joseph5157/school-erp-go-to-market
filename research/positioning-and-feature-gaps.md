@@ -66,7 +66,7 @@ Ranked by how often the **seven** clearly marketed ERP vendors advertise the cap
 - **Entry cost perception:** free plans, trials and low monthly prices exist for small schools (S15, S18, S21). A setup fee may look expensive at first contact (HYP).
 - **No trial:** competitors offer self-serve trials or free tiers. We offer presenter-led demos only (outreach kit).
 - **No track record:** competitors display customer counts and testimonials. We have none to show and must not invent any.
-- **Identity not approved:** company and product names are still pending, which limits any outward positioning.
+- **Identity partly decided:** the product is Everclass ERP (owner, 2026-11-15); the company name is still pending, which limits outward positioning.
 
 ## 3. Installation and hosting model
 

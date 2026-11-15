@@ -9,8 +9,8 @@ description: Publish school notices to the Guardian Portal, withdraw a notice, r
 
 School notices appear in the Guardian Portal as soon as they are published. Sending them on WhatsApp is an optional, separate step carried out by office staff.
 
-!!! info "School ERP never sends messages itself"
-    There is no automatic SMS, email or WhatsApp delivery. With **WhatsApp Assist**, School ERP prepares the message text and a WhatsApp link; a staff member opens it on their own phone, sends it, and records the result.
+!!! info "Everclass ERP never sends messages itself"
+    There is no automatic SMS, email or WhatsApp delivery. With **WhatsApp Assist**, Everclass ERP prepares the message text and a WhatsApp link; a staff member opens it on their own phone, sends it, and records the result.
 
 ## Publish a notice
 
@@ -45,12 +45,12 @@ Messages are prepared only for guardians who have opted in. Record each decision
 ### Prepare messages for a notice
 
 1. Open a published notice and select **Prepare WhatsApp messages…**.
-2. School ERP shows how many opted-in guardians will get a message.
+2. Everclass ERP shows how many opted-in guardians will get a message.
 3. Select **Prepare messages**.
 
 Nothing is sent from here. Messages are queued for staff. Guardians without consent are skipped and counted.
 
-School ERP also prepares **same-day absence messages** when attendance is submitted and **report card notices** when report cards are published, for eligible guardians.
+Everclass ERP also prepares **same-day absence messages** when attendance is submitted and **report card notices** when report cards are published, for eligible guardians.
 
 ### Send from the Message queue
 
@@ -59,6 +59,6 @@ School ERP also prepares **same-day absence messages** when attendance is submit
 3. Send it from your phone, then return and select **Mark as sent**.
 4. If you will not send a message, enter the **Reason for not sending** and select **Dismiss**. Dismissing does not send anything.
 
-Before display and before you mark a message sent, School ERP rechecks the guardian's portal access and consent. If a phone number is missing or not usable, the message says so and the guardian's details need updating.
+Before display and before you mark a message sent, Everclass ERP rechecks the guardian's portal access and consent. If a phone number is missing or not usable, the message says so and the guardian's details need updating.
 
 **Sent today** lists messages marked sent today and who marked them.

@@ -10,7 +10,7 @@
  *    to downloads that carry personal data (PDF, CSV, XLSX) and to the Django
  *    admin are refused even as GET, so a scene can never open a write form.
  *
- * Paths come from School ERP `config/urls.py`, `core/urls.py` and
+ * Paths come from Everclass ERP `config/urls.py`, `core/urls.py` and
  * `core/portal_urls.py` (read-only inspection of `school-erp` main c6284df).
  */
 

@@ -11,7 +11,7 @@ function fill(path: string): string {
 
 const u = SAMPLE_IDS.uuid;
 
-/** Write or sensitive School ERP paths (from core/urls.py and core/portal_urls.py). */
+/** Write or sensitive Everclass ERP paths (from core/urls.py and core/portal_urls.py). */
 const WRITE_PATHS = [
   '/admin/',
   '/students/42/enroll/',

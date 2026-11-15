@@ -22,7 +22,7 @@ Status: **Draft**.
 
 ## Content decisions
 
-- Company name, product name, phone, email and website areas remain blank.
+- Company name, product name, phone, email and website areas remain blank (product name since decided: Everclass ERP; not yet placed in the layout).
 - The current demonstration is presented as 12 documented product areas and three role experiences.
 - The student journey is shown from applicant registration through controlled family access.
 - The installable PWA is described as online-only; offline work, background sync and push are not included.

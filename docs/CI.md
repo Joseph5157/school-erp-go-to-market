@@ -93,7 +93,7 @@ If Marp hangs or times out, re-run the job once; a persistent failure is a real 
 
 ## What CI does not test
 
-- Whether the documentation is accurate for the current School ERP build, or approved for publication.
+- Whether the documentation is accurate for the current Everclass ERP build, or approved for publication.
 - Spelling, tone, brand compliance or visual quality of pages and slides (screenshots still need human review).
 - External links (Google Fonts, GitHub references), which are not fetched.
 - The committed PDF, PPTX and preview images: they are only checked for being unchanged, not for matching the current source.

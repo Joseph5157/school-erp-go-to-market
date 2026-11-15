@@ -21,7 +21,7 @@ Recording a Guardian, or a relationship, never grants access by itself.
 2. Enter the Guardian's name and contact details.
 3. Select **Save guardian**.
 
-If School ERP finds a possible duplicate, nothing is saved yet. Check the matches. Select **Use this Guardian** to use an existing record, correct the details and select **Check again**, or select **Save as new anyway**.
+If Everclass ERP finds a possible duplicate, nothing is saved yet. Check the matches. Select **Use this Guardian** to use an existing record, correct the details and select **Check again**, or select **Save as new anyway**.
 
 To change contact details later, open the Guardian and select **Edit contact details**.
 
@@ -40,7 +40,7 @@ If a Guardian should no longer be linked to a Student, select **End** next to th
 ## Create a Guardian Portal account
 
 !!! warning "Verify identity first"
-    You must verify the person's identity before creating or linking an account. School ERP records your confirmation; it does not verify identity itself.
+    You must verify the person's identity before creating or linking an account. Everclass ERP records your confirmation; it does not verify identity itself.
 
 1. Open the Guardian and, under **Guardian Portal account**, select **Create portal account**.
 2. Choose how identity was verified:

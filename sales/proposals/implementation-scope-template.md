@@ -1,4 +1,4 @@
-# School ERP — Implementation Scope Template
+# Everclass ERP — Implementation Scope Template
 
 > **Draft — Internal review only.** Blank template. No delivery dates, warranties or service commitments are offered by this document. Completed scope documents contain school information and must be stored securely **outside this Git repository**.
 

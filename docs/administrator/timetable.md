@@ -10,7 +10,7 @@ description: Set up numbered teaching periods, build each Section's weekly timet
 The timetable is a weekly grid of **periods** and **weekdays** for each Section. Each slot names a Subject. The teacher is worked out from the [subject teacher assignment](teacher-assignments.md#assign-subject-teachers) for that Subject and Section, so you never type a teacher into the timetable.
 
 !!! info "What the timetable does not do"
-    School ERP does not generate timetables automatically, and does not manage rooms, substitutions or special days. Periods are numbered and carry no clock times.
+    Everclass ERP does not generate timetables automatically, and does not manage rooms, substitutions or special days. Periods are numbered and carry no clock times.
 
 ## 1. Set up periods
 
@@ -29,7 +29,7 @@ Use **Edit** to rename or reorder. A period that is **In use** by a slot cannot 
 4. Enter the **Start date** (it cannot be in the past) and, optionally, an **End date**. A blank end date runs to the end of the Academic Year.
 5. Save the slot.
 
-If the derived teacher already teaches another Section in the same period and weekday on overlapping dates, the slot is **not saved**. School ERP explains the clash (for example, which Section and dates), so you can choose another period or change the teacher assignment first.
+If the derived teacher already teaches another Section in the same period and weekday on overlapping dates, the slot is **not saved**. Everclass ERP explains the clash (for example, which Section and dates), so you can choose another period or change the teacher assignment first.
 
 Saturdays show as **Not a school day** when Saturdays are off in that Academic Year.
 

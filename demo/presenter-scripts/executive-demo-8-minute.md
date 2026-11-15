@@ -1,4 +1,4 @@
-# School ERP — Eight-Minute Executive Demonstration
+# Everclass ERP — Eight-Minute Executive Demonstration
 
 **Status: Draft.** Audience: school proprietor, principal, administrator and academic coordinator. This is a **read-only**, short alternative to the [30-minute workflow script](live-demo-30-minute.md), not a replacement. All displayed school and student records must be fictional.
 
@@ -6,7 +6,7 @@
 
 | Time | On screen | Presenter wording |
 |---|---|---|
-| 0:00–0:45 | Administrator overview with school/year | “Our School ERP helps a school manage its core academic and administrative work in one place. We will follow a sample student from admission through attendance and results, then see what the teacher and guardian can access.” |
+| 0:00–0:45 | Administrator overview with school/year | “Our Everclass ERP helps a school manage its core academic and administrative work in one place. We will follow a sample student from admission through attendance and results, then see what the teacher and guardian can access.” |
 | 0:45–1:45 | School structure and applicant/student profile | “The office sets up academic years, classes, sections, subjects and terms. The office reviews each application before admitting a student. Previous class and school-year records stay available.” |
 | 1:45–2:45 | Teacher desktop **My day** / My Students and an existing attendance register | “Teachers see only their assigned classes. They can record attendance, while the school office can identify classes that have not completed it and correct mistakes with a record of the change.” |
 | 2:45–4:00 | Teacher gradebook, then admin assessment/report publication | “Teachers enter marks for their classes. The office checks the results and decides when to release the report cards. Parents cannot see unpublished marks.” |

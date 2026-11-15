@@ -1,6 +1,6 @@
 ---
 title: Permissions and corrections
-description: What teachers can and cannot change in School ERP, and how to ask the office to correct submitted attendance or finalised results.
+description: What teachers can and cannot change in Everclass ERP, and how to ask the office to correct submitted attendance or finalised results.
 ---
 
 # Permissions and corrections
@@ -36,6 +36,6 @@ If submitted attendance or a finalised mark is wrong:
 
 ## Why the rules exist
 
-- **Blank is not absent and not zero.** School ERP never guesses a result for a student you have not marked.
+- **Blank is not absent and not zero.** Everclass ERP never guesses a result for a student you have not marked.
 - **History is preserved.** Corrections are added alongside the original instead of overwriting it, so the school can always explain a change.
 - **Guardians see only what the school publishes.** Nothing you save is shown to guardians until the office publishes it.

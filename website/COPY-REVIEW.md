@@ -49,5 +49,5 @@ These are wording decisions for the draft. They do not approve the copy (Gate 3 
 |---|---|---|
 | "Areas served: Telangana and Andhra Pradesh" | Contact | Confirm this is the public service area (Gate 4) |
 | "Our implementation team" responsibilities | Implementation | Confirm the team description and the training offer before publication |
-| Product name "School ERP" | Everywhere | Provisional until Gate 1 |
+| Product name "Everclass ERP" | Everywhere | Provisional until Gate 1 |
 | Same-day absence alerts as a WhatsApp Assist example | Home, FAQ | Catalogue item M09 06; re-verify on the deployed build |

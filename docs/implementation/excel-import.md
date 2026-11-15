@@ -1,6 +1,6 @@
 ---
 title: Excel import validation
-description: Upload the import workbook, read the preview, fix errors, review warnings, and confirm or discard an import batch in School ERP.
+description: Upload the import workbook, read the preview, fix errors, review warnings, and confirm or discard an import batch in Everclass ERP.
 ---
 
 # Excel import validation
@@ -16,7 +16,7 @@ The Excel import creates Classes, Sections, Guardians, Students and their placem
 3. Choose the **Academic Year** and the **enrollment start date** (every imported student is placed from this date, which must fall within the year), and choose the .xlsx file (up to 2 MB).
 4. Select **Check file**.
 
-School ERP checks the file and keeps it as an **import batch** for you to review.
+Everclass ERP checks the file and keeps it as an **import batch** for you to review.
 
 ## 2. Read the result
 
@@ -47,7 +47,7 @@ The **Warnings** table lists each one with its sheet, row, column and what to ch
 2. If there are warnings, tick **I have reviewed the warnings.**
 3. Select **Confirm import**.
 
-School ERP re-checks the data against current school records before writing anything, and imports everything in one step. The batch then shows what was imported, for example how many students, classes, sections and guardians were created and how many existing guardians were reused.
+Everclass ERP re-checks the data against current school records before writing anything, and imports everything in one step. The batch then shows what was imported, for example how many students, classes, sections and guardians were created and how many existing guardians were reused.
 
 If you do not want to import the file, select **Discard**. Nothing is imported and the batch cannot be confirmed later.
 

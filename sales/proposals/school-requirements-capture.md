@@ -1,4 +1,4 @@
-# School ERP — School Requirements Capture Sheet
+# Everclass ERP — School Requirements Capture Sheet
 
 **Status: Draft.** Client discovery worksheet for the initial Telangana / Andhra Pradesh private-school market (typically around 300–2,000 students). This is an **unfilled template**: completed customer forms and contact information must be stored securely **outside this Git repository**.
 

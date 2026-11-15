@@ -14,7 +14,7 @@ description: How the manuals are organised, the terms they use and how to search
 | [Administrator](../administrator/index.md) | School office staff | Setup, admissions, guardians, teachers, attendance review, results, timetable, notices, documents |
 | [Teacher](../faculty/index.md) | Class teachers and subject teachers | My day, students, attendance, marks, term remarks |
 | [Guardian](../guardian/index.md) | Parents and carers | Portal sign-in, children, attendance, report cards, notices |
-| [Implementation](../implementation/index.md) | The team bringing a new school onto School ERP | Configuration order, accounts, data preparation, Excel import, acceptance checks |
+| [Implementation](../implementation/index.md) | The team bringing a new school onto Everclass ERP | Configuration order, accounts, data preparation, Excel import, acceptance checks |
 
 ## Conventions
 
@@ -23,7 +23,7 @@ description: How the manuals are organised, the terms they use and how to search
 - Steps are numbered in the order you carry them out.
 - Notes in blue give information; green tips suggest good practice; amber warnings explain something that cannot easily be undone.
 
-## Terms used in School ERP
+## Terms used in Everclass ERP
 
 Academic Year
 :   The school year, with a start and end date. Terms, subjects offered, class teachers, subject teachers, timetables and assessments all belong to one Academic Year.

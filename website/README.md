@@ -2,7 +2,7 @@
 
 Status: **Draft — local preview only.** Not published, not deployed, and blocked from search indexing.
 
-A static, responsive marketing website for School ERP aimed at private-school owners, principals and office teams in Telangana and Andhra Pradesh. Built with [Astro](https://astro.build) 7.3.8 (exact version, committed `package-lock.json`). There is no backend, form, database, tracking or runtime dependency on the School ERP application.
+A static, responsive marketing website for Everclass ERP aimed at private-school owners, principals and office teams in Telangana and Andhra Pradesh. Built with [Astro](https://astro.build) 7.3.8 (exact version, committed `package-lock.json`). There is no backend, form, database, tracking or runtime dependency on the Everclass ERP application.
 
 ## Pages
 

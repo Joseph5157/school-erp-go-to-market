@@ -7,7 +7,7 @@ description: Issue numbered bonafide certificates, download report card PDFs and
 
 <p class="erp-draft" data-search-exclude><strong>Draft.</strong> Verify against the deployed build before sharing.</p>
 
-School ERP issues three types of PDF from *Daily > Documents*. Issued documents receive a serial number by document type and Academic Year, and are kept as a permanent record.
+Everclass ERP issues three types of PDF from *Daily > Documents*. Issued documents receive a serial number by document type and Academic Year, and are kept as a permanent record.
 
 | Document | Use |
 |---|---|

@@ -3,13 +3,13 @@ marp: true
 theme: school-erp-institutional
 size: 16:9
 paginate: true
-footer: "School ERP  ·  Discussion draft  ·  Not for distribution"
-title: "School ERP — Connected school workflows"
-description: "Draft school-management presentation based on the documented current School ERP scope."
+footer: "Everclass ERP  ·  Discussion draft  ·  Not for distribution"
+title: "Everclass ERP — Connected school workflows"
+description: "Draft school-management presentation based on the documented current Everclass ERP scope."
 ---
 
 <!-- _class: lead -->
-# School ERP
+# Everclass ERP
 
 ## One connected record for everyday school work
 

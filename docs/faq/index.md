@@ -1,6 +1,6 @@
 ---
 title: Frequently asked questions
-description: Answers to common questions from school administrators, teachers and guardians about School ERP attendance, marks, report cards, access and current product scope.
+description: Answers to common questions from school administrators, teachers and guardians about Everclass ERP attendance, marks, report cards, access and current product scope.
 ---
 
 # Frequently asked questions
@@ -13,7 +13,7 @@ description: Answers to common questions from school administrators, teachers an
     Ask the school office. An administrator resets it and gives you a new temporary password, which you change at your next sign-in. There is no self-service reset. See [Signing in and passwords](../getting-started/signing-in.md).
 
 ??? question "Why was I signed out?"
-    For security, School ERP signs you out after about 30 minutes without activity, or after about 8 hours in total.
+    For security, Everclass ERP signs you out after about 30 minutes without activity, or after about 8 hours in total.
 
 ??? question "My username is refused after several attempts."
     After repeated failed sign-ins the username is locked for a short time. Wait, or ask the office to clear the lockout.
@@ -37,7 +37,7 @@ description: Answers to common questions from school administrators, teachers an
 ??? question "Is Absent counted as zero?"
     No. Absent is shown as Absent and never counted as zero. A blank result is neither Absent nor zero.
 
-??? question "Does School ERP calculate totals, ranks or GPA?"
+??? question "Does Everclass ERP calculate totals, ranks or GPA?"
     No. Each assessment is shown separately. Totals, weighting, ranks and GPA are not part of the current product.
 
 ??? question "When can guardians see marks?"
@@ -54,21 +54,21 @@ description: Answers to common questions from school administrators, teachers an
 ??? question "Can one guardian see several children?"
     Yes. One guardian account can be granted access to each of their children separately.
 
-??? question "Does School ERP send SMS or WhatsApp messages automatically?"
+??? question "Does Everclass ERP send SMS or WhatsApp messages automatically?"
     No. With WhatsApp Assist, the system prepares messages and staff send them from their own phone. There is no automatic SMS, email or WhatsApp delivery.
 
 ## Product scope
 
-??? question "Does School ERP handle fees?"
+??? question "Does Everclass ERP handle fees?"
     Not today. Fees and online payments are deferred and need a separate agreement.
 
 ??? question "Is there a mobile app or a student login?"
-    There is no native app or student login. On supported phones, School ERP can be installed to the home screen, but it needs an internet connection; there is no offline mode or push notification.
+    There is no native app or student login. On supported phones, Everclass ERP can be installed to the home screen, but it needs an internet connection; there is no offline mode or push notification.
 
 ??? question "Can we move all students to the next class at the end of the year?"
     Bulk academic-year rollover is not available yet. Placements are changed per student.
 
-??? question "Can School ERP issue Transfer Certificates?"
+??? question "Can Everclass ERP issue Transfer Certificates?"
     Not yet. The required fields and layout must first be agreed with the school.
 
 ??? question "Is the interface available in Telugu?"

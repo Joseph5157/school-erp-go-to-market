@@ -1,4 +1,4 @@
-# School ERP documentation portal (GTM-DOCS-01)
+# Everclass ERP documentation portal (GTM-DOCS-01)
 # Tested set for reproducible local builds with Python 3.13 on 2026-11-09.
 # Install into an isolated virtual environment; see DOCUMENTATION-PORTAL.md.
 zensical==0.1.0

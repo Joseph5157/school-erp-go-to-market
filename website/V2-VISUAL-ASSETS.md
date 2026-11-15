@@ -1,10 +1,10 @@
-# School ERP Marketing V2 — real-product visual capture gate
+# Everclass ERP Marketing V2 — real-product visual capture gate
 
 **Status:** Draft / design evidence only. Complements Draft PR #18. No live capture authorised by this file.
 
 ## Purpose
 
-Replace the clearly labelled CSS mock dashboard in the homepage V2 pilot with authentic and consistent **read-only** School ERP visual evidence. Use **only approved fictional data** in a disposable demonstration school. Source behaviour must be verified against the currently deployed Django version before a screenshot is accepted. This does not change application data or authorise public publication.
+Replace the clearly labelled CSS mock dashboard in the homepage V2 pilot with authentic and consistent **read-only** Everclass ERP visual evidence. Use **only approved fictional data** in a disposable demonstration school. Source behaviour must be verified against the currently deployed Django version before a screenshot is accepted. This does not change application data or authorise public publication.
 
 The Work B2Base design review dated 10 November 2026 is the visual reference, particularly its page 8 product-composition and screenshot brief. The website remains Astro, and the existing private Railway preview remains unchanged while the PR is reviewed.
 
@@ -46,7 +46,7 @@ Before replacing the PR #18 CSS pilot, verify:
 
 - [ ] Owner approved demonstration environment and declared all displayed records fictional
 - [ ] Seven states inspected; each assigned real screenshot or explicitly labelled illustration
-- [ ] All visible statuses match current School ERP behaviour and role permissions
+- [ ] All visible statuses match current Everclass ERP behaviour and role permissions
 - [ ] Source files and captures contain no private information, tokens, or URLs containing secrets
 - [ ] Screenshot/source provenance documented in an internal, non-public register
 - [ ] Desktop and mobile visual QA at 390, 768, 1024, 1366, 1440 and 1920 widths
@@ -85,7 +85,7 @@ The owner approved the demo school's screenshots for website use (all names and 
 | V2-06 | `PublicationFlow.astro` via `ProductShot.astro` | Guardian portal home on a phone: attendance, latest report card, notices | `guardian-home.webp` |
 | — | `RolePreview.astro` via `Photo.astro` | Brochure cover image, captioned "Illustrative image" | `school-team.webp` |
 
-Each screenshot is captioned "Screenshot of School ERP in a demo school. All names and figures are fictional." The screenshots predate some later app changes; recapture before public launch. The provenance checklist above is still open for a public launch.
+Each screenshot is captioned "Screenshot of Everclass ERP in a demo school. All names and figures are fictional." The screenshots predate some later app changes; recapture before public launch. The provenance checklist above is still open for a public launch.
 
 The hand-drawn illustration components (`IllustrationPanel`, `SceneAdmission`, `SceneRegister`, `SceneGuardianReport`) have been removed. AI images must contain no readable text and are always captioned as illustrative, never as real people or real schools.
 

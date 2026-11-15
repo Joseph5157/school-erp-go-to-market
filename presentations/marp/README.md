@@ -78,7 +78,7 @@ Remaining limitations:
 - [ ] Verify all feature claims against the current `school-erp` build and [feature catalogue](../../docs/product/feature-catalogue.md).
 - [x] Export both PDF and PPTX; inspect all 12 slides for clipping, diagram scaling, fonts and page numbering (2026-11-09).
 - [ ] Rehearse the talk using [speaker notes](speaker-notes.md).
-- [ ] Add only approved company name, product identity, logo and contact information later; `School ERP` is neutral working copy.
+- [ ] Add only approved company name, product identity, logo and contact information later; `Everclass ERP` is neutral working copy.
 - [ ] Confirm pricing/scope and customer-facing wording through owner approval.
 - [ ] Complete **deferred staging verification** before demonstrating the live product; do not confuse this presentation with live workflow validation.
 - [ ] Update [content status](../../docs/content-status.md) only after owner approval; it remains Draft now.

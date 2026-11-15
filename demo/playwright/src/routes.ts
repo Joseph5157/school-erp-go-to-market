@@ -1,7 +1,7 @@
 /**
- * Read-only School ERP pages used by the demo scenes.
+ * Read-only Everclass ERP pages used by the demo scenes.
  *
- * Every entry was checked by reading the School ERP source on `main` at
+ * Every entry was checked by reading the Everclass ERP source on `main` at
  * c6284df (read-only): the path and URL name come from `core/urls.py` or
  * `core/portal_urls.py`, the `<title>` text from the page template's
  * `{% block title %}`. "Verified in source" is not "verified live": no entry
@@ -56,12 +56,12 @@ export const ROUTES = {
   myGradebook: { path: '/my/gradebook/:pk/', urlName: 'core:my-gradebook', role: 'teacher', title: 'Gradebook ', titleMatch: 'prefix', source: 'core/templates/core/my_gradebook.html' },
 
   // Guardian Portal (nav "Guardian Portal")
-  portalHome: { path: '/guardian/', urlName: 'portal:home', role: 'guardian', title: 'Home · School ERP', titleMatch: 'exact', source: 'templates/portal/home.html (portal/base.html appends " · School ERP")' },
+  portalHome: { path: '/guardian/', urlName: 'portal:home', role: 'guardian', title: 'Home · Everclass ERP', titleMatch: 'exact', source: 'templates/portal/home.html (portal/base.html appends " · Everclass ERP")' },
   portalChild: { path: '/guardian/children/:uuid/', urlName: 'portal:child', role: 'guardian', title: '', titleMatch: 'none', source: 'templates/portal/child.html (title is the child name)' },
   portalAttendance: { path: '/guardian/children/:uuid/attendance/', urlName: 'portal:attendance', role: 'guardian', title: 'Attendance', titleMatch: 'prefix', source: 'templates/portal/attendance.html' },
   portalReportCards: { path: '/guardian/children/:uuid/report-cards/', urlName: 'portal:report-cards', role: 'guardian', title: 'Report cards', titleMatch: 'prefix', source: 'templates/portal/report_cards.html' },
   portalReportCard: { path: '/guardian/children/:uuid/report-cards/:uuid/', urlName: 'portal:report-card', role: 'guardian', title: '', titleMatch: 'none', source: 'templates/portal/report_card.html' },
-  portalNotices: { path: '/guardian/notices/', urlName: 'portal:notices', role: 'guardian', title: 'Notices · School ERP', titleMatch: 'exact', source: 'templates/portal/notices.html (portal/base.html appends " · School ERP")' },
+  portalNotices: { path: '/guardian/notices/', urlName: 'portal:notices', role: 'guardian', title: 'Notices · Everclass ERP', titleMatch: 'exact', source: 'templates/portal/notices.html (portal/base.html appends " · Everclass ERP")' },
 } as const satisfies Record<string, RouteInfo>;
 
 export type RouteKey = keyof typeof ROUTES;

@@ -1,6 +1,6 @@
-# School ERP: Go-To-Market
+# Everclass ERP: Go-To-Market
 
-Marketing, sales and documentation material for the School ERP product offered to private schools.
+Marketing, sales and documentation material for the Everclass ERP product offered to private schools.
 
 Production application code lives in the separate `school-erp` repository. This repository holds go-to-market material only.
 
