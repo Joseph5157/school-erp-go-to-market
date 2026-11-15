@@ -10,7 +10,7 @@ export const ROLES = ['admin', 'teacher', 'guardian'] as const;
 export type Role = (typeof ROLES)[number];
 
 /**
- * - `local`: a School ERP dev server on this machine (localhost only).
+ * - `local`: an Everclass ERP dev server on this machine (localhost only).
  * - `fictional-sandbox`: a separately authorised environment holding fictional data only.
  * - `staging`: the shared staging deployment. Never captured in this stage.
  */

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the six-page A4 School ERP client brochure.
+"""Build the six-page A4 Everclass ERP client brochure.
 
 All copy remains selectable and editable in the PDF. Company, product and
 contact identity areas are intentionally left blank for later completion.
@@ -501,8 +501,8 @@ def build():
     register_fonts()
     OUT.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(OUT), pagesize=A4, pageCompression=1)
-    c.setTitle("School ERP Client Brochure — A4")
-    c.setSubject("Six-page client brochure for a School ERP demonstration")
+    c.setTitle("Everclass ERP Client Brochure — A4")
+    c.setSubject("Six-page client brochure for an Everclass ERP demonstration")
     c.setAuthor("")
     for page in (page1, page2, page3, page4, page5, page6):
         page(c)

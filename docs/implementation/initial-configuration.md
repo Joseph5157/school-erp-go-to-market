@@ -1,6 +1,6 @@
 ---
 title: Initial school configuration
-description: Configure the school profile, guardian message channel, first Academic Year and school calendar for a new School ERP installation.
+description: Configure the school profile, guardian message channel, first Academic Year and school calendar for a new Everclass ERP installation.
 ---
 
 # Initial school configuration

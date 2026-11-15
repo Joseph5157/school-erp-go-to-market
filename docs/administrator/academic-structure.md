@@ -39,7 +39,7 @@ Use **Rename** to correct a Class/Grade or Section name.
 When a Class/Grade or Section is no longer used, archive it instead of deleting it. An archived record cannot be picked for anything new, and everything already recorded against it is kept.
 
 1. Open the Class/Grade and select **Archive this Class/Grade**, or select **Archive** next to a Section.
-2. If it is still in use, School ERP lists what must be moved or ended first, such as current placements or assignments.
+2. If it is still in use, Everclass ERP lists what must be moved or ended first, such as current placements or assignments.
 3. When nothing is in use, confirm the archive.
 
 To bring it back, open it and select **Restore this Class/Grade** or **Restore section**.

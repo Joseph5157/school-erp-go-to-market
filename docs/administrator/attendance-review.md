@@ -9,7 +9,7 @@ description: Monitor daily registers, find sections with missing attendance, ope
 
 Class teachers normally take attendance from **My day** (see [Recording and submitting attendance](../faculty/attendance.md)). The office monitors completion, fills gaps and makes corrections.
 
-## How School ERP counts attendance
+## How Everclass ERP counts attendance
 
 - A **register** is the attendance for one Section on one school day. A Section can have only one register per day.
 - A register is a **draft** until it is **submitted**. Only submitted registers count.

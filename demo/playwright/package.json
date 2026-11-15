@@ -2,7 +2,7 @@
   "name": "school-erp-demo-automation",
   "version": "0.1.0",
   "private": true,
-  "description": "GTM-DEMO-AUTO-01: read-only Playwright demo automation for School ERP walkthroughs (fictional data only).",
+  "description": "GTM-DEMO-AUTO-01: read-only Playwright demo automation for Everclass ERP walkthroughs (fictional data only).",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=22"

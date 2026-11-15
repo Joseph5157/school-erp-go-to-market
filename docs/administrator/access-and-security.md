@@ -9,7 +9,7 @@ description: Decide guardian access for students without a current placement and
 
 ## Guardian access reviews
 
-When a Student no longer has a current enrollment — for example after their Academic Year ends — School ERP stops showing that child's information to guardians until an administrator decides. Nothing is decided automatically.
+When a Student no longer has a current enrollment — for example after their Academic Year ends — Everclass ERP stops showing that child's information to guardians until an administrator decides. Nothing is decided automatically.
 
 The guardian sees **Access under review** for that child in the portal.
 
@@ -23,7 +23,7 @@ A similar review opens automatically when you [deactivate a student](admissions-
 
 ## Sign-in lockouts
 
-To protect accounts, School ERP refuses a username after repeated failed sign-ins: **5 from one network source, or 20 from any source, within 15 minutes**.
+To protect accounts, Everclass ERP refuses a username after repeated failed sign-ins: **5 from one network source, or 20 from any source, within 15 minutes**.
 
 Lockouts expire on their own. To restore access sooner:
 
@@ -35,7 +35,7 @@ Clearing a lockout is recorded. Before clearing, confirm the request genuinely c
 
 ## Security events and history
 
-School ERP records important security and operational events, such as password resets, account changes, document issues and lockout clearances. Teacher pages show their recent security events; guardian pages show their account and access history.
+Everclass ERP records important security and operational events, such as password resets, account changes, document issues and lockout clearances. Teacher pages show their recent security events; guardian pages show their account and access history.
 
 ## Good practice
 

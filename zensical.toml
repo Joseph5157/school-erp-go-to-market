@@ -1,4 +1,4 @@
-# School ERP documentation portal — Zensical configuration
+# Everclass ERP documentation portal — Zensical configuration
 #
 # Status: Draft (GTM-DOCS-01). Local preview and local builds only.
 # Do not configure public hosting from this file without owner approval.
@@ -7,14 +7,14 @@
 # Syntax reference: https://zensical.org/docs/setup/basics/
 
 [project]
-site_name = "School ERP Documentation"
-site_description = "Draft user manuals and implementation guide for School ERP (temporary working name)."
+site_name = "Everclass ERP Documentation"
+site_description = "Draft user manuals and implementation guide for Everclass ERP."
 docs_dir = "docs"
 site_dir = "site"
 use_directory_urls = true
 
 # Footer text. No company name, address or contact details until approved.
-copyright = "School ERP (temporary working name) · Draft documentation · Not for publication"
+copyright = "Everclass ERP · Draft documentation · Not for publication"
 
 # Internal and sales-only material stays in the repository but is removed
 # from the generated website AND the search index:

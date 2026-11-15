@@ -18,7 +18,7 @@ Status updates use the card image (1080 × 1920 px) and the caption only.
 
 **Message / caption:**
 
-> From admission to class placement, attendance, marks and report cards: [Product name] keeps a school's academic work connected in one system. Guardians the school approves see attendance and published report cards for their own children.
+> From admission to class placement, attendance, marks and report cards: Everclass ERP keeps a school's academic work connected in one system. Guardians the school approves see attendance and published report cards for their own children.
 >
 > Would a short demonstration be useful? – [Your name], [Company name]
 
@@ -30,7 +30,7 @@ Status updates use the card image (1080 × 1920 px) and the caption only.
 
 **Message / caption:**
 
-> With [Product name], the class teacher submits the day's register, and the office can see absentees and which sections have not submitted attendance yet. Corrections by the office are recorded.
+> With Everclass ERP, the class teacher submits the day's register, and the office can see absentees and which sections have not submitted attendance yet. Corrections by the office are recorded.
 >
 > Happy to show you with a sample school. – [Your name], [Company name]
 
@@ -78,7 +78,7 @@ Status updates use the card image (1080 × 1920 px) and the caption only.
 
 **Message / caption:**
 
-> Starting with Excel? [Product name] checks every row of the student and guardian template before anything is saved, lists problems by row and flags possible duplicates for the school to review.
+> Starting with Excel? Everclass ERP checks every row of the student and guardian template before anything is saved, lists problems by row and flags possible duplicates for the school to review.
 >
 > Happy to talk through onboarding. – [Your name], [Company name]
 

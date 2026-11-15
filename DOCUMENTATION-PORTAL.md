@@ -2,7 +2,7 @@
 
 Status: **Draft** (GTM-DOCS-01). Local preview and local builds only. Do not deploy to GitHub Pages or any public host without owner approval.
 
-The School ERP documentation portal is a searchable website built with [Zensical](https://zensical.org/docs/) from the Markdown files in `docs/`. Configuration lives in [`zensical.toml`](zensical.toml).
+The Everclass ERP documentation portal is a searchable website built with [Zensical](https://zensical.org/docs/) from the Markdown files in `docs/`. Configuration lives in [`zensical.toml`](zensical.toml).
 
 ## Requirements
 

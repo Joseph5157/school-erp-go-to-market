@@ -1,4 +1,4 @@
-# School ERP — Annual Support and Maintenance Template
+# Everclass ERP — Annual Support and Maintenance Template
 
 > **Draft — Internal review only.** Blank template. Support hours, response times, availability targets, restoration commitments and penalties are **undecided** and must not be offered until approved by the owner and written into a signed agreement.
 

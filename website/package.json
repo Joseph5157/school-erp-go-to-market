@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "GTM-WEBSITE-01 draft marketing website for School ERP. Static, local preview only; not published.",
+  "description": "GTM-WEBSITE-01 draft marketing website for Everclass ERP. Static, local preview only; not published.",
   "engines": {
     "node": ">=22.12.0"
   },

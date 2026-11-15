@@ -1,4 +1,4 @@
-# School ERP Feature Catalogue
+# Everclass ERP Feature Catalogue
 
 Status: **Draft**. Imported from catalogue v1.0 (baseline `b800676`) and reconciled on 9 November 2026 with the current default branch, PWA Gate 1, accepted correction/archive decisions and the November security closeout. Rehearse every client-facing workflow against the deployed demo build before publication.
 

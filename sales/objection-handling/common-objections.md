@@ -1,4 +1,4 @@
-# School ERP — Common Objections and Responses
+# Everclass ERP — Common Objections and Responses
 
 > **Draft — Internal review only.** Guidance for respectful, factual answers in school meetings. Do not promise capabilities, prices, portability terms or service levels that have not been agreed. Check product statements against the [feature catalogue](../../docs/product/feature-catalogue.md) and the [sales FAQ](../faq/sales-faq.md).
 

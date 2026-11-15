@@ -56,7 +56,7 @@ Only what is needed to continue a business conversation: the contact's name, rol
 
 ## Before outreach begins (owner checklist)
 
-- [ ] Company and product names, and business contact details, approved
+- [ ] Company name and business contact details approved (product name decided: Everclass ERP)
 - [ ] Location for prospect records outside Git approved, with access limited to named people
 - [ ] Messaging-rule and data-protection obligations confirmed with an adviser
 - [ ] Opt-out suppression approach (identifiers, scope, access, storage, review and deletion) approved by the owner and an adviser

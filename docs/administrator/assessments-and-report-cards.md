@@ -18,7 +18,7 @@ Results move through clear stages. Each stage is a deliberate action by a differ
 | **Publish** | Administrator | Term report cards are released to guardians. |
 
 !!! info "No totals, weighting or ranks"
-    School ERP shows each assessment separately. It does not calculate totals, weighted averages, GPA or class ranks. "Absent" is never counted as zero, and a blank result is neither Absent nor zero.
+    Everclass ERP shows each assessment separately. It does not calculate totals, weighted averages, GPA or class ranks. "Absent" is never counted as zero, and a blank result is neither Absent nor zero.
 
 ## Set up grading scales
 

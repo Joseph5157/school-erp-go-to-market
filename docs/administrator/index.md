@@ -1,13 +1,13 @@
 ---
 title: Administrator Manual
-description: How school office staff set up School ERP, manage admissions and accounts, review daily work and release results to guardians.
+description: How school office staff set up Everclass ERP, manage admissions and accounts, review daily work and release results to guardians.
 ---
 
 # Administrator Manual
 
 <p class="erp-draft" data-search-exclude><strong>Draft.</strong> Verify against the deployed build before sharing.</p>
 
-Administrators are the control point of School ERP. You configure the school, admit and place students, create teacher and guardian logins, review attendance and results, and decide what is released to guardians.
+Administrators are the control point of Everclass ERP. You configure the school, admit and place students, create teacher and guardian logins, review attendance and results, and decide what is released to guardians.
 
 ## Finding your way around
 

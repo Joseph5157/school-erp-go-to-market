@@ -1,4 +1,4 @@
-# School ERP — Sales FAQ for School Management
+# Everclass ERP — Sales FAQ for School Management
 
 > **Draft — Internal review only.** For use by the sales team when answering school management. Answers describe the current product as recorded in the [feature catalogue](../../docs/product/feature-catalogue.md); verify against the deployed demo build before a meeting. Do not quote prices, dates or service levels from this document.
 
@@ -6,7 +6,7 @@ User-level questions (signing in, attendance, marks) are answered in the [docume
 
 ## About the product
 
-**What is School ERP?**
+**What is Everclass ERP?**
 A web-based system for running a school's academic administration: school setup, admissions and student records, teacher assignments, attendance, assessments and report cards, timetable, guardian portal, notices, school documents, Excel onboarding, and access control with audit history. These are the 12 areas in the feature catalogue (M01–M12).
 
 **Who uses it?**

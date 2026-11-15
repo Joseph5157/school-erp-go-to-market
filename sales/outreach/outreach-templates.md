@@ -27,11 +27,11 @@
 
 **Second attempt wording** (use for an unanswered first attempt, at least five working days later, on the same channel where possible):
 
-> Namaste [Contact name] garu / Dear [Contact name], I am following up on my message of [Date] about [Product name] for [School name]. If a short demonstration would be useful, I would be glad to arrange one at your convenience. If not, just let me know and I will not contact you again.
+> Namaste [Contact name] garu / Dear [Contact name], I am following up on my message of [Date] about Everclass ERP for [School name]. If a short demonstration would be useful, I would be glad to arrange one at your convenience. If not, just let me know and I will not contact you again.
 
 **Standard one-line description** (reuse it, do not inflate it):
 
-> [Product name] is a web-based system for a school's academic administration: student records, attendance, assessments and report cards, timetable, a guardian portal and school documents. Each school gets its own installation, set up with the school.
+> Everclass ERP is a web-based system for a school's academic administration: student records, attendance, assessments and report cards, timetable, a guardian portal and school documents. Each school gets its own installation, set up with the school.
 
 ---
 
@@ -43,7 +43,7 @@
 >
 > I am [Your name] from [Company name]. [Referrer name] suggested I get in touch. / Thank you for sharing your number at [event].
 >
-> We work with private schools on [Product name], a system for student records, daily attendance, report cards and a guardian portal. Each school gets its own installation.
+> We work with private schools on Everclass ERP, a system for student records, daily attendance, report cards and a guardian portal. Each school gets its own installation.
 >
 > Would a short 10-minute conversation or demonstration be useful for [School name]? If this is not relevant, please let me know and I will not message again.
 >
@@ -57,13 +57,13 @@
 
 **Use for** a school's published office email, or an address the contact gave us.
 
-**Subject:** Student records, attendance and report cards: [Product name] for [School name]
+**Subject:** Student records, attendance and report cards: Everclass ERP for [School name]
 
 > Dear [Contact name / Principal],
 >
-> I am [Your name], [Your role] at [Company name]. We provide [Product name] to private schools in Telangana and Andhra Pradesh.
+> I am [Your name], [Your role] at [Company name]. We provide Everclass ERP to private schools in Telangana and Andhra Pradesh.
 >
-> [Product name] brings a school's academic administration together: admissions and student records, class attendance, marks entry, report cards that the office reviews before guardians can see them, the timetable and a guardian portal. Existing student records can be imported from Excel after a validation check. Each school gets its own installation, set up with the school.
+> Everclass ERP brings a school's academic administration together: admissions and student records, class attendance, marks entry, report cards that the office reviews before guardians can see them, the timetable and a guardian portal. Existing student records can be imported from Excel after a validation check. Each school gets its own installation, set up with the school.
 >
 > If it would be useful, I would be glad to show you a short demonstration using a sample school with fictional data, at a time convenient for you.
 >
@@ -88,7 +88,7 @@
 
 **Opening (to the decision-maker)**
 
-> Thank you for taking the call, [Contact name] garu. I will be brief. We provide [Product name], which helps schools manage student records, attendance, report cards and parent access in one system. Is this a good time for two minutes, or shall I call back?
+> Thank you for taking the call, [Contact name] garu. I will be brief. We provide Everclass ERP, which helps schools manage student records, attendance, report cards and parent access in one system. Is this a good time for two minutes, or shall I call back?
 
 **If they agree, ask two or three questions** (from the [qualification guide](lead-qualification.md)):
 
@@ -142,7 +142,7 @@ Then add the school (or the contact, if they speak only for themselves) to the s
 
 **WhatsApp version**
 
-> Thank you, [Contact name] garu. As discussed, I would like to show you [Product name].
+> Thank you, [Contact name] garu. As discussed, I would like to show you Everclass ERP.
 >
 > Proposed: [Day], [Date] at [Time], at the school / online. It takes about 10 minutes for the short version, or around 30 minutes for a detailed session.
 >
@@ -152,11 +152,11 @@ Then add the school (or the contact, if they speak only for themselves) to the s
 
 **Email version**
 
-**Subject:** Demonstration of [Product name]: [Day], [Date]
+**Subject:** Demonstration of Everclass ERP: [Day], [Date]
 
 > Dear [Contact name],
 >
-> Thank you for your interest. I would like to propose a demonstration of [Product name] on [Day], [Date] at [Time], [at the school / online].
+> Thank you for your interest. I would like to propose a demonstration of Everclass ERP on [Day], [Date] at [Time], [at the school / online].
 >
 > We can do a short version (about 10 minutes) covering student records, attendance, report-card publication and the guardian portal, or a detailed session (around 30 minutes). Either is subject to scheduling and demo readiness. We use a demonstration school with fictional data.
 >
@@ -176,7 +176,7 @@ Then add the school (or the contact, if they speak only for themselves) to the s
 
 > Dear [Contact name],
 >
-> Thank you for your enquiry about [Product name] on [Date].
+> Thank you for your enquiry about Everclass ERP on [Date].
 >
 > To understand what would help [School name] most, could you tell me briefly:
 > 1. Roughly how many students and sections the school has
@@ -223,15 +223,15 @@ Then add the school (or the contact, if they speak only for themselves) to the s
 
 **WhatsApp version**
 
-> Namaste [Contact name] garu, I am following up once on my earlier message about [Product name]. I understand schools are busy. If a short demonstration would be useful later, please message me any time. I will not follow up again. Thank you.
+> Namaste [Contact name] garu, I am following up once on my earlier message about Everclass ERP. I understand schools are busy. If a short demonstration would be useful later, please message me any time. I will not follow up again. Thank you.
 
 **Email version**
 
-**Subject:** Following up: [Product name] for [School name]
+**Subject:** Following up: Everclass ERP for [School name]
 
 > Dear [Contact name],
 >
-> I wrote on [Date] about [Product name]. I understand this may not be the right time, so this will be my last message.
+> I wrote on [Date] about Everclass ERP. I understand this may not be the right time, so this will be my last message.
 >
 > If you would like a short demonstration in future, please reply to this email or call me on [Your phone].
 >

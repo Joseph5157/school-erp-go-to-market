@@ -3,10 +3,11 @@
 // client deck. Do not add capabilities here that the catalogue does not list.
 
 export const site = {
-  // Provisional text wordmark. The company and product names are not decided.
-  wordmark: 'School ERP',
-  wordmarkNote: 'Provisional wordmark',
-  titleSuffix: 'School ERP (draft)',
+  // Text wordmark: the product name Everclass ERP is decided (2026-11-15); the logo and company
+  // name are not, so the wordmark stays plain text.
+  wordmark: 'Everclass ERP',
+  wordmarkNote: 'Text wordmark; logo pending',
+  titleSuffix: 'Everclass ERP (draft)',
 };
 
 export const nav = [

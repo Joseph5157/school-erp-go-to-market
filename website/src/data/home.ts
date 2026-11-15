@@ -21,10 +21,10 @@ export type IconName =
 export type Link = { href: string; label: string };
 export type Intro = { eyebrow: string; heading: string; lead?: string; link?: Link };
 
-const shotCaption = 'Screenshot of School ERP in a demo school. All names and figures are fictional.';
+const shotCaption = 'Screenshot of Everclass ERP in a demo school. All names and figures are fictional.';
 
 // Real screenshots ----------------------------------------------------------
-// Captured from the School ERP demo school on 5 November 2026. Every name and
+// Captured from the Everclass ERP demo school on 5 November 2026. Every name and
 // figure is fictional demo data (owner approved for website use 2026-11-11).
 // Source PNGs: school-erp/marketing-assets/screenshots/ (not in this repo).
 export type Shot = {
@@ -44,7 +44,7 @@ export const shots = {
     width: 1600,
     height: 997,
     narrow: { src: '/images/product/overview-phone.webp', width: 480, height: 533 },
-    alt: 'School ERP administrator overview for a demo school: term attendance against an 80% target, today’s present and absent count, registers, marks and results still to finish, a daily attendance line chart and a four-week attendance heatmap.',
+    alt: 'Everclass ERP administrator overview for a demo school: term attendance against an 80% target, today’s present and absent count, registers, marks and results still to finish, a daily attendance line chart and a four-week attendance heatmap.',
     caption: shotCaption,
     frame: 'browser',
     bar: 'School overview',

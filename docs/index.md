@@ -1,13 +1,13 @@
 ---
-title: School ERP Documentation
-description: Step-by-step manuals for school administrators, teachers and guardians, and a guide for implementing School ERP in a new school.
+title: Everclass ERP Documentation
+description: Step-by-step manuals for school administrators, teachers and guardians, and a guide for implementing Everclass ERP in a new school.
 ---
 
-# School ERP Documentation
+# Everclass ERP Documentation
 
-<p class="erp-draft" data-search-exclude><strong>Draft.</strong> School ERP is a temporary working name. This documentation describes the current product and must be checked against the deployed build before it is shared with a school.</p>
+<p class="erp-draft" data-search-exclude><strong>Draft.</strong> This documentation describes the current product and must be checked against the deployed build before it is shared with a school.</p>
 
-School ERP helps a private school run its academic year: school setup, admissions, attendance, assessments, report cards, timetables, notices and school documents. Each person sees only the work their role allows.
+Everclass ERP helps a private school run its academic year: school setup, admissions, attendance, assessments, report cards, timetables, notices and school documents. Each person sees only the work their role allows.
 
 ## Choose your manual
 
@@ -52,6 +52,6 @@ Prepare school data, configure the academic structure, create accounts and impor
 
 You can also press ++ctrl+k++ or ++slash++, or select the search box at the top of any page and type a school term such as *attendance*, *report card*, *section* or *bonafide*.
 
-## What School ERP does not do today
+## What Everclass ERP does not do today
 
 To avoid confusion, these are **not** part of the current standard product: fees and online payments, automatic SMS, email or WhatsApp delivery, a student login, a native mobile app, offline use, transport, library, hostel, payroll and inventory. See the [FAQ](faq/index.md) for details.

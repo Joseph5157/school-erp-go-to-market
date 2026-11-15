@@ -1,4 +1,4 @@
-# School ERP — Quotation Template
+# Everclass ERP — Quotation Template
 
 > **Draft — Internal review only.** Blank template with no prices. Fill amounts only from the owner-approved rate card, using the internal [pricing framework](../pricing/pricing-framework.md). Completed quotations contain school information and must be stored securely **outside this Git repository**.
 
@@ -17,7 +17,7 @@
 | Issued to | {{SCHOOL_LEGAL_NAME}} |
 | School address | {{SCHOOL_ADDRESS}} |
 | School contact (role) | {{SCHOOL_CONTACT_ROLE}} |
-| Product | School ERP *(temporary working name)*, version {{PRODUCT_VERSION}} |
+| Product | Everclass ERP, version {{PRODUCT_VERSION}} |
 | Currency | {{CURRENCY}} |
 | **Quotation valid until** | ______________________ *(validity period to be approved)* |
 

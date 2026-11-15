@@ -37,12 +37,11 @@ If one of those documents changes, re-check this kit. Before any real conversati
 
 ## Placeholders
 
-Company name, product name, logo, phone, email and website are **not approved**. Templates use these placeholders. Do not replace them with invented values:
+The product name is decided: **Everclass ERP** (owner, 2026-11-15). Company name, logo, phone, email and website are **not approved**. Templates use these placeholders. Do not replace them with invented values:
 
 | Placeholder | Meaning |
 |---|---|
 | `[Company name]` | Our company, once approved |
-| `[Product name]` | The product name, once approved ("School ERP" is a working name only) |
 | `[Your name]`, `[Your role]` | The person sending the message |
 | `[Your phone]`, `[Your email]` | Approved business contact details |
 | `[School name]`, `[Contact name]`, `[Contact role]` | The school and person, filled in at the moment of sending, never in Git |

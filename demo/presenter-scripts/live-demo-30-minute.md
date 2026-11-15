@@ -1,4 +1,4 @@
-# School ERP Live Demonstration Script
+# Everclass ERP Live Demonstration Script
 
 Status: **Draft**. Thirty-minute presenter script for a rehearsed demo using fictional data only.
 
@@ -30,7 +30,7 @@ Record before starting: Demo URL __________ · School __________ · Academic yea
 
 **On screen** Open the Admin Overview. Keep the student list and Teacher and Guardian profiles ready in their separate browser sessions.
 
-**Say** “Good morning, and thank you for your time. Today I will demonstrate our School ERP. We will follow a sample student through admissions, attendance and results, then see what the teacher and guardian can access.”
+**Say** “Good morning, and thank you for your time. Today I will demonstrate our Everclass ERP. We will follow a sample student through admissions, attendance and results, then see what the teacher and guardian can access.”
 
 **Say** “This demonstration uses fictional school records. After the walkthrough, we would like to understand your school process and identify the configuration or additional work you need.”
 
@@ -198,7 +198,7 @@ Use these answers when the topic comes up. Record the request and return to the 
 
 ## Do you have a mobile app or offline use
 
-**Say** “The School ERP is an online browser-based system and can be installed as a PWA on supported devices. The current PWA remains online-only. Native apps, offline workflows, push notifications and background sync require separate assessment and scope.”
+**Say** “Everclass ERP is an online browser-based system and can be installed as a PWA on supported devices. The current PWA remains online-only. Native apps, offline workflows, push notifications and background sync require separate assessment and scope.”
 
 ## What is the price and how soon can we launch
 

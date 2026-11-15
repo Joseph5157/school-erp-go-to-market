@@ -7,7 +7,7 @@ description: Create teacher logins, assign class teachers and subject teachers f
 
 <p class="erp-draft" data-search-exclude><strong>Draft.</strong> Verify against the deployed build before sharing.</p>
 
-A teacher's access in School ERP follows their **assignments**. A teacher sees a Section's attendance only if they are its class teacher, and enters marks only for the Subjects and Sections they are assigned to teach, on the dates the assignment is in force.
+A teacher's access in Everclass ERP follows their **assignments**. A teacher sees a Section's attendance only if they are its class teacher, and enters marks only for the Subjects and Sections they are assigned to teach, on the dates the assignment is in force.
 
 ## Create a teacher login
 
@@ -41,7 +41,7 @@ Each Subject offering and Section has one teacher at a time, who enters its mark
 To change the teacher, select **Reassign**. The current assignment ends the day before the new one starts, so past results stay with the teacher who taught them. Use **End** to stop an assignment on a chosen day, or **Delete planned** for one that has not started.
 
 !!! warning "Inactive holders"
-    If a Section or Subject is still assigned to a deactivated login, School ERP flags it as **Login inactive or not a teacher** — reassign it so the work is not left without a teacher.
+    If a Section or Subject is still assigned to a deactivated login, Everclass ERP flags it as **Login inactive or not a teacher** — reassign it so the work is not left without a teacher.
 
 ## Check coverage gaps
 

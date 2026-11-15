@@ -1,8 +1,8 @@
-# School ERP demo automation (Playwright)
+# Everclass ERP demo automation (Playwright)
 
 **Status: Draft — GTM-DEMO-AUTO-01 foundation.** Read-only automation for Administrator, Teacher and Guardian walkthroughs on **fictional data only**. Nothing here has been run against staging or any deployed environment yet. Every scene is marked `liveVerified: false` until an authorised rehearsal proves it.
 
-This folder is demo tooling, not School ERP application code. Routes and selectors were taken by reading the `school-erp` source (read-only, `main` at `c6284df`); the application was not changed.
+This folder is demo tooling, not Everclass ERP application code. Routes and selectors were taken by reading the `school-erp` source (read-only, `main` at `c6284df`); the application was not changed.
 
 ## What is here
 
@@ -158,4 +158,4 @@ No retries are configured: a flaky live step should be investigated, not repeate
 
 ## Not in this stage
 
-Live rehearsal, write flows, screenshots of staging, video, CI runs against any environment, and changes to School ERP.
+Live rehearsal, write flows, screenshots of staging, video, CI runs against any environment, and changes to Everclass ERP.

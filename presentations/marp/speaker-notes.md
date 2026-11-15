@@ -1,10 +1,10 @@
-# School ERP — Client Presentation Speaker Notes
+# Everclass ERP — Client Presentation Speaker Notes
 
 **Status: Draft.** A **10-minute conversation opener**, not a live-demo rehearsal. Use plain language. Do not show real school data or unapproved commercial promises.
 
 | Slide | Suggested time | Presenter cue |
 |---|---:|---|
-| 1. School ERP | 0:30 | Frame this as a discussion about the school's current processes, not a feature sales pitch. |
+| 1. Everclass ERP | 0:30 | Frame this as a discussion about the school's current processes, not a feature sales pitch. |
 | 2. Fragmented school work | 0:45 | Ask which record or approval currently causes the most follow-up work. Do not claim quantified savings. |
 | 3. Student journey | 0:50 | Trace a fictional applicant into attendance, assessments and released results; describe the actual school review points. |
 | 4. Product areas | 0:45 | Summarize the four diagram groups; say the full catalogue has 12 documented areas. |
@@ -21,7 +21,7 @@
 
 ## Prior to public use
 
-1. Final company and product names, approved logo and contacts are still undecided. Do not invent them.
+1. The product is **Everclass ERP**. The company name, approved logo and contacts are still undecided. Do not invent them.
 2. Validate marketing claims against the current application and approved feature catalogue.
 3. Prepare the meeting's [blank requirements form](../../sales/proposals/school-requirements-capture.md).
 4. Do not use staging screenshots or perform a live role-based demonstration until the [deferred rehearsal](../../demo/demo-checklists/pre-demo-readiness.md) is completed.

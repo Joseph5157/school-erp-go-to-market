@@ -3,7 +3,7 @@
  *
  * Status meanings (also in README):
  * - implemented: read-only automation exists; route, page title and nav
- *   landmark are verified in the School ERP source; no record has to exist.
+ *   landmark are verified in the Everclass ERP source; no record has to exist.
  * - provisional: read-only automation exists but needs a suitable fictional
  *   record (it discovers one from links on the page and skips with the
  *   fallback when none is found), or relies on selectors that only render
