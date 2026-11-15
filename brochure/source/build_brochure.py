@@ -502,7 +502,7 @@ def build():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(OUT), pagesize=A4, pageCompression=1)
     c.setTitle("Everclass ERP Client Brochure — A4")
-    c.setSubject("Six-page client brochure for a Everclass ERP demonstration")
+    c.setSubject("Six-page client brochure for an Everclass ERP demonstration")
     c.setAuthor("")
     for page in (page1, page2, page3, page4, page5, page6):
         page(c)
