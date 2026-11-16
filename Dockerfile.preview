@@ -1,0 +1,21 @@
+# Private internal preview only. This is NOT the public launch image.
+# Build context must be the repository root so shared SVG diagrams are present.
+FROM node:22-alpine AS build
+WORKDIR /repo
+COPY website/package.json website/package-lock.json ./website/
+WORKDIR /repo/website
+RUN npm ci --no-audit --no-fund
+WORKDIR /repo
+COPY website/ ./website/
+COPY diagrams/svg/ ./diagrams/svg/
+WORKDIR /repo/website
+ENV ASTRO_TELEMETRY_DISABLED=1
+RUN npm run check
+
+FROM caddy:2.10-alpine
+COPY website/Caddyfile.preview /etc/caddy/Caddyfile
+COPY website/scripts/start-preview.sh /usr/local/bin/start-preview.sh
+COPY --from=build /repo/website/dist /srv
+ENV PORT=8080
+EXPOSE 8080
+CMD ["sh", "/usr/local/bin/start-preview.sh"]
