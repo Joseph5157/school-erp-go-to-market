@@ -254,7 +254,7 @@ export type Capability = { title: string; text: string; icon: IconName; href: st
 
 export const capabilitiesIntro: Intro = {
   eyebrow: 'What it covers today',
-  heading: 'Eight connected areas of school work',
+  heading: 'The everyday core of twelve connected areas',
   link: { href: '/features/#not-included', label: 'See what is not in the current product' },
 };
 
