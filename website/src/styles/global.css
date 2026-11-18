@@ -1316,21 +1316,30 @@ tbody th {
 }
 .section-head { margin-bottom: 44px; }
 
-/* Page top: the homepage's mint field with faint vertical lines */
+/* Page top: graphite with one teal glow behind the image, matching the
+   homepage hero (owner choice 2026-11-18, background option C). Teal #1bb5a8
+   and its tint #7fe0d6 come from the Everclass mark. */
 .page-intro {
-  position: relative; isolation: isolate;
-  background: radial-gradient(ellipse at 85% 28%, #d1ecdf 0%, transparent 49%),
-    linear-gradient(165deg, #fff 10%, #f3faf5 56%, #dceee5 100%);
+  position: relative; isolation: isolate; overflow: hidden;
+  color: #fff; background: var(--ink); border-bottom: 0;
 }
 .page-intro::before {
-  position: absolute; inset: 0; z-index: -1; pointer-events: none; content: "";
-  background-image: linear-gradient(to right, #2163510d 1px, transparent 1px);
-  background-size: 116px 100%;
-  mask-image: linear-gradient(to bottom, #0009, transparent 88%);
+  position: absolute; z-index: -1; pointer-events: none; content: "";
+  right: -10%; top: 50%; width: min(900px, 110vw); height: 120%;
+  transform: translateY(-50%); border-radius: 50%;
+  background: radial-gradient(closest-side, #1bb5a84d, #1bb5a800);
 }
 @media (min-width: 720px) {
   .page-intro { padding: 104px 0 88px; }
 }
+.page-intro h1 { color: #fff; }
+.page-intro .eyebrow { color: #7fe0d6; }
+.page-intro .lead { color: #c3ccd4; }
+.page-intro .jump-links a { color: #fff; background: #ffffff0f; border-color: #5a6672; }
+.page-intro .jump-links a:hover { color: #fff; background: #ffffff1f; border-color: #7fe0d6; }
+.page-intro .jump-links a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.page-intro .page-intro-media figcaption { color: #c3ccd4; }
+.page-intro .page-intro-media .v2-shot-frame { border-color: #3a4652; box-shadow: 0 30px 60px #00000059; }
 .page-intro .lead { font-size: 1.12rem; }
 
 .card { border-radius: 8px; padding: 30px; }
