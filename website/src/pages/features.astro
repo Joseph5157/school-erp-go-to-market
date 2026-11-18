@@ -9,23 +9,27 @@ import ProductShot from '../components/home/ProductShot.astro';
 import Photo from '../components/home/Photo.astro';
 import { areaGroups, boundaries } from '../data/site';
 import { shots, admissionPhoto } from '../data/home';
-import type { IconName, Shot } from '../data/home';
+import type { IconName, Photo as PhotoType, Shot } from '../data/home';
 
-const overviewPhone: Shot = {
-  src: '/images/product/overview-phone.webp',
-  width: 480,
-  height: 533,
-  alt: 'Everclass ERP administrator overview for a demo school: term attendance against an 80% target, today’s present and absent count, registers, marks and results still to finish.',
-  caption: shots.overview.caption,
-  frame: 'phone',
-};
-
-// The overview screenshot is already the page's hero, so School administration
-// uses the admissions-desk photo instead of repeating it.
+// Groups without a fitting product screenshot use a captioned illustrative
+// photo instead: the overview screenshot is already the page's hero, and the
+// old cropped phone overview did not show data import or access at all.
 const groupShots: Record<string, Shot> = {
   'daily-work': shots.register,
   family: shots.guardian,
-  'data-access': overviewPhone,
+};
+
+const onboardingPhoto: PhotoType = {
+  src: '/images/product/implementation-meeting.webp',
+  width: 1200,
+  height: 675,
+  alt: 'Illustration of a school principal going over printed spreadsheets with two members of the implementation team, as part of importing the school’s records.',
+  caption: 'Illustrative image. The people shown are not real staff, guardians or students.',
+};
+
+const groupPhotos: Record<string, PhotoType> = {
+  administration: admissionPhoto,
+  'data-access': onboardingPhoto,
 };
 
 const icons: Record<string, IconName> = {
@@ -78,7 +82,7 @@ const whatsappSteps = [
               <p>{group.intro}</p>
             </div>
             <div class="feature-group-visual">
-              {groupShots[group.slug] ? <ProductShot shot={groupShots[group.slug]} /> : <Photo photo={admissionPhoto} />}
+              {groupShots[group.slug] ? <ProductShot shot={groupShots[group.slug]} /> : <Photo photo={groupPhotos[group.slug]} />}
             </div>
           </div>
           <div class="feature-card-grid">
