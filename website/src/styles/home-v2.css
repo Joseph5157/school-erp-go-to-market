@@ -61,25 +61,36 @@
 .home-v2 .v2-inline-link:hover { color: var(--v2-forest-dark); }
 .home-v2 .v2-after-link { margin: 28px 0 0; }
 
-/* 01 First screen: centred copy, screenshot rising out of a green band */
+/* 01 First screen: centred copy on graphite, one teal glow behind the
+   screenshot (owner choice 2026-11-18, background option C). Teal #1bb5a8 and
+   its light tint #7fe0d6 come from the Everclass mark. */
 .home-v2 .v2-hero {
-  position: relative; isolation: isolate; padding-top: 96px;
-  background: radial-gradient(ellipse at 50% 18%, #e2f3ea 0%, transparent 55%),
-    linear-gradient(180deg, #fff 0%, #f3faf5 42%, #cfe6db 64%, #4c9178 88%, #2f7a63 100%);
+  position: relative; isolation: isolate; padding-top: 96px; overflow: hidden;
+  color: #fff; background: var(--v2-ink);
 }
 .home-v2 .v2-hero::before {
-  position: absolute; inset: 0; z-index: -1; pointer-events: none; content: "";
-  background-image: linear-gradient(to right, #2163510d 1px, transparent 1px);
-  background-size: 116px 100%;
-  mask-image: linear-gradient(to bottom, #0009, transparent 70%);
+  position: absolute; z-index: -1; pointer-events: none; content: "";
+  left: 50%; bottom: -12%; width: min(1100px, 120vw); height: 70%;
+  transform: translateX(-50%); border-radius: 50%;
+  background: radial-gradient(closest-side, #1bb5a852, #1bb5a800);
 }
+.home-v2 .v2-hero .v2-label { color: #7fe0d6; }
 .home-v2 .v2-hero-copy { position: relative; z-index: 2; max-width: 780px; margin: 0 auto; text-align: center; }
-.home-v2 .v2-hero-copy h1 { margin: 20px auto 20px; }
-.home-v2 .v2-hero-copy h1 span { color: var(--v2-forest); }
+.home-v2 .v2-hero-copy h1 { margin: 20px auto 20px; color: #fff; }
+.home-v2 .v2-hero-copy h1 span { color: #7fe0d6; }
+.home-v2 .v2-hero p { color: #c3ccd4; }
 .home-v2 .v2-hero-lead { font-size: 1.12rem; line-height: 1.75; max-width: 620px; margin: 0 auto; }
 .home-v2 .v2-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .home-v2 .v2-hero-copy .v2-hero-actions { justify-content: center; }
+/* On graphite the primary button turns white and the secondary becomes an outline. */
+.home-v2 .v2-hero .v2-btn-primary { color: var(--v2-ink); background: #fff; }
+.home-v2 .v2-hero .v2-btn-primary:hover { color: var(--v2-ink); background: #e6f7f5; }
+.home-v2 .v2-hero .v2-btn-secondary { color: #fff; background: transparent; border-color: #5a6672; }
+.home-v2 .v2-hero .v2-btn-secondary:hover { color: #fff; background: #ffffff14; border-color: #8b97a3; }
+.home-v2 .v2-hero .v2-btn:focus-visible { outline-color: #fff; }
 .home-v2 .v2-hero-note { font-size: .875rem; margin: 22px auto 0; max-width: 520px; }
+.home-v2 .v2-hero .v2-shot-caption { color: #c3ccd4; }
+.home-v2 .v2-hero .v2-shot--bleed .v2-shot-frame { border-color: #3a4652; box-shadow: 0 -10px 60px #00000059; }
 .home-v2 .v2-hero-stage { position: relative; max-width: 980px; margin: 56px auto 0; }
 
 /* Screenshot that runs into the bottom edge of its section */
