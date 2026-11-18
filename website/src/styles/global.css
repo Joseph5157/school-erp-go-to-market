@@ -183,10 +183,19 @@ ol {
 
 .wordmark {
   display: inline-flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
   color: var(--ink);
   line-height: 1.1;
+}
+
+/* Logo mark shown unchanged (brand/brand-guidelines.md: never recolour). */
+.wordmark-mark {
+  display: block;
+  width: 34px;
+  height: 34px;
+  flex: none;
 }
 
 .wordmark:hover {
@@ -201,19 +210,7 @@ ol {
   gap: 8px;
 }
 
-.wordmark-name::before {
-  content: '';
-  width: 12px;
-  height: 12px;
-  border-radius: 3px;
-  background: var(--brand);
-}
 
-.wordmark-note {
-  font-size: 0.72rem;
-  color: var(--ink-soft);
-  margin-top: 3px;
-}
 
 .nav-desktop {
   display: none;
@@ -1233,8 +1230,13 @@ tbody th {
   color: #fff;
 }
 
-.site-footer .wordmark-note {
-  color: #aab4bf;
+/* The mark's navy stroke would vanish on the dark footer, so it sits on a
+   white tile instead of being recoloured. */
+.site-footer .wordmark-mark {
+  box-sizing: content-box;
+  padding: 4px;
+  border-radius: 8px;
+  background: #fff;
 }
 
 .site-footer h2 {

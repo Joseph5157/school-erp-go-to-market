@@ -1,5 +1,6 @@
 ---
 import { site, nav, demoHref, requirementsHref } from '../data/site';
+import LogoMark from './LogoMark.astro';
 ---
 
 <footer class="site-footer">
@@ -7,8 +8,8 @@ import { site, nav, demoHref, requirementsHref } from '../data/site';
     <div class="footer-grid">
       <div>
         <a class="wordmark" href="/">
+          <LogoMark />
           <span class="wordmark-name">{site.wordmark}</span>
-          <span class="wordmark-note">{site.wordmarkNote}</span>
         </a>
         <p class="mt-lg">
           School administration software for private schools in Telangana and Andhra Pradesh: admissions,

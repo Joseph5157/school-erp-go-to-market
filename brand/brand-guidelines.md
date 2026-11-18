@@ -154,9 +154,16 @@ Avoid:
 
 ## 9. Logo and icon rules
 
-No approved company or product logo package has been imported into this repository.
+The owner provided the Everclass ERP logo files on 2026-11-18. They are in `brand/logos/`:
 
-- Keep logo areas as placeholders in outward-facing drafts.
+- `everclass-logo.svg`: the mark with the "Everclass ERP" text (set in Quicksand, with Nunito or Segoe UI as fallbacks)
+- `everclass-mark.svg`: the mark alone (a loop with a sprout), the same drawing as the application's `_brand_mark.html`
+
+Its colours (teal `#1BB5A8`, navy `#0B2A4A`, yellow `#F5B82E`) belong to the mark only. They do not replace the Graphite & Institutional Green palette for text, buttons or backgrounds.
+
+The status stays **Draft** until the owner records approval. Clear-space, minimum-size and misuse rules are still to be written.
+
+- Use the files exactly as supplied. On dark backgrounds, place the mark on a white tile; do not recolour it.
 - Do not invent a company name, product name or contact details.
 - Do not treat the generated PWA install icon as the approved company logo.
 - Do not redraw, stretch, recolour or extract a mark from a screenshot.
@@ -183,6 +190,6 @@ Approved by the owner on 2026-11-09:
 Still pending:
 
 1. Final company name (product name decided: **Everclass ERP**)
-2. Approved logo files and logo rules
+2. Formal approval of the logo files provided on 2026-11-18, plus clear-space, minimum-size and misuse rules
 3. Any formal colour-usage ratio
 4. Telugu marketing-copy conventions

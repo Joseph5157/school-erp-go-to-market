@@ -3,10 +3,9 @@
 // client deck. Do not add capabilities here that the catalogue does not list.
 
 export const site = {
-  // Text wordmark: the product name Everclass ERP is decided (2026-11-15); the logo and company
-  // name are not, so the wordmark stays plain text.
+  // Product name decided 2026-11-15. Logo files provided by the owner 2026-11-18
+  // (brand/logos/); the mark is shown unchanged beside the name (LogoMark.astro).
   wordmark: 'Everclass ERP',
-  wordmarkNote: 'Text wordmark; logo pending',
   titleSuffix: 'Everclass ERP (draft)',
 };
 
