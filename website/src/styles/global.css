@@ -3,8 +3,8 @@
    (owner request); see the "V2 look" block at the end of this file. */
 
 :root {
-  --ink: #10283b;
-  --ink-soft: #4b5e67;
+  --ink: #18212b;
+  --ink-soft: #4a5562;
   --paper: #fbfcfa;
   --surface: #ffffff;
   --rule: #dce8e2;
@@ -1380,7 +1380,7 @@ tbody th {
 .page-intro-media .v2-photo { margin: 0; }
 .page-intro-media .v2-shot-frame {
   overflow: hidden; background: #fff; border: 1px solid #bfd7cd; border-radius: 8px;
-  box-shadow: 0 28px 58px #10283b1c, 0 8px 20px #10283b0b;
+  box-shadow: 0 28px 58px #18212b1c, 0 8px 20px #18212b0b;
 }
 .page-intro-media .v2-shot-bar {
   display: flex; align-items: center; gap: 6px; padding: 9px 13px;
@@ -1462,17 +1462,19 @@ tbody th {
 }
 .feature-group-copy p { max-width: 520px; margin: 0; color: var(--ink-soft); font-size: 1.05rem; line-height: 1.75; }
 .feature-group-visual { min-width: 0; }
-.feature-group-visual .v2-shot { margin: 0; }
+.feature-group-visual .v2-shot,
+.feature-group-visual .v2-photo { margin: 0; }
+.feature-group-visual .v2-photo img { display: block; width: 100%; height: auto; border-radius: 8px; }
 .feature-group-visual .v2-shot-frame {
   overflow: hidden; border: 1px solid #bfd7cd; border-radius: 8px; background: #fff;
-  box-shadow: 0 24px 54px #10283b17;
+  box-shadow: 0 24px 54px #18212b17;
 }
 .feature-group-visual .v2-shot-bar { display: flex; align-items: center; gap: 6px; padding: 9px 13px; background: #eef3f1; border-bottom: 1px solid #dde7e2; }
 .feature-group-visual .v2-shot-bar i { width: 8px; height: 8px; border-radius: 50%; background: #c5d3cd; }
 .feature-group-visual .v2-shot-bar span { margin-left: 8px; color: #3e5552; font-size: .7rem; }
 .feature-group-visual .v2-shot img { display: block; width: 100%; height: auto; }
 .feature-group-visual .v2-shot--phone { max-width: 300px; margin-inline: auto; }
-.feature-group-visual .v2-shot--phone .v2-shot-frame { border: 8px solid #112839; border-radius: 30px; }
+.feature-group-visual .v2-shot--phone .v2-shot-frame { border: 8px solid #18212b; border-radius: 30px; }
 .feature-card-grid { display: grid; gap: 14px; }
 .feature-ticks { list-style: none; padding: 0 !important; }
 .feature-ticks li { position: relative; padding-left: 25px; }
@@ -1491,13 +1493,13 @@ tbody th {
 .workflow-section .section-head p,
 .workflow-card-head p { color: #c7d9da; }
 .workflow-grid { display: grid; gap: 18px; }
-.workflow-card { padding: 28px; border: 1px solid #44606a; border-radius: 8px; background: #183544; }
+.workflow-card { padding: 28px; border: 1px solid #414c58; border-radius: 8px; background: #232d38; }
 .workflow-card-head { display: grid; grid-template-columns: 52px 1fr; gap: 16px; margin-bottom: 14px; }
-.workflow-card-head .icon-card-symbol { border-color: #44606a; background: #244554; color: #b8e6d1; font-size: .78rem; font-weight: 700; }
+.workflow-card-head .icon-card-symbol { border-color: #414c58; background: #2d3843; color: #b8e6d1; font-size: .78rem; font-weight: 700; }
 .workflow-card-head h3 { margin: 2px 0 6px; }
 .workflow-card-head p { margin: 0; font-size: .92rem; }
-.workflow-card .step-flow { border-color: #44606a; }
-.workflow-card .step-flow > li { border-color: #44606a; }
+.workflow-card .step-flow { border-color: #414c58; }
+.workflow-card .step-flow > li { border-color: #414c58; }
 .workflow-card .step-flow-number { background: #d6f2e3; color: #123b32; }
 .workflow-card .step-flow p { color: #c7d9da; }
 @media (min-width: 980px) { .workflow-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

@@ -6,8 +6,9 @@ import IconCard from '../components/IconCard.astro';
 import StatusList from '../components/StatusList.astro';
 import StepFlow from '../components/StepFlow.astro';
 import ProductShot from '../components/home/ProductShot.astro';
+import Photo from '../components/home/Photo.astro';
 import { areaGroups, boundaries } from '../data/site';
-import { shots } from '../data/home';
+import { shots, admissionPhoto } from '../data/home';
 import type { IconName, Shot } from '../data/home';
 
 const overviewPhone: Shot = {
@@ -19,8 +20,9 @@ const overviewPhone: Shot = {
   frame: 'phone',
 };
 
+// The overview screenshot is already the page's hero, so School administration
+// uses the admissions-desk photo instead of repeating it.
 const groupShots: Record<string, Shot> = {
-  administration: shots.overview,
   'daily-work': shots.register,
   family: shots.guardian,
   'data-access': overviewPhone,
@@ -75,7 +77,9 @@ const whatsappSteps = [
               <h2 id={`${group.slug}-heading`}>{group.title}</h2>
               <p>{group.intro}</p>
             </div>
-            <div class="feature-group-visual"><ProductShot shot={groupShots[group.slug]} /></div>
+            <div class="feature-group-visual">
+              {groupShots[group.slug] ? <ProductShot shot={groupShots[group.slug]} /> : <Photo photo={admissionPhoto} />}
+            </div>
           </div>
           <div class="feature-card-grid">
             {group.areas.map((area) => (
